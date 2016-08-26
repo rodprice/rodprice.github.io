@@ -1,2 +1,2 @@
 # rodprice.github.io
-Numerical Ramblings
+Distraction is us

@@ -1,0 +1,13 @@
+#+BEGIN_COMMENT
+.. title: About me
+.. slug: index
+.. date: 2017-04-29 00:02:04 UTC-06:00
+.. tags: 
+.. category: about
+.. link: 
+.. description: Flattering things about me that may not be entirely true.
+.. type: text
+#+END_COMMENT
+
+
+Flattering things about me that may not be entirely true.

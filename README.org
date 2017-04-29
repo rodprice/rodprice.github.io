@@ -1,0 +1,14 @@
+#+TITLE: README
+#+DATE: <2017-04-29 Sat 15:56><2017-04-29 Sat 15:56>
+#+AUTHOR: Rodney Price
+#+EMAIL: rod@kobe
+#+DESCRIPTION: where this git branch came from
+#+KEYWORDS: 
+#+SETUPFILE: c:/Users/rodprice/AppData/Roaming/.emacs.d/templates/level-0.org
+#+STARTUP: showall
+#+OPTIONS: LaTeX:t
+
+This is the original - quite pretty - site that Github Pages set up
+for me.  I'm supposed to be somewhat more serious (the authorities on
+the internet tell me) so I set up a nice nikola-powered blog instead.
+Here is the original site, in case I ever change my mind.

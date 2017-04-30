@@ -53,14 +53,9 @@
             </li>
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Projects <b class="caret"></b></a>
-            <ul class="dropdown-menu">
-<li>
+            <ul class="dropdown-menu"><li>
 <a href="/pages/projects/balloon/">High-altitude balloon</a>
-                    </li>
-<li>
-<a href="/pages/projects/potatogun/">Calibrated potato gun</a>
-            </li>
-</ul>
+            </li></ul>
 </li>
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Reference <b class="caret"></b></a>
@@ -119,74 +114,50 @@
         
 
     </header><div class="e-content entry-content" itemprop="articleBody text">
-    <p>
-A few years ago, I bought a potato gun.  To be more precise, I bought
-a kit for a potato gun.  It was well put together, polished even, and
-it could shoot a potato a good long way.  I could point it straight
-up, shoot the thing, and the potato would go up so far that I would
-lose sight of it.  It never hit me on the way down, but it did smack
-into the grass with a satisfying thump.  The dog loved it.  So did my
-son Miles, then just a few years old.
-</p>
-
-<p>
-My wife, on the other hand, was not a fan.  When I knocked a slat out
-of the wood fence in the backyard, she was unhappy.  When I shot a
-potato into the neighbor's garage door (I really underestimated how
-far that thing could shoot) she was really unhappy.  When Miles and I
-shot it off in the basement bathroom, my wife and I had a talk.  Miles
-and I were both fascinated with the way the potato splattered into
-mush when it hit the shower wall.  My wife thought we were down there
-tearing the bathroom apart.  Maybe we were.
-</p>
-
-<p>
-Soon afterward, the potato gun broke in half.  PVC pipes can only take
-so much abuse, it seems.  I put the two halves of the potato gun on a
-shelf in the garage and forgot about it.  The level of conflict in my
-marriage eased, and all of us went on with our lives.  I had been kind
-of an idiot about it, and truth be told, I was a bit relieved.  Funny
-how that happens.
-</p>
-
-<p>
-Miles, on the other hand, hadn't forgotten.  A few weeks ago, his
-teachers at school announced a science fair would be held, and Miles
-had an idea.  He would see how far the potato gun would shoot as a
-function of elevation and pressure in the chamber.  (The potato gun is
-pneumatic, with a pressure gauge and relief valve.  I wasn't being
-completely irresponsible, you see.)
-</p>
-
-<p>
-He got going on this when he read on the internet that the world
-record for muzzle velocity of a potato gun was 2,000 and some miles
-per hour.  This potato gun, he said, was powered by combustion rather
-than compressed air, and he wanted to make one of his own.  
-</p>
-
-<p>
-I expressed some skepticism that a potato had enough structural
-integrity to accelerate to Mach 3 without turning into a fine mist.  I
-also made it clear that we weren't going to be building a device using
-a possibly uncontrolled explosion to propel a supersonic potato.
-Disappointment and some argument ensued.  Miles is now 12 years old,
-and as with all 12 year old boys, the thought of explosions and
-supersonic anything is magnetic.
-</p>
-
-<p>
-We did agree that using my old potato gun for the project might be a
-good idea.  It did, after all, have a pressure gauge, and it does
-shoot pretty far, satisfying that 12 year old need for speed.  And
-destructive power.  If you consider destroying a potato as destructive
-power.  So we agreed.  We'd find a big field, and Miles will figure
-out a way to measure elevation and distance.
-</p>
-
-<p>
-Now we have some engineering to do.  I'll keep you posted.
-</p>
+    <script>
+function rc4(key, str) {
+    var s = [], j = 0, x, res = '';
+    for (var i = 0; i < 256; i++) {
+        s[i] = i;
+    }
+    for (i = 0; i < 256; i++) {
+        j = (j + s[i] + key.charCodeAt(i % key.length)) % 256;
+        x = s[i];
+        s[i] = s[j];
+        s[j] = x;
+    }
+    i = 0;
+    j = 0;
+    for (var y = 0; y < str.length; y++) {
+        i = (i + 1) % 256;
+        j = (j + s[i]) % 256;
+        x = s[i];
+        s[i] = s[j];
+        s[j] = x;
+        res += String.fromCharCode(str.charCodeAt(y) ^ s[(s[i] + s[j]) % 256]);
+    }
+    return res;
+}
+function decrypt() {
+    key = $("#key").val();
+    crypt_div = $("#encr")
+    crypted = crypt_div.html();
+    decrypted = rc4(key, window.atob(crypted));
+    if (decrypted.substr(decrypted.length - 11) == "<!--tail-->"){
+        crypt_div.html(decrypted);
+        $("#pwform").hide();
+        crypt_div.show();
+    } else { alert("Wrong password"); };
+}
+</script><div id="encr" style="display: none;">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</div>
+<div id="pwform">
+<form onsubmit="javascript:decrypt(); return false;" class="form-inline">
+<fieldset>
+<legend>This post is password-protected.</legend>
+<input type="password" id="key" placeholder="Type password here"><button type="submit" class="btn">Show Content</button>
+</fieldset>
+</form>
+</div>
     </div>
     <aside class="postpromonav"><nav><ul class="pager hidden-print">
 <li class="previous">

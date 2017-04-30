@@ -7,6 +7,7 @@
 .. link: 
 .. description: How we got started on the potato gun project
 .. type: text
+.. password: Peaches1011
 #+END_COMMENT
 
 A few years ago, I bought a potato gun.  To be more precise, I bought

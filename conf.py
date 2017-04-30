@@ -138,7 +138,7 @@ NAVIGATION_LINKS = {
         (
             (
                 ("/pages/projects/balloon/", "High-altitude balloon"),
-                ("/pages/projects/potatogun/", "Calibrated potato gun"),
+                # ("/pages/projects/potatogun/", "Calibrated potato gun"),
             ),
          "Projects"
         ),

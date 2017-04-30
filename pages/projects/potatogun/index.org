@@ -1,0 +1,18 @@
+#+BEGIN_COMMENT
+.. title: Miles' incredible calibrated potato gun
+.. slug: index
+.. date: 2017-04-29 00:46:20 UTC-06:00
+.. tags: potato-gun
+.. category: projects
+.. link: 
+.. description: 
+.. type: text
+#+END_COMMENT
+
+
+* Construction
+
+* Test data
+
+* Results
+

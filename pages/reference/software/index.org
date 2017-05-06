@@ -10,10 +10,69 @@
 #+END_COMMENT
 
 
-* MSP430 programming
+* MSP430
 
- - [[http://www.simplyembedded.org][Simply Embedded]]'s excellent series of programming [[http://www.simplyembedded.org/tutorials/][tutorials]] for the
-   MSP430.  This takes you through setting up a toolchain with the gcc
-   compiler and mspdebug, sets up a makefile with a nice project
-   structure, covers the MSP430 clocks, timers, and interrupts, and
-   more.  Great stuff, if somewhat hardcore.  
+** Tools
+
+*** [[http://processors.wiki.ti.com/index.php/Category:CCS][Code Composer Studio]] (CCS)
+    
+TI's proprietary IDE for all of its microprocessors, not just the
+MSP430.  There's a free version, but it's apparently limited to 4k
+binaries.  
+
+*** [[https://www.iar.com/iar-embedded-workbench/][IAR Embedded Workbench]]
+
+A commercial IDE for many embedded processors that has been around for
+a long time.  The code it generates is generally a bit smaller and
+faster than others, including TI's CCS.  They offer a limited [[http://www.ti.com/tool/iar-kickstart][free
+edition]] called "Kickstarter".
+
+*** [[https://sourceforge.net/projects/mspgcc/][mspgcc]]
+
+The standard open-source compiler and toolchain for MSP430 until TI
+and RedHat got together and put together their own.  Based on an older
+version of gcc than TI/RedHat.  
+
+*** [[http://software-dl.ti.com/msp430/msp430_public_sw/mcu/msp430/MSPGCC/latest/index_FDS.html][mspgcc-elf]]
+
+Maintained by [[http://www.somniumtech.com/][SOMNIUM Technologies Limited]] (sounds sleepy) developed
+initially by TI and RedHat.  Simply Embedded has a nice [[http://www.simplyembedded.org/tutorials/build-msp340-gcc-toolchain/][tutorial]] on
+installing it on Linux.  The standard C library is [[https://sourceware.org/newlib/][newlib]].  Not sure
+what that means for development... buggy? faster?
+
+*** [[http://dlbeer.co.nz/mspdebug/][mspdebug]]
+
+Programs the chip on the Launchpad, runs a debugger, and lots of other
+things.
+
+*** [[http://energia.nu/][Energia]]
+
+An Arduino clone for MSP430.  Reportedly runs mspgcc under the hood.
+I'm currently investigating how to use the Energia libraries with the
+bare metal mspgcc-elf toolchain.
+
+*** [[http://platformio.org/][PlatformIO]]
+
+A set of tools written in Python, with a command-line component
+("core") and an IDE.  Seems to be gaining traction, but I've seen
+comments (sorry, don't have reference) that it's having trouble
+keeping up with compiler developments for the many processor families
+they're trying to cover.
+
+*** [[http://43oh.com/2013/03/tutorial-codeblocks-and-mspgcc/][Code::Blocks]]
+
+Yet another embedded IDE purporting to create a common development
+environment across OS's and microprocessors.
+
+** Tutorials
+
+  - [[http://www.simplyembedded.org][Simply Embedded]]'s excellent series of programming [[http://www.simplyembedded.org/tutorials/][tutorials]] for the
+    MSP430.  This takes you through setting up a toolchain with the gcc
+    compiler and mspdebug, sets up a makefile with a nice project
+    structure, covers the MSP430 clocks, timers, and interrupts, and
+    more.  Great stuff, if somewhat hardcore.
+
+** Community
+
+  - [[http://43oh.com/][43oh]]
+  - [[https://sourceforge.net/p/mspgcc/mailman/mspgcc-users/][mspgcc-users]]

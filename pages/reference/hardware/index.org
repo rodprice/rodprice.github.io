@@ -13,4 +13,8 @@
 * MSP430
 
  - Texas Instrument's [[http://www.ti.com/msp430][MSP430 site]]
- 
+ - The web page for the [[http://www.ti.com/product/msp430g2553][MSP430G2553]] chip on the Launchpad. 
+
+** Community
+
+ - Hackster.io [[https://www.hackster.io/ti-launchpad][Launchpad area]]

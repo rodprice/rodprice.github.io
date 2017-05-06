@@ -11,3 +11,21 @@
 
 
 Write your page here.
+
+* Tutorials
+
+** [[https://www.sparkfun.com/tutorials/180][High Altitude Balloon Launch]] (Sparkfun)
+
+This is an account of an unsuccessful launch - unsuccessful because
+they lost the balloon.  It had lots of functionality, however: camera,
+accelerometer, magnetic field, humidity, temperature, ...
+
+ - [[https://www.sparkfun.com/tutorials/180][Introduction]]
+ - [[https://www.sparkfun.com/tutorials/185][Sensor system, flight computer, and radio system]]
+ - [[https://www.sparkfun.com/tutorials/186][Still and video cameras]]
+ - [[https://www.sparkfun.com/tutorials/187][The balloon, enclosure, helium, and cut-down]]
+ - [[https://www.sparkfun.com/tutorials/188][Enclosure and heating system]]
+ - [[https://www.sparkfun.com/tutorials/189][Weights, measures, and costs]]
+ - [[https://www.sparkfun.com/tutorials/190][Lessons learned]]
+
+

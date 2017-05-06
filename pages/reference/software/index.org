@@ -1,20 +1,16 @@
 #+BEGIN_COMMENT
-.. title: Electronics references
+.. title: Software references
 .. slug: index
 .. date: 2017-05-05 21:19:20 UTC-06:00
 .. tags: electronics, reference
 .. category: electronics
 .. link: 
-.. description: Useful links about chips, radios, and so on
+.. description: Useful links about software, embedded and otherwise
 .. type: text
 #+END_COMMENT
 
 
-* MSP430
-
- - Texas Instrument's [[http://www.ti.com/msp430][MSP430 site]]
- 
-** Tutorials
+* MSP430 programming
 
  - [[http://www.simplyembedded.org][Simply Embedded]]'s excellent series of programming [[http://www.simplyembedded.org/tutorials/][tutorials]] for the
    MSP430.  This takes you through setting up a toolchain with the gcc

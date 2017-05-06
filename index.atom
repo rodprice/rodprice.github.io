@@ -3,7 +3,7 @@
 <feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>Shiny Penny</title>
   <id>http://www.shinypenny.org/index.atom</id>
-  <updated>2017-04-30T02:57:04Z</updated>
+  <updated>2017-05-06T03:47:50Z</updated>
   <author>
     <name>Rodney Price</name>
   </author>
@@ -12,13 +12,13 @@
   <generator uri="https://getnikola.com/">Nikola</generator>
   <entry>
     <title>Miles' science fair project</title>
-    <id>http://www.shinypenny.org/posts/miles-science-fair-project/</id>
+    <id>http://www.shinypenny.org/posts/miles-science-fair-project.html</id>
     <updated>2017-04-29T13:57:20-06:00</updated>
     <published>2017-04-29T13:57:20-06:00</published>
     <author>
       <name>Rodney Price</name>
     </author>
-    <link rel="alternate" type="text/html" href="http://www.shinypenny.org/posts/miles-science-fair-project/"/>
+    <link rel="alternate" type="text/html" href="http://www.shinypenny.org/posts/miles-science-fair-project.html"/>
     <summary type="html">&lt;script&gt;
 function rc4(key, str) {
     var s = [], j = 0, x, res = '';
@@ -69,13 +69,13 @@ function decrypt() {
   </entry>
   <entry>
     <title>Maybe this will work</title>
-    <id>http://www.shinypenny.org/posts/maybe-this-will-work/</id>
+    <id>http://www.shinypenny.org/posts/maybe-this-will-work.html</id>
     <updated>2017-04-28T19:08:21-06:00</updated>
     <published>2017-04-28T19:08:21-06:00</published>
     <author>
       <name>Rodney Price</name>
     </author>
-    <link rel="alternate" type="text/html" href="http://www.shinypenny.org/posts/maybe-this-will-work/"/>
+    <link rel="alternate" type="text/html" href="http://www.shinypenny.org/posts/maybe-this-will-work.html"/>
     <summary type="html">&lt;p&gt;
 Hope springs eternal.
 &lt;/p&gt;</summary>

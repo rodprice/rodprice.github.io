@@ -7,30 +7,30 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <sitemap>
   <loc>http://www.shinypenny.org/categories/cat_projects.atom</loc>
-  <lastmod>2017-04-30T02:57:00Z</lastmod>
+  <lastmod>2017-05-06T03:47:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://www.shinypenny.org/categories/cat_projects.xml</loc>
-  <lastmod>2017-04-30T02:57:00Z</lastmod>
+  <lastmod>2017-05-06T03:47:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://www.shinypenny.org/galleries/demo/rss.xml</loc>
-  <lastmod>2017-04-30T02:56:00Z</lastmod>
+  <lastmod>2017-05-06T03:47:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://www.shinypenny.org/galleries/rss.xml</loc>
-  <lastmod>2017-04-30T02:56:00Z</lastmod>
+  <lastmod>2017-05-06T03:47:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://www.shinypenny.org/index.atom</loc>
-  <lastmod>2017-04-30T02:57:00Z</lastmod>
+  <lastmod>2017-05-06T03:47:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://www.shinypenny.org/rss.xml</loc>
-  <lastmod>2017-04-30T02:57:00Z</lastmod>
+  <lastmod>2017-05-06T03:47:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://www.shinypenny.org/sitemap.xml</loc>
-  <lastmod>2017-04-30T02:57:00Z</lastmod>
+  <lastmod>2017-05-06T03:47:00Z</lastmod>
  </sitemap>
 </sitemapindex>

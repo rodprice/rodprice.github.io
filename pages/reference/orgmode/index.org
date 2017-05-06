@@ -18,5 +18,9 @@
 
 ** Tutorials
 
- - Rainer Konig's [[https://www.youtube.com/playlist?list%3DPLVtKhBrRV_ZkPnBtt_TD1Cs9PJlU0IIdE][videos]]: really useful introduction to org mode in bite-size pieces
- - Mike Zamansky's [[http://cestlaz.github.io/stories/emacs/][videos]]: covers lots of emacs topics, not just org mode
+ - Rainer Konig's [[https://www.youtube.com/playlist?list%3DPLVtKhBrRV_ZkPnBtt_TD1Cs9PJlU0IIdE][videos]]: really useful introduction to org mode in
+   bite-size pieces
+ - Mike Zamansky's [[http://cestlaz.github.io/stories/emacs/][videos]]: covers lots of emacs topics, not just org
+   mode
+ - Sacha Chua's "[[http://sachachua.com/blog/2008/01/outlining-your-notes-with-org/][Outlining your notes with org]]": a brief but thorough
+   introduction to org mode's outlining and linking facilities.

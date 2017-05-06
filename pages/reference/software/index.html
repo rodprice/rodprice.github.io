@@ -113,17 +113,132 @@
 
     </header><div class="e-content entry-content" itemprop="articleBody text">
     <div id="outline-container-sec-1" class="outline-2">
-<h2 id="sec-1">MSP430 programming</h2>
+<h2 id="sec-1">MSP430</h2>
 <div class="outline-text-2" id="text-1">
+</div>
+<div id="outline-container-sec-1-1" class="outline-3">
+<h3 id="sec-1-1">Tools</h3>
+<div class="outline-text-3" id="text-1-1">
+</div>
+<div id="outline-container-sec-1-1-1" class="outline-4">
+<h4 id="sec-1-1-1">
+<a href="http://processors.wiki.ti.com/index.php/Category:CCS">Code Composer Studio</a> (CCS)</h4>
+<div class="outline-text-4" id="text-1-1-1">
+<p>
+TI's proprietary IDE for all of its microprocessors, not just the
+MSP430.  There's a free version, but it's apparently limited to 4k
+binaries.  
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-1-1-2" class="outline-4">
+<h4 id="sec-1-1-2"><a href="https://www.iar.com/iar-embedded-workbench/">IAR Embedded Workbench</a></h4>
+<div class="outline-text-4" id="text-1-1-2">
+<p>
+A commercial IDE for many embedded processors that has been around for
+a long time.  The code it generates is generally a bit smaller and
+faster than others, including TI's CCS.  They offer a limited <a href="http://www.ti.com/tool/iar-kickstart">free
+edition</a> called "Kickstarter".
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-1-1-3" class="outline-4">
+<h4 id="sec-1-1-3"><a href="https://sourceforge.net/projects/mspgcc/">mspgcc</a></h4>
+<div class="outline-text-4" id="text-1-1-3">
+<p>
+The standard open-source compiler and toolchain for MSP430 until TI
+and RedHat got together and put together their own.  Based on an older
+version of gcc than TI/RedHat.  
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-1-1-4" class="outline-4">
+<h4 id="sec-1-1-4"><a href="http://software-dl.ti.com/msp430/msp430_public_sw/mcu/msp430/MSPGCC/latest/index_FDS.html">mspgcc-elf</a></h4>
+<div class="outline-text-4" id="text-1-1-4">
+<p>
+Maintained by <a href="http://www.somniumtech.com/">SOMNIUM Technologies Limited</a> (sounds sleepy) developed
+initially by TI and RedHat.  Simply Embedded has a nice <a href="http://www.simplyembedded.org/tutorials/build-msp340-gcc-toolchain/">tutorial</a> on
+installing it on Linux.  The standard C library is <a href="https://sourceware.org/newlib/">newlib</a>.  Not sure
+what that means for development… buggy? faster?
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-1-1-5" class="outline-4">
+<h4 id="sec-1-1-5"><a href="http://dlbeer.co.nz/mspdebug/">mspdebug</a></h4>
+<div class="outline-text-4" id="text-1-1-5">
+<p>
+Programs the chip on the Launchpad, runs a debugger, and lots of other
+things.
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-1-1-6" class="outline-4">
+<h4 id="sec-1-1-6"><a href="http://energia.nu/">Energia</a></h4>
+<div class="outline-text-4" id="text-1-1-6">
+<p>
+An Arduino clone for MSP430.  Reportedly runs mspgcc under the hood.
+I'm currently investigating how to use the Energia libraries with the
+bare metal mspgcc-elf toolchain.
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-1-1-7" class="outline-4">
+<h4 id="sec-1-1-7"><a href="http://platformio.org/">PlatformIO</a></h4>
+<div class="outline-text-4" id="text-1-1-7">
+<p>
+A set of tools written in Python, with a command-line component
+("core") and an IDE.  Seems to be gaining traction, but I've seen
+comments (sorry, don't have reference) that it's having trouble
+keeping up with compiler developments for the many processor families
+they're trying to cover.
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-1-1-8" class="outline-4">
+<h4 id="sec-1-1-8"><a href="http://43oh.com/2013/03/tutorial-codeblocks-and-mspgcc/">Code::Blocks</a></h4>
+<div class="outline-text-4" id="text-1-1-8">
+<p>
+Yet another embedded IDE purporting to create a common development
+environment across OS's and microprocessors.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-1-2" class="outline-3">
+<h3 id="sec-1-2">Tutorials</h3>
+<div class="outline-text-3" id="text-1-2">
 <ul class="org-ul">
 <li>
 <a href="http://www.simplyembedded.org">Simply Embedded</a>'s excellent series of programming <a href="http://www.simplyembedded.org/tutorials/">tutorials</a> for the
 MSP430.  This takes you through setting up a toolchain with the gcc
 compiler and mspdebug, sets up a makefile with a nice project
 structure, covers the MSP430 clocks, timers, and interrupts, and
-more.  Great stuff, if somewhat hardcore.  
+more.  Great stuff, if somewhat hardcore.
 </li>
 </ul>
+</div>
+</div>
+
+<div id="outline-container-sec-1-3" class="outline-3">
+<h3 id="sec-1-3">Community</h3>
+<div class="outline-text-3" id="text-1-3">
+<ul class="org-ul">
+<li>
+<a href="http://43oh.com/">43oh</a>
+</li>
+<li>
+<a href="https://sourceforge.net/p/mspgcc/mailman/mspgcc-users/">mspgcc-users</a>
+</li>
+</ul>
+</div>
 </div>
 </div>
     </div>

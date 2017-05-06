@@ -147,6 +147,7 @@ NAVIGATION_LINKS = {
                 ("/pages/reference/orgmode/", "Org mode"),
                 ("/pages/reference/markdown/", "Markdown"),
                 ("/pages/reference/nikola/", "Nikola"),
+                ("/pages/reference/electronics/", "Electronics"),
                 # ("/pages/reference/rst/", "ReStructured Text"),
             ),
          "Reference"
@@ -1027,7 +1028,7 @@ STRIP_INDEXES = True
 # This can be disabled on a per-page/post basis by adding
 #    .. pretty_url: False
 # to the metadata.
-PRETTY_URLS = True
+PRETTY_URLS = False
 
 # If True, publish future dated posts right away instead of scheduling them.
 # Defaults to False.

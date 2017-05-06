@@ -3,11 +3,20 @@
 .. slug: index
 .. date: 2017-04-29 00:46:20 UTC-06:00
 .. tags: emacs, org-mode, reference
-.. category: markup
+.. category: emacs
 .. link: 
 .. description: 
 .. type: text
 #+END_COMMENT
 
+** Quick links
 
-Write your page here.
+ - [[file:org-mode-syntax-reference.org][Syntax reference]]: how to say things in org mode
+ - [[file:org-mode-command-reference.org][Command reference]]: how to get around in org mode
+ - [[http://orgmode.org/guide/][Compact guide]]: the first place to look if you're stuck
+ - [[http://orgmode.org/manual/index.html][Manual]]: the authoritative reference
+
+** Tutorials
+
+ - Rainer Konig's [[https://www.youtube.com/playlist?list%3DPLVtKhBrRV_ZkPnBtt_TD1Cs9PJlU0IIdE][videos]]: really useful introduction to org mode in bite-size pieces
+ - Mike Zamansky's [[http://cestlaz.github.io/stories/emacs/][videos]]: covers lots of emacs topics, not just org mode

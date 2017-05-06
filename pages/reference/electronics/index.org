@@ -1,0 +1,23 @@
+#+BEGIN_COMMENT
+.. title: Electronics references
+.. slug: index
+.. date: 2017-05-05 21:19:20 UTC-06:00
+.. tags: electronics, reference
+.. category: electronics
+.. link: 
+.. description: Useful links about chips, radios, and so on
+.. type: text
+#+END_COMMENT
+
+
+* MSP430
+
+ - Texas Instrument's [[http://www.ti.com/msp430][MSP430 site]]
+ 
+** Tutorials
+
+ - [[http://www.simplyembedded.org][Simply Embedded]]'s excellent series of programming [[http://www.simplyembedded.org/tutorials/][tutorials]] for the
+   MSP430.  This takes you through setting up a toolchain with the gcc
+   compiler and mspdebug, sets up a makefile with a nice project
+   structure, covers the MSP430 clocks, timers, and interrupts, and
+   more.  Great stuff, if somewhat hardcore.  

@@ -147,7 +147,8 @@ NAVIGATION_LINKS = {
                 ("/pages/reference/orgmode/", "Org mode"),
                 ("/pages/reference/markdown/", "Markdown"),
                 ("/pages/reference/nikola/", "Nikola"),
-                ("/pages/reference/electronics/", "Electronics"),
+                ("/pages/reference/software/", "Software"),
+                ("/pages/reference/hardware/", "Hardware"),
                 # ("/pages/reference/rst/", "ReStructured Text"),
             ),
          "Reference"

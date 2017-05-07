@@ -1,0 +1,32 @@
+#+BEGIN_COMMENT
+.. title: Hacking an 18 dollar camera
+.. slug: hacking-an-18-dollar-camera
+.. date: 2017-05-06 13:43:52 UTC-06:00
+.. tags: balloon, projects, camera
+.. category: balloon
+.. link: http://lifehacker.com/5942229/unlock-the-secret-pro-features-of-your-canon-point-and-shoot-camera-with-chdk
+.. description: 
+.. type: text
+#+END_COMMENT
+
+Some friends and I are building and launching a high-altitude balloon,
+and we want a camera on board.  Of course we want a camera!  We have
+to see what it looks like up there.
+
+#+BEGIN_HTML
+<!-- TEASER_END -->
+#+END_HTML
+
+It turns out that people have learned to hack little Canon point and
+shoot cameras.  You can do all kinds of things like, say, make your
+camera take a picture every 5 seconds and take a 30 second video every
+five minutes.  The project is called the "Canon Hacker Development
+Kit" or [[http://chdk.wikia.com/wiki/CHDK][CHDK]].  The following video shows how it works.  [[http://lifehacker.com/5942229/unlock-the-secret-pro-features-of-your-canon-point-and-shoot-camera-with-chdk][Here]] is the
+[[http://lifehacker.com/][LifeHacker]] article the video came from.
+
+#+BEGIN_HTML
+<iframe width="712" height="402"
+    src="https://www.youtube.com/embed/MsYmkU2cNaY"
+    frameborder="0" allowfullscreen>
+</iframe>
+#+END_HTML

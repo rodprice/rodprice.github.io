@@ -18,6 +18,10 @@ lose sight of it.  It never hit me on the way down, but it did smack
 into the grass with a satisfying thump.  The dog loved it.  So did my
 son Miles, then just a few years old.
 
+#+begin_html
+<!-- TEASER_END -->
+#+end_html
+
 My wife, on the other hand, was not a fan.  When I knocked a slat out
 of the wood fence in the backyard, she was unhappy.  When I shot a
 potato into the neighbor's garage door (I really underestimated how

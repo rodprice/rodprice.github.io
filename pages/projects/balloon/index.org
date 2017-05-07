@@ -9,28 +9,40 @@
 .. type: text
 #+END_COMMENT
 
+# * Tasks
 
-* Kid's jobs
+# ** Scouts
 
-** 432 MHz antenna
+# *** 432 MHz antenna
+#     Build a quarter-wave antenna that usually lands right-side up when
+#     it hits the ground.
 
-** Parachute drop
+# *** Parachute drop
+#     Test the parachute by dropping it off a tall building, or
+#     something.  With permission, of course.
 
-** Fox hunt
-   
-* My job
+# *** Fox hunt
+#     Hide the beacon somewhere in the woods and make the adults find
+#     it, using some variety of antenna and receiver.
 
-** Radio installation
+# ** Richard
 
-** Helium source
+# *** APRS tracker
+    
+# ** Rod
 
-** 432 MHz beacon
+# *** Radio installation
 
-* Mike Whitmore
+# *** Helium source
 
-** FCC authorization
+# *** 432 MHz beacon
 
-** Camera
+# ** Mike
+#    Should he choose to accept this mission.
+
+# *** FAA authorization
+
+# *** Camera
 
 * Tutorials
 

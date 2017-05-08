@@ -11,7 +11,7 @@
  </url>
  <url>
   <loc>http://www.shinypenny.org/archive.html</loc>
-  <lastmod>2017-05-07T06:19:00Z</lastmod>
+  <lastmod>2017-05-08T04:43:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.shinypenny.org/categories/</loc>
@@ -19,7 +19,7 @@
  </url>
  <url>
   <loc>http://www.shinypenny.org/categories/balloon.html</loc>
-  <lastmod>2017-05-07T05:59:00Z</lastmod>
+  <lastmod>2017-05-08T04:43:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.shinypenny.org/categories/camera.html</loc>
@@ -27,7 +27,7 @@
  </url>
  <url>
   <loc>http://www.shinypenny.org/categories/cat_balloon.html</loc>
-  <lastmod>2017-05-07T05:59:00Z</lastmod>
+  <lastmod>2017-05-08T04:43:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.shinypenny.org/categories/cat_projects.html</loc>
@@ -159,7 +159,7 @@
  </url>
  <url>
   <loc>http://www.shinypenny.org/posts/hacking-an-18-dollar-camera.html</loc>
-  <lastmod>2017-05-07T05:59:00Z</lastmod>
+  <lastmod>2017-05-08T01:43:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.shinypenny.org/posts/maybe-this-will-work.html</loc>
@@ -168,5 +168,9 @@
  <url>
   <loc>http://www.shinypenny.org/posts/miles-science-fair-project.html</loc>
   <lastmod>2017-05-07T06:19:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://www.shinypenny.org/posts/testing-testing-testing.html</loc>
+  <lastmod>2017-05-08T04:43:00Z</lastmod>
  </url>
 </urlset>

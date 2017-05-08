@@ -1,0 +1,65 @@
+#+BEGIN_COMMENT
+.. title: Testing, testing, testing
+.. slug: testing-testing-testing
+.. date: 2017-05-07 17:40:06 UTC-06:00
+.. tags: balloon
+.. category: balloon
+.. link: 
+.. description: Payload testing for the balloon
+.. type: text
+#+END_COMMENT
+
+
+We anticipate that our balloon will take maybe an hour after launch to
+get to 100,000 feet altitude.  From there you can see the curvature of
+the Earth.  The sky is black, and the highest clouds are far below.
+We'll be taking pictures and video and measuring stuff.  We haven't
+decided what yet.  
+
+#+begin_html
+<!-- TEASER_END -->
+#+end_html
+
+#+name: fig:stairs
+#+caption: Stairs at the Price house
+#+begin_html
+<p>
+<a href="../images/balloon/stairs.png">
+<img alt="Stairs at the Price house"
+src="../images/balloon/stairs.png"
+title="Stairs at the Price house"
+style="float:right;width:35%;margin:10px">
+</a>
+</p>
+#+end_html
+
+
+This is near-space.  Richard tells me that conditions up here are like
+the surface of Mars.  Air pressure is about 0.01 atmosphere.
+Temperatures can be as low as -50 C.  There's no ozone layer to keep
+out the ultraviolet light.  Things can be a bit rough.
+
+Then we have to get the payload back to Earth.  The balloon is made of
+material designed to burst at altitude.  At that point, a parachute
+takes over, but since the air is so thin, there's not much it can do
+to slow things down.  I've read that payloads can accelerate to almost
+the speed of sound.
+
+Sooner or later the air gets thick enough that the parachute can do
+some good.  Since we don't want to chase the balloon clear across
+Kansas, however, we've chosen a parachute that will slow the balloon
+only to about 50 mph.  It's going to hit the ground hard.
+
+The point of all this is to say that we have some work to do to ensure
+that the payload we build can survive all this.  Hence the title of
+this post.  We're going to test, test, and then test some more.
+Here's how we're going to do it: 
+
+We're going to kick the payload down the stairs.  Literally.  
+
+If the payload can't survive a trip down the stairs at my house
+(pictured) it's not going to make it on the balloon.  Then we're going
+to put the payload in dry ice for a while to see if it works when it's
+cold.  It's got to be strong, tough, insulated against the cold, and
+lightweight.  So we're going to test, test, test.
+

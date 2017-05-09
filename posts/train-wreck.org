@@ -1,1 +1,13 @@
+#+BEGIN_COMMENT
+.. title: Train wreck
+.. slug: train-wreck
+.. date: 2017-05-09 17:17:30 UTC-06:00
+.. tags: work, draft
+.. category: work
+.. link: 
+.. description: How I got a vice president to yell at me.
+.. type: text
+#+END_COMMENT
+
+
 ** At some point, you just have to stand aside and admire the power of the train wreck unfolding in front of you.

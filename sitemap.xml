@@ -11,15 +11,15 @@
  </url>
  <url>
   <loc>http://www.shinypenny.org/archive.html</loc>
-  <lastmod>2017-05-08T04:43:00Z</lastmod>
+  <lastmod>2017-05-09T05:36:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.shinypenny.org/categories/</loc>
-  <lastmod>2017-05-06T19:52:00Z</lastmod>
+  <lastmod>2017-05-09T05:36:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.shinypenny.org/categories/balloon.html</loc>
-  <lastmod>2017-05-08T04:43:00Z</lastmod>
+  <lastmod>2017-05-09T05:36:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.shinypenny.org/categories/camera.html</loc>
@@ -27,7 +27,7 @@
  </url>
  <url>
   <loc>http://www.shinypenny.org/categories/cat_balloon.html</loc>
-  <lastmod>2017-05-08T04:43:00Z</lastmod>
+  <lastmod>2017-05-09T05:36:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.shinypenny.org/categories/cat_projects.html</loc>
@@ -36,6 +36,10 @@
  <url>
   <loc>http://www.shinypenny.org/categories/projects.html</loc>
   <lastmod>2017-05-07T05:59:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://www.shinypenny.org/categories/testing.html</loc>
+  <lastmod>2017-05-09T05:36:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.shinypenny.org/galleries/</loc>
@@ -171,6 +175,6 @@
  </url>
  <url>
   <loc>http://www.shinypenny.org/posts/testing-testing-testing.html</loc>
-  <lastmod>2017-05-08T04:43:00Z</lastmod>
+  <lastmod>2017-05-09T05:36:00Z</lastmod>
  </url>
 </urlset>

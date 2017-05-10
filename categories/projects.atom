@@ -3,7 +3,7 @@
 <feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>Posts about projects</title>
   <id>http://www.shinypenny.org/categories/projects.atom</id>
-  <updated>2017-05-10T03:32:33Z</updated>
+  <updated>2017-05-10T05:01:09Z</updated>
   <author>
     <name>Rodney Price</name>
   </author>
@@ -11,7 +11,7 @@
   <link rel="alternate" type="text/html" href="http://www.shinypenny.org/categories/projects.html"/>
   <generator uri="https://getnikola.com/">Nikola</generator>
   <entry>
-    <title>Hacking an 18 dollar camera</title>
+    <title>Hacking an $18 camera</title>
     <id>http://www.shinypenny.org/posts/hacking-an-18-dollar-camera.html</id>
     <updated>2017-05-06T13:43:52-06:00</updated>
     <published>2017-05-06T13:43:52-06:00</published>

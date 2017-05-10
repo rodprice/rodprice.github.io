@@ -1,0 +1,39 @@
+#+BEGIN_COMMENT
+.. title: Markup languages
+.. slug: index
+.. date: 2017-04-29 00:46:20 UTC-06:00
+.. tags: markup, emacs, org-mode, markdown, python, reference
+.. category: markup
+.. link: 
+.. description: 
+.. type: text
+#+END_COMMENT
+
+** Org mode
+
+  - Quick links
+
+    - [[file:org-mode-syntax-reference.org][Syntax reference]]: how to say things in org mode
+    - [[file:org-mode-command-reference.org][Command reference]]: how to get around in org mode
+    - [[http://orgmode.org/guide/][Compact guide]]: the first place to look if you're stuck
+    - [[http://orgmode.org/manual/index.html][Manual]]: the authoritative 
+
+  - Tutorials
+
+    - Rainer Konig's [[https://www.youtube.com/playlist?list%3DPLVtKhBrRV_ZkPnBtt_TD1Cs9PJlU0IIdE][videos]]: introduction to org mode in bite-size pieces
+    - Mike Zamansky's [[http://cestlaz.github.io/stories/emacs/][videos]]: lots of emacs topics, not just org mode
+    - Sacha Chua's "[[http://sachachua.com/blog/2008/01/outlining-your-notes-with-org/][Outlining your notes with org]]": a brief but thorough
+    introduction to org mode's outlining and linking facilities.
+
+** Markdown
+
+  - [[file:markdown-quick-reference.html][Markdown quick reference]]
+  - Github's [[https://guides.github.com/features/mastering-markdown/][Mastering Markdown]]
+    
+** ReStructured Text
+   
+  - [[file:restructured-text-demo.html][ReStructuredText demo]]
+
+** IPython notebooks
+
+  - [[file:display-system.html][IPython notebook display system]]

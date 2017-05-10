@@ -1,5 +1,5 @@
 #+BEGIN_COMMENT
-.. title: Hacking an 18 dollar camera
+.. title: Hacking an $18 camera
 .. slug: hacking-an-18-dollar-camera
 .. date: 2017-05-06 13:43:52 UTC-06:00
 .. tags: balloon, projects, camera

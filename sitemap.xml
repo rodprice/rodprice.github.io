@@ -7,174 +7,274 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
   <loc>http://www.shinypenny.org/</loc>
-  <lastmod>2017-05-06T04:08:00Z</lastmod>
+  <lastmod>2017-05-10T03:32:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://www.shinypenny.org/404.html</loc>
+  <lastmod>2017-05-10T03:32:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.shinypenny.org/archive.html</loc>
-  <lastmod>2017-05-09T05:36:00Z</lastmod>
+  <lastmod>2017-05-10T03:54:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.shinypenny.org/categories/</loc>
-  <lastmod>2017-05-09T05:36:00Z</lastmod>
+  <lastmod>2017-05-10T03:32:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.shinypenny.org/categories/balloon.html</loc>
-  <lastmod>2017-05-09T05:36:00Z</lastmod>
+  <lastmod>2017-05-10T03:54:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.shinypenny.org/categories/camera.html</loc>
-  <lastmod>2017-05-07T05:59:00Z</lastmod>
+  <lastmod>2017-05-10T03:54:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.shinypenny.org/categories/cat_balloon.html</loc>
-  <lastmod>2017-05-09T05:36:00Z</lastmod>
+  <lastmod>2017-05-10T03:54:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.shinypenny.org/categories/cat_projects.html</loc>
-  <lastmod>2017-05-07T06:19:00Z</lastmod>
+  <lastmod>2017-05-10T03:32:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.shinypenny.org/categories/projects.html</loc>
-  <lastmod>2017-05-07T05:59:00Z</lastmod>
+  <lastmod>2017-05-10T03:54:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.shinypenny.org/categories/testing.html</loc>
-  <lastmod>2017-05-09T05:36:00Z</lastmod>
+  <lastmod>2017-05-10T03:32:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.shinypenny.org/galleries/</loc>
-  <lastmod>2017-05-06T04:08:00Z</lastmod>
+  <lastmod>2017-05-10T03:32:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.shinypenny.org/galleries/demo/</loc>
-  <lastmod>2017-05-06T04:08:00Z</lastmod>
+  <lastmod>2017-05-10T03:32:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.shinypenny.org/listings/</loc>
-  <lastmod>2017-05-06T04:08:00Z</lastmod>
+  <lastmod>2017-05-10T03:32:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.shinypenny.org/listings/__pycache__/</loc>
-  <lastmod>2017-05-06T04:08:00Z</lastmod>
+  <lastmod>2017-05-10T03:32:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.shinypenny.org/listings/hello.py.html</loc>
-  <lastmod>2017-05-06T04:08:00Z</lastmod>
+  <lastmod>2017-05-10T03:32:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.shinypenny.org/pages/about/</loc>
-  <lastmod>2017-05-06T04:08:00Z</lastmod>
+  <lastmod>2017-05-10T03:32:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://www.shinypenny.org/pages/display-system.html</loc>
+  <lastmod>2017-05-10T02:26:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.shinypenny.org/pages/projects/balloon/</loc>
-  <lastmod>2017-05-06T04:08:00Z</lastmod>
+  <lastmod>2017-05-10T03:32:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.shinypenny.org/pages/projects/potatogun/</loc>
-  <lastmod>2017-05-06T04:08:00Z</lastmod>
+  <lastmod>2017-05-10T03:32:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.shinypenny.org/pages/reference/hardware/</loc>
-  <lastmod>2017-05-06T04:08:00Z</lastmod>
+  <lastmod>2017-05-10T03:32:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.shinypenny.org/pages/reference/markdown/</loc>
-  <lastmod>2017-05-06T04:08:00Z</lastmod>
+  <lastmod>2017-05-10T03:22:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://www.shinypenny.org/pages/reference/markup/</loc>
+  <lastmod>2017-05-10T03:42:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://www.shinypenny.org/pages/reference/markup/display-system.html</loc>
+  <lastmod>2017-05-10T03:32:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://www.shinypenny.org/pages/reference/markup/ipythons-display-system.html</loc>
+  <lastmod>2017-05-10T03:42:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://www.shinypenny.org/pages/reference/markup/markdown-quick-reference.html</loc>
+  <lastmod>2017-05-10T03:32:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://www.shinypenny.org/pages/reference/markup/nikola/</loc>
+  <lastmod>2017-05-10T03:32:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://www.shinypenny.org/pages/reference/markup/nikola/about-nikola.html</loc>
+  <lastmod>2017-05-10T03:32:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://www.shinypenny.org/pages/reference/markup/nikola/bootstrap-demo.html</loc>
+  <lastmod>2017-05-10T03:32:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://www.shinypenny.org/pages/reference/markup/nikola/charts.html</loc>
+  <lastmod>2017-05-10T03:32:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://www.shinypenny.org/pages/reference/markup/nikola/creating-a-theme.html</loc>
+  <lastmod>2017-05-10T03:32:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://www.shinypenny.org/pages/reference/markup/nikola/dr-nikolas-vendetta.html</loc>
+  <lastmod>2017-05-10T03:32:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://www.shinypenny.org/pages/reference/markup/nikola/extending.html</loc>
+  <lastmod>2017-05-10T03:32:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://www.shinypenny.org/pages/reference/markup/nikola/handbook.html</loc>
+  <lastmod>2017-05-10T03:32:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://www.shinypenny.org/pages/reference/markup/nikola/internals.html</loc>
+  <lastmod>2017-05-10T03:32:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://www.shinypenny.org/pages/reference/markup/nikola/listings-demo.html</loc>
+  <lastmod>2017-05-10T03:32:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://www.shinypenny.org/pages/reference/markup/nikola/path-handlers.html</loc>
+  <lastmod>2017-05-10T03:32:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://www.shinypenny.org/pages/reference/markup/nikola/quickref.html</loc>
+  <lastmod>2017-05-10T03:32:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://www.shinypenny.org/pages/reference/markup/nikola/quickstart.html</loc>
+  <lastmod>2017-05-10T03:32:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://www.shinypenny.org/pages/reference/markup/nikola/slides-demo.html</loc>
+  <lastmod>2017-05-10T03:32:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://www.shinypenny.org/pages/reference/markup/nikola/social_buttons.html</loc>
+  <lastmod>2017-05-10T03:32:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://www.shinypenny.org/pages/reference/markup/nikola/theming.html</loc>
+  <lastmod>2017-05-10T03:32:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://www.shinypenny.org/pages/reference/markup/org-mode-command-reference.html</loc>
+  <lastmod>2017-05-10T03:32:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://www.shinypenny.org/pages/reference/markup/restructured-text-demo.html</loc>
+  <lastmod>2017-05-10T03:32:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.shinypenny.org/pages/reference/nikola/</loc>
-  <lastmod>2017-05-06T04:08:00Z</lastmod>
+  <lastmod>2017-05-10T02:26:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.shinypenny.org/pages/reference/nikola/about-nikola.html</loc>
-  <lastmod>2017-05-06T04:08:00Z</lastmod>
+  <lastmod>2017-05-10T02:26:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.shinypenny.org/pages/reference/nikola/bootstrap-demo.html</loc>
-  <lastmod>2017-05-06T04:08:00Z</lastmod>
+  <lastmod>2017-05-10T02:26:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.shinypenny.org/pages/reference/nikola/charts.html</loc>
-  <lastmod>2017-05-06T04:08:00Z</lastmod>
+  <lastmod>2017-05-10T02:26:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.shinypenny.org/pages/reference/nikola/creating-a-theme.html</loc>
-  <lastmod>2017-05-06T04:08:00Z</lastmod>
+  <lastmod>2017-05-10T02:26:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.shinypenny.org/pages/reference/nikola/dr-nikolas-vendetta.html</loc>
-  <lastmod>2017-05-06T04:08:00Z</lastmod>
+  <lastmod>2017-05-10T02:26:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.shinypenny.org/pages/reference/nikola/extending.html</loc>
-  <lastmod>2017-05-06T04:08:00Z</lastmod>
+  <lastmod>2017-05-10T02:26:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.shinypenny.org/pages/reference/nikola/handbook.html</loc>
-  <lastmod>2017-05-06T04:08:00Z</lastmod>
+  <lastmod>2017-05-10T02:26:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.shinypenny.org/pages/reference/nikola/internals.html</loc>
-  <lastmod>2017-05-06T04:08:00Z</lastmod>
+  <lastmod>2017-05-10T02:26:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.shinypenny.org/pages/reference/nikola/listings-demo.html</loc>
-  <lastmod>2017-05-06T04:08:00Z</lastmod>
+  <lastmod>2017-05-10T02:26:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.shinypenny.org/pages/reference/nikola/path-handlers.html</loc>
-  <lastmod>2017-05-06T04:08:00Z</lastmod>
+  <lastmod>2017-05-10T02:26:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.shinypenny.org/pages/reference/nikola/quickref.html</loc>
-  <lastmod>2017-05-06T04:08:00Z</lastmod>
+  <lastmod>2017-05-10T02:26:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.shinypenny.org/pages/reference/nikola/quickstart.html</loc>
-  <lastmod>2017-05-06T04:08:00Z</lastmod>
+  <lastmod>2017-05-10T02:26:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.shinypenny.org/pages/reference/nikola/slides-demo.html</loc>
-  <lastmod>2017-05-06T04:08:00Z</lastmod>
+  <lastmod>2017-05-10T02:26:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.shinypenny.org/pages/reference/nikola/social_buttons.html</loc>
-  <lastmod>2017-05-06T04:08:00Z</lastmod>
+  <lastmod>2017-05-10T02:26:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.shinypenny.org/pages/reference/nikola/theming.html</loc>
-  <lastmod>2017-05-06T04:08:00Z</lastmod>
+  <lastmod>2017-05-10T02:26:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.shinypenny.org/pages/reference/orgmode/</loc>
-  <lastmod>2017-05-06T04:08:00Z</lastmod>
+  <lastmod>2017-05-10T02:26:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.shinypenny.org/pages/reference/orgmode/org-mode-command-reference.html</loc>
-  <lastmod>2017-05-06T04:08:00Z</lastmod>
+  <lastmod>2017-05-10T02:26:00Z</lastmod>
  </url>
  <url>
-  <loc>http://www.shinypenny.org/pages/reference/orgmode/org-mode-syntax-reference.html</loc>
-  <lastmod>2017-05-06T04:08:00Z</lastmod>
+  <loc>http://www.shinypenny.org/pages/reference/rest/</loc>
+  <lastmod>2017-05-10T02:26:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.shinypenny.org/pages/reference/software/</loc>
-  <lastmod>2017-05-06T04:08:00Z</lastmod>
+  <lastmod>2017-05-10T03:32:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://www.shinypenny.org/pages/typesetting-equations.html</loc>
+  <lastmod>2017-05-10T03:22:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.shinypenny.org/posts/hacking-an-18-dollar-camera.html</loc>
-  <lastmod>2017-05-08T01:43:00Z</lastmod>
+  <lastmod>2017-05-10T03:54:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.shinypenny.org/posts/maybe-this-will-work.html</loc>
-  <lastmod>2017-05-06T04:08:00Z</lastmod>
+  <lastmod>2017-05-10T03:32:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.shinypenny.org/posts/miles-science-fair-project.html</loc>
-  <lastmod>2017-05-07T06:19:00Z</lastmod>
+  <lastmod>2017-05-10T03:32:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.shinypenny.org/posts/testing-testing-testing.html</loc>
-  <lastmod>2017-05-09T05:36:00Z</lastmod>
+  <lastmod>2017-05-10T03:32:00Z</lastmod>
  </url>
 </urlset>

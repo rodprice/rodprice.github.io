@@ -1,48 +1,87 @@
 #+BEGIN_COMMENT
-.. title: The Greenwood Village ward high-altitude balloon
+.. title: Project Icarus
 .. slug: index
 .. date: 2017-04-29 00:46:20 UTC-06:00
 .. tags: projects, balloon
 .. category: projects
-.. link: 
+.. link: https://en.wikipedia.org/wiki/Icarus
 .. description: 
 .. type: text
 #+END_COMMENT
 
-# * Tasks
+* Tasks
 
-# ** Scouts
+** APRS tracker
+   [[https://en.wikipedia.org/wiki/Automatic_Packet_Reporting_System][APRS]] (Automatic Packet Reporting System) is an amateur radio
+   service that lets users transmit their location periodically to a
+   network of receivers.  These transmissions (packets) are
+   transferred from the receving stations to internet sites where
+   others can track their location.  See [[https://aprs.fi/#!lat%3D39.73920&lng%3D-104.98470][here]] for a current map of
+   APRS receivers and transmitters in the Denver area.
 
-# *** 432 MHz antenna
-#     Build a quarter-wave antenna that usually lands right-side up when
-#     it hits the ground.
+   APRS beacons are a great way to track where your balloon is during
+   its flight.  When your balloon has line-of-sight to an APRS
+   receiver (that is, it's in flight) a little power goes a long way.
+   Our tracker transmits only 0.3 watts, but in flight we think it
+   will be heard for hundreds of miles.  Transmission distances while
+   it's on the ground are another story.  It's especially bad if the
+   antenna comes to rest flat on the ground when the balloon lands.
 
-# *** Parachute drop
-#     Test the parachute by dropping it off a tall building, or
-#     something.  With permission, of course.
+   Have a look at this [[https://aprs.fi/#!call%3Da%252FVA6TNY-11&timerange%3D3600&tail%3D3600][aprs.fi]] page to see the track for a balloon
+   launched a while ago by the kids from Sir George Simpson Jr. High
+   in (evidently) Canada.  
 
-# *** Fox hunt
-#     Hide the beacon somewhere in the woods and make the adults find
-#     it, using some variety of antenna and receiver.
+** 432 MHz beacon
+   Build a radio beacon operating on the 70 cm amateur radio band.
+   All it has to do is go "beep, beep, beep."  It's a backup for the
+   APRS tracker.  If that isn't working when the balloon lands, we'll
+   use this to find the balloon's location.
 
-# ** Richard
+** 432 MHz antenna
+   Build a quarter-wave antenna that usually lands right-side up when
+   it hits the ground.  We've asked the young men to help us with
+   this.  It's important to land upright so the transmitter can get a
+   strong signal out.
 
-# *** APRS tracker
-    
-# ** Rod
+** Fox hunt
+   Hide the 432 MHz beacon somewhere in the woods and have the Scouts
+   make the adults find it, using some variety of antenna and portable
+   receiver.  Amateur radio types call this a "fox hunt," and they
+   have regular contests to see who can get to the "fox" first.  This
+   is our way of testing the 432 MHz beacon.
 
-# *** Radio installation
+** Parachute drop
+   Test the parachute by dropping it off a tall building, or
+   something.  With permission, of course.
 
-# *** Helium source
+** Ham radio installation
+   Rod Price (callsign KD0FFJ) has an old 144/432 MHz mobile ham
+   radio.  It was in my old 1994 Nissan Altima, but that car went the
+   way of all the earth, and now I have a new Mazda 3.  I drilled
+   holes in the Altima to install the radio; my wife and I aren't
+   quite so sure that's a good idea in our Mazda.  We do need a mobile
+   radio to track the balloon, so I need to get busy and install the
+   thing.  With it we should be able to receive both APRS packets (144
+   MHz) and 432 MHz beacon "beeps."
 
-# *** 432 MHz beacon
+** Helium source
+   Surprisingly (or maybe not) helium to fill the balloon is
+   expensive.  Our initial estimate was $150 to fill a smallish
+   balloon.  We're currently looking for a cheaper source.  This cost
+   drives most of our payload choices.  More weight means more helium,
+   means more cost.
 
-# ** Mike
-#    Should he choose to accept this mission.
+** FAA authorization
+   The FAA likes to know when people launch a balloon, but they're
+   reasonable about it.  For a balloon under four pounds (I think)
+   they just ask for notification a few days in advance.  Yet another
+   reason to be careful about payload weight.
 
-# *** FAA authorization
-
-# *** Camera
+** Camera
+   Why fly a balloon if you can't take pictures?  Options include a
+   GoPro (expensive, you might lose it, but really good quality), a
+   Canon point and shoot (inexpensive and hackable), or a cheap film
+   camera (reputedly better quality than cheap digital cameras).
 
 * Tutorials
 

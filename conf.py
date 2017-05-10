@@ -144,12 +144,9 @@ NAVIGATION_LINKS = {
         ),
         (
             (
-                ("/pages/reference/orgmode/", "Org mode"),
-                ("/pages/reference/markdown/", "Markdown"),
-                ("/pages/reference/nikola/", "Nikola"),
+                ("/pages/reference/markup/", "Markup"),
                 ("/pages/reference/software/", "Software"),
                 ("/pages/reference/hardware/", "Hardware"),
-                # ("/pages/reference/rst/", "ReStructured Text"),
             ),
          "Reference"
         ),
@@ -207,6 +204,7 @@ POSTS = (
     ("posts/*.rst", "posts", "post.tmpl"),
     ("posts/*.txt", "posts", "post.tmpl"),
     ("posts/*.html", "posts", "post.tmpl"),
+    ("posts/*.ipynb", "posts", "post.tmpl"),
 )
 PAGES = (
     ("pages/*.org", "pages", "story.tmpl"),
@@ -214,6 +212,7 @@ PAGES = (
     ("pages/*.rst", "pages", "story.tmpl"),
     ("pages/*.txt", "pages", "story.tmpl"),
     ("pages/*.html", "pages", "story.tmpl"),
+    ("pages/*.ipynb", "pages", "story.tmpl"),
 )
 
 
@@ -877,7 +876,7 @@ IMAGE_FOLDERS = {'images': 'images'}
 # vs
 # xcode
 # This list MAY be incomplete since pygments adds styles every now and then.
-# CODE_COLOR_SCHEME = 'default'
+CODE_COLOR_SCHEME = 'trac'
 
 # If you use 'site-reveal' theme you can select several subthemes
 # THEME_REVEAL_CONFIG_SUBTHEME = 'sky'
@@ -1364,6 +1363,12 @@ GLOBAL_CONTEXT = {'blog_sidebar': """\
 # rendered
 GLOBAL_CONTEXT_FILLER = []
 
+
+########################################################################
+## Plugins
+
+# Configure the errorpages plugin
+CREATE_HTTP_ERROR_PAGES = [404]
 
 
 ########################################################################

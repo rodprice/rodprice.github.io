@@ -6,12 +6,20 @@
     xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <sitemap>
+  <loc>http://www.shinypenny.org/categories/antenna.atom</loc>
+  <lastmod>2017-05-11T05:43:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>http://www.shinypenny.org/categories/antenna.xml</loc>
+  <lastmod>2017-05-11T05:46:00Z</lastmod>
+ </sitemap>
+ <sitemap>
   <loc>http://www.shinypenny.org/categories/balloon.atom</loc>
   <lastmod>2017-05-10T05:01:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://www.shinypenny.org/categories/balloon.xml</loc>
-  <lastmod>2017-05-10T05:01:00Z</lastmod>
+  <lastmod>2017-05-11T05:46:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://www.shinypenny.org/categories/camera.atom</loc>
@@ -27,7 +35,7 @@
  </sitemap>
  <sitemap>
   <loc>http://www.shinypenny.org/categories/cat_balloon.xml</loc>
-  <lastmod>2017-05-10T05:01:00Z</lastmod>
+  <lastmod>2017-05-11T05:46:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://www.shinypenny.org/categories/cat_projects.atom</loc>
@@ -44,6 +52,14 @@
  <sitemap>
   <loc>http://www.shinypenny.org/categories/projects.xml</loc>
   <lastmod>2017-05-10T05:01:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>http://www.shinypenny.org/categories/radio.atom</loc>
+  <lastmod>2017-05-11T05:43:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>http://www.shinypenny.org/categories/radio.xml</loc>
+  <lastmod>2017-05-11T05:46:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://www.shinypenny.org/categories/testing.atom</loc>
@@ -63,14 +79,14 @@
  </sitemap>
  <sitemap>
   <loc>http://www.shinypenny.org/index.atom</loc>
-  <lastmod>2017-05-10T05:01:00Z</lastmod>
+  <lastmod>2017-05-11T05:46:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://www.shinypenny.org/rss.xml</loc>
-  <lastmod>2017-05-10T05:01:00Z</lastmod>
+  <lastmod>2017-05-11T05:46:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://www.shinypenny.org/sitemap.xml</loc>
-  <lastmod>2017-05-10T05:01:00Z</lastmod>
+  <lastmod>2017-05-11T05:46:00Z</lastmod>
  </sitemap>
 </sitemapindex>

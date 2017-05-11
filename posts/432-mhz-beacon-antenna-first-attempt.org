@@ -1,5 +1,5 @@
 #+BEGIN_COMMENT
-.. title: 432 MHz Beacon antenna, first attempt
+.. title: 432 MHz beacon antenna, first attempt
 .. slug: 432-mhz-beacon-antenna-first-attempt
 .. date: 2017-05-10 21:34:37 UTC-06:00
 .. tags: balloon, radio, antenna

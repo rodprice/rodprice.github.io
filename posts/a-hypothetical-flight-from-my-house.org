@@ -1,0 +1,32 @@
+#+BEGIN_COMMENT
+.. title: A hypothetical flight from my house
+.. slug: a-hypothetical-flight-from-my-house
+.. date: 2017-05-12 23:11:42 UTC-06:00
+.. tags: balloon
+.. category: balloon
+.. link: http://s3research.com/tools/flightpredictor/
+.. description: 
+.. type: text
+#+END_COMMENT
+
+
+If we launched a high-altitude balloon from my house tomorrow morning,
+here's what might happen.
+
+#+begin_html
+<!-- TEASER_END -->
+#+end_html
+
+#+name: fig:balloon-flight-prediction-20170512
+#+caption: Balloon track
+#+begin_html
+<p>
+<a href="/images/balloon/balloon-flight-prediction-20170512.png">
+<img alt="Balloon track"
+src="/images/balloon/balloon-flight-prediction-20170512.png"
+title="Balloon track"
+style="float:right;width:100%;margin:10px">
+</a>
+</p>
+#+end_html
+

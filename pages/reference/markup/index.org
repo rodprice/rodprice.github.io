@@ -9,21 +9,34 @@
 .. type: text
 #+END_COMMENT
 
+#+name: fig:emacs-zoned-gnu
+#+begin_html
+<p>
+<a href="/images/emacs-zoned-gnu.jpeg">
+<img alt=""
+src="/images/emacs-zoned-gnu.jpeg"
+title=""
+style="float:right;width:35%;margin:10px">
+</a>
+</p>
+#+end_html
+
 ** Org mode
 
-  - Quick links
+**** Quick links
 
-    - [[file:org-mode-syntax-reference.org][Syntax reference]]: how to say things in org mode
-    - [[file:org-mode-command-reference.org][Command reference]]: how to get around in org mode
-    - [[http://orgmode.org/guide/][Compact guide]]: the first place to look if you're stuck
-    - [[http://orgmode.org/manual/index.html][Manual]]: the authoritative 
+  - [[file:org-mode-syntax-reference.org][Syntax reference]]  :: How to say things in org mode
+  - [[http://orgmode.org/guide/][Compact guide]]     :: The first place to look if you're stuck
+  - [[http://orgmode.org/manual/index.html][Manual]]            :: The authoritative reference
+  - [[file:org-mode-command-reference.org][Command reference]] :: How to get around in org mode
 
-  - Tutorials
+**** Tutorials
 
-    - Rainer Konig's [[https://www.youtube.com/playlist?list%3DPLVtKhBrRV_ZkPnBtt_TD1Cs9PJlU0IIdE][videos]]: introduction to org mode in bite-size pieces
-    - Mike Zamansky's [[http://cestlaz.github.io/stories/emacs/][videos]]: lots of emacs topics, not just org mode
-    - Sacha Chua's "[[http://sachachua.com/blog/2008/01/outlining-your-notes-with-org/][Outlining your notes with org]]": a brief but thorough
-    introduction to org mode's outlining and linking facilities.
+  - Rainer Konig's [[https://www.youtube.com/playlist?list%3DPLVtKhBrRV_ZkPnBtt_TD1Cs9PJlU0IIdE][videos]]                        :: Introduction to org mode in bite-size pieces
+  - [[file:rainer-konigs-org-mode-summaries.org][Summaries]] of Rainer Konig's videos           :: Added incrementally as I view them
+  - Mike Zamansky's [[http://cestlaz.github.io/stories/emacs/][videos]]                       :: Lots of emacs topics, not just org mode
+  - [[https://emacsclub.github.io/html/index.html][Penn Emacs Club]]'s org-mode [[file:org-mode-tutorial.org][Tutorial]]          :: Lots of nice looks into corners
+  - Sacha Chua's "[[http://sachachua.com/blog/2008/01/outlining-your-notes-with-org/][Outlining your notes with org]]" :: A brief but thorough introduction to org mode's outlining and linking facilities.
 
 ** Markdown
 

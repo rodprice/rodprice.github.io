@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article# " lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="A look into lots of seldom seen corners of org-mode.">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Org mode tutorial / cheat sheet | Shiny Penny</title>
+<link href="/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="/assets/css/rst.css" rel="stylesheet" type="text/css">
+<link href="/assets/css/code.css" rel="stylesheet" type="text/css">
+<link href="/assets/css/colorbox.css" rel="stylesheet" type="text/css">
+<link href="/assets/css/theme.css" rel="stylesheet" type="text/css">
+<link href="/assets/css/custom.css" rel="stylesheet" type="text/css">
+<link href="/assets/css/ipython.min.css" rel="stylesheet" type="text/css">
+<link href="/assets/css/nikola_ipython.css" rel="stylesheet" type="text/css">
+<meta name="theme-color" content="#5670d4">
+<meta name="generator" content="Nikola (getnikola.com)">
+<link rel="alternate" type="application/rss+xml" title="RSS" href="/rss.xml">
+<link rel="alternate" type="application/atom+xml" title="Atom" href="/index.atom">
+<link rel="canonical" href="http://www.shinypenny.org/pages/reference/markup/org-mode-tutorial.html">
+<!--[if lt IE 9]><script src="/assets/js/html5.js"></script><![endif]--><style>body{background-image:url(/images/topography.png);}</style>
+<meta name="author" content="Rodney Price">
+<meta property="og:site_name" content="Shiny Penny">
+<meta property="og:title" content="Org mode tutorial / cheat sheet">
+<meta property="og:url" content="http://www.shinypenny.org/pages/reference/markup/org-mode-tutorial.html">
+<meta property="og:description" content="A look into lots of seldom seen corners of org-mode.">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2017-05-12T19:34:43-06:00">
+<meta property="article:tag" content="emacs">
+<meta property="article:tag" content="mathjax">
+<meta property="article:tag" content="reference">
+</head>
+<body>
+<a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
+
+<!-- Menubar -->
+
+<nav class="navbar navbar-inverse navbar-static-top"><div class="container">
+<!-- This keeps the margins nice -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar" aria-controls="bs-navbar" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="http://www.shinypenny.org/">
+
+                <span id="blog-title">Shiny Penny</span>
+            </a>
+        </div>
+<!-- /.navbar-header -->
+        <div class="collapse navbar-collapse" id="bs-navbar" aria-expanded="false">
+            <ul class="nav navbar-nav">
+<li>
+<a href="/pages/about/index.html">About</a>
+            </li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Projects <b class="caret"></b></a>
+            <ul class="dropdown-menu"><li>
+<a href="/pages/projects/balloon/">High-altitude balloon</a>
+            </li></ul>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Reference <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+<li>
+<a href="/pages/reference/markup/">Markup</a>
+                    </li>
+<li>
+<a href="/pages/reference/software/">Software</a>
+                    </li>
+<li>
+<a href="/pages/reference/hardware/">Hardware</a>
+            </li>
+</ul>
+</li>
+<li>
+<a href="http://github.com/rodprice">GitHub</a>
+                </li>
+<li>
+<a href="/archive.html">Archive</a>
+                </li>
+<li>
+<a href="/categories/">Tags</a>
+
+                
+            </li>
+</ul>
+<ul class="nav navbar-nav navbar-right">
+<li>
+    <a href="/pages/reference/markup/org-mode-tutorial.org" id="sourcelink">Source</a>
+    </li>
+
+                
+            </ul>
+</div>
+<!-- /.navbar-collapse -->
+    </div>
+<!-- /.container -->
+</nav><!-- End of Menubar --><div class="container" id="content" role="main">
+    <div class="body-content">
+        <!--Body content-->
+        <div class="row">
+            
+            
+<article class="post-text storypage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="/pages/reference/markup/org-mode-tutorial.html" class="u-url">Org mode tutorial / cheat sheet</a></h1>
+
+        
+
+    </header><div class="e-content entry-content" itemprop="articleBody text">
+    <div class="center">
+<p>
+<i>Common tasks in org-mode</i>
+</p>
+</div>
+
+<div id="outline-container-sec-1" class="outline-2">
+<h2 id="sec-1">Headings</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+It's all about headings in org. 
+Headings such as this are created with <code>*</code> (stars). The number of stars defines 
+the depth of the heading. Pressing <code>&lt;TAB&gt;</code> on headings will minimize/maximize 
+them. Pressing tab multiple times in a row on headings with subheadings will
+maximize each subheading by depth corresponding to the number of times 
+you pressed <code>&lt;TAB&gt;</code>.
+</p>
+</div>
+
+<div id="outline-container-sec-1-1" class="outline-3">
+<h3 id="sec-1-1">Subheadings</h3>
+<div class="outline-text-3" id="text-1-1">
+<p>
+Subheadings can nest within other headings such as this one. This is really
+convenient for organizing stuff.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-2" class="outline-2">
+<h2 id="sec-2">"TODO"s (<code>C-c C-t</code>)</h2>
+<div class="outline-text-2" id="text-2">
+<p>
+TODO's are created by starting headers with the keyword TODO or DONE. 
+You can also create one with <code>C-c C-t</code> on a header. 
+They are meant to represent tasks you wish to create within your 
+organizational document. These can be helpful when planning out projects
+or assignments. 
+</p>
+</div>
+
+<div id="outline-container-sec-2-1" class="outline-3">
+<h3 id="sec-2-1">The TODO cycle</h3>
+<div class="outline-text-3" id="text-2-1">
+<p>
+You can
+turn an existing header into a TODO item by cycling its TODO status. The 
+shortcut for this is <code>C-c C-t</code> (t for todo). 
+</p>
+
+<blockquote>
+<p>
+Non-TODO -&gt; TODO -&gt; DONE -&gt; Non-TODO … (with <code>C-c C-t</code>).
+</p>
+</blockquote>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-3" class="outline-2">
+<h2 id="sec-3">Lists</h2>
+<div class="outline-text-2" id="text-3">
+<p>
+You can create bullets with the - (dash), numbered bullets or lists with
+<code>#.</code> (number[dot]). Tabbing multiple times changes the indentation of the bullet,
+but only if there is no text yet.  Tabbing multiple levels can get
+confusing, but if you remember to <code>&lt;TAB&gt;</code> before typing <code>-</code> or <code>#.</code>, things
+tend to work out. 
+</p>
+</div>
+
+<div id="outline-container-sec-3-1" class="outline-3">
+<h3 id="sec-3-1">Ordered Lists</h3>
+<div class="outline-text-3" id="text-3-1">
+<ol class="org-ol">
+<li>item 1
+</li>
+<li>item 2 
+<ol class="org-ol">
+<li>sub 1
+</li>
+<li>sub 2
+<ol class="org-ol">
+<li>subsub 1
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-sec-3-2" class="outline-3">
+<h3 id="sec-3-2">Unordered Lists</h3>
+<div class="outline-text-3" id="text-3-2">
+<p>
+Start with <code>-</code>, <code>+</code>, or <code>*</code>.
+</p>
+
+<ul class="org-ul">
+<li>hello
+</li>
+<li>item 2
+</li>
+<li>item 3
+<ul class="org-ul">
+<li>subitem 1
+</li>
+<li>sub
+<ul class="org-ul">
+<li>subsub
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-sec-3-3" class="outline-3">
+<h3 id="sec-3-3">Description Lists</h3>
+<div class="outline-text-3" id="text-3-3">
+<p>
+Start with <code>-</code>, <code>+</code>, or <code>*</code> and followed by <code>::</code>
+</p>
+
+<div class="highlight"><pre><span></span>Matlab is a funny language. 
+ - Scope :: Scope doesn't work as expected, and messes everything up
+   when loops mix variables up in recursive functions.
+ - Namespaces :: You wish. 
+ - Header Files :: Nope.
+</pre></div>
+
+<p>
+gives 
+</p>
+
+<p>
+Matlab is a funny language. 
+</p>
+<dl class="org-dl">
+<dt> Scope </dt>
+<dd>Scope doesn't work as expected, and messes everything up
+when loops mix variables up in recursive functions.
+</dd>
+<dt> Namespaces </dt>
+<dd>You wish. 
+</dd>
+<dt> Header Files </dt>
+<dd>Nope.
+</dd>
+</dl>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-sec-4" class="outline-2">
+<h2 id="sec-4">Text Formatting</h2>
+<div class="outline-text-2" id="text-4">
+<p>
+Individual words can be <b>bolded</b> with stars, <i>italicized</i> with forward
+slashes, and <span class="underline">underlined</span> with underscores. Also, there is 
+<code>verbatim</code> and <del>strike-through</del>. 
+</p>
+
+<pre class="example">
+*bold* /italics/ _underline_ ~verbatim~ +strike-through+
+</pre>
+</div>
+</div>
+
+<div id="outline-container-sec-5" class="outline-2">
+<h2 id="sec-5">Tables</h2>
+<div class="outline-text-2" id="text-5">
+<p>
+Tables can be created from any line that starts with '<code>|</code>' (pipe). 
+A line that starts with '<code>|-</code>' (pipe dash) is considered a horizontal 
+seperator; <code>&lt;TAB&gt;</code> after inserting it to expand the separator.  
+</p>
+
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<colgroup>
+<col class="left">
+<col class="left">
+<col class="left">
+<col class="left">
+<col class="left">
+</colgroup>
+<thead><tr>
+<th scope="col" class="left">this</th>
+<th scope="col" class="left">is</th>
+<th scope="col" class="left">a</th>
+<th scope="col" class="left">sample</th>
+<th scope="col" class="left">table</th>
+</tr></thead>
+<tbody>
+<tr>
+<td class="left">move</td>
+<td class="left">from</td>
+<td class="left">one</td>
+<td class="left">col</td>
+<td class="left">to</td>
+</tr>
+<tr>
+<td class="left">the</td>
+<td class="left">other</td>
+<td class="left">with</td>
+<td class="left"><code>&lt;TAB&gt;</code></td>
+<td class="left">this column</td>
+</tr>
+</tbody>
+</table>
+<p>
+Some tips: 
+</p>
+<ul class="org-ul">
+<li>
+<code>&lt;TAB&gt;</code> realigns the columns, and moves to the next column. 
+If at end of line, it will create a new row. 
+</li>
+<li>
+<code>C-c C-c</code> will realign the columns without moving or creating new ones.
+</li>
+<li>
+<code>&lt;RET&gt;</code> moves to the next row. 
+</li>
+</ul>
+</div>
+
+<div id="outline-container-sec-5-1" class="outline-3">
+<h3 id="sec-5-1">Table Formatting</h3>
+<div class="outline-text-3" id="text-5-1">
+<p>
+When exporting, tables are drawn without cell borders or frames. Here are 
+useful table formatting commands which you place immediately before a table.
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<colgroup>
+<col class="left">
+<col class="left">
+<col class="left">
+<col class="left">
+<col class="left">
+</colgroup>
+<thead><tr>
+<th scope="col" class="left">this</th>
+<th scope="col" class="left">is</th>
+<th scope="col" class="left">a</th>
+<th scope="col" class="left">sample</th>
+<th scope="col" class="left">table</th>
+</tr></thead>
+<tbody>
+<tr>
+<td class="left">move</td>
+<td class="left">from</td>
+<td class="left">one</td>
+<td class="left">col</td>
+<td class="left">to</td>
+</tr>
+<tr>
+<td class="left">the</td>
+<td class="left">other</td>
+<td class="left">with</td>
+<td class="left"><code>&lt;TAB&gt;</code></td>
+<td class="left">this column</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-6" class="outline-2">
+<h2 id="sec-6">Literal Examples</h2>
+<div class="outline-text-2" id="text-6">
+<p>
+Literal examples are snippets of text or source code that need to be 
+unformatted on org export. Put this text between <code>#+begin-example</code> and 
+<code>+end_example</code>.
+</p>
+</div>
+<div id="outline-container-sec-6-1" class="outline-3">
+<h3 id="sec-6-1">Source Code</h3>
+<div class="outline-text-3" id="text-6-1">
+<p>
+Org-mode is great for inserting snippets of code. This can be done with the
+</p>
+
+<pre class="example">
+#+BEGIN_SRC [major-mode-name] [options]
+#+END_SRC
+</pre>
+
+<p>
+[major-mode-name] adds a lot of extra functionality to these code blocks
+within your org file. It's also good for whoever is reading to know what 
+the language is.
+</p>
+
+<p>
+For example: 
+</p>
+
+<div class="highlight"><pre><span></span>&lt;span class="linenr"&gt;1: &lt;/span&gt;int main() { 
+&lt;span class="linenr"&gt;2: &lt;/span&gt;    return 0; 
+&lt;span class="linenr"&gt;3: &lt;/span&gt;    }
+</pre></div>
+</div>
+
+<div id="outline-container-sec-6-1-1" class="outline-4">
+<h4 id="sec-6-1-1">Useful options and commands.</h4>
+<div class="outline-text-4" id="text-6-1-1">
+<p>
+Options: 
+</p>
+<ul class="org-ul">
+<li>
+<code>-n</code> : add line numbers to the source code.
+</li>
+<li>
+<code>+n</code> : add line numbers but continue from last SRC snippet.
+</li>
+<li>
+<code>-r</code> : remove labels from source code
+</li>
+</ul>
+<p>
+Commands: 
+</p>
+<ul class="org-ul">
+<li>
+<code>C-c [']</code> : Allows you to edit the source code at point in its native mode. 
+Opens a new buffer where you exit after editing by the command again. 
+</li>
+<li>
+<code>C-c l</code> : calls org-store-link when editing with ~C-c '~. This creates 
+a label at the line currently being edited. It can be retrieved 
+later with <code>C-c C-l</code>. 
+</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-6-2" class="outline-3">
+<h3 id="sec-6-2">Easy templates</h3>
+<div class="outline-text-3" id="text-6-2">
+<p>
+It gets tiring to use the long tags if you're doing this a lot. 
+These are shortcuts to generate the above snippet borders. To insert, 
+type a '&lt;' followed by a template selector and then &lt;TAB&gt;. 
+</p>
+
+<p>
+Template selectors: 
+</p>
+<pre class="example">
+s	#+begin_src ... #+end_src 
+e	#+begin_example ... #+end_example
+q	#+begin_quote ... #+end_quote 
+v	#+begin_verse ... #+end_verse 
+c	#+begin_center ... #+end_center 
+l	#+begin_latex ... #+end_latex 
+L	#+latex: 
+h	#+begin_html ... #+end_html 
+H	#+html: 
+a	#+begin_ascii ... #+end_ascii 
+A	#+ascii: 
+i	#+index: line 
+I	#+include: line
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-7" class="outline-2">
+<h2 id="sec-7">Linking</h2>
+<div class="outline-text-2" id="text-7">
+</div>
+<div id="outline-container-sec-7-1" class="outline-3">
+<h3 id="sec-7-1">Linking files together</h3>
+<div class="outline-text-3" id="text-7-1">
+<p>
+You can link files together with 
+</p>
+<pre class="example">
+[[file:filename][name-of-link]]
+</pre>
+<p>
+This will preserve links after export to HTML as well. 
+</p>
+</div>
+</div>
+<div id="outline-container-sec-7-2" class="outline-3">
+<h3 id="sec-7-2">Linking sections within a document</h3>
+<div class="outline-text-3" id="text-7-2">
+<p>
+You can create a link to a section within your document with the section name
+in brackets. The second option lets you call the link something else. 
+</p>
+<pre class="example">
+[[section-title]]
+[[section-title][link-title]]
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-sec-8" class="outline-2">
+<h2 id="sec-8">Exporting (<code>C-c C-e</code>)</h2>
+<div class="outline-text-2" id="text-8">
+<p>
+You can export org files to any of the supported formats with 
+<code>C-c C-e [option]</code>. 
+</p>
+
+<p>
+<code>C-c C-e</code> will show you the options available in a separate buffer. Common 
+ones are text, html, and latex. You can get PDFs by converting to latex, but
+you need to have a LaTeX environment installed on your system to use this.
+</p>
+</div>
+
+<div id="outline-container-sec-8-1" class="outline-3">
+<h3 id="sec-8-1">Export Options (<code>C-c C-e t</code>)</h3>
+<div class="outline-text-3" id="text-8-1">
+<p>
+When org files are exported, certain variables are set automatically but
+can be manually set by you. To change a variable's value, use 
+</p>
+<pre class="example">
+#+VARIABLE-NAME: value
+</pre>
+<p>
+anywhere in your document. At the top is probably best. 
+</p>
+
+<p>
+To paste a template of all export options in your 
+org document so that you can set them immediately, use 
+(org-insert-export-options-template), or <code>C-c C-e t</code>. 
+</p>
+
+<p>
+This will print
+</p>
+
+<pre class="example">
+#+TITLE:       the title to be shown (default is the buffer name)
+#+AUTHOR:      the author (default taken from user-full-name)
+#+DATE:        a date, an Org timestamp120, or a format string for format-time-string
+#+EMAIL:       his/her email address (default from user-mail-address)
+#+DESCRIPTION: the page description, e.g. for the XHTML meta tag
+#+KEYWORDS:    the page keywords, e.g. for the XHTML meta tag
+#+LANGUAGE:    language for HTML, e.g. ‘en’ (org-export-default-language)
+#+TEXT:        Some descriptive text to be inserted at the beginning.
+#+TEXT:        Several lines may be given.
+#+OPTIONS:     H:2 num:t toc:t \n:nil @:t ::t |:t ^:t f:t TeX:t ...
+#+BIND:        lisp-var lisp-val, e.g.: org-export-latex-low-levels itemize
+			   You need to confirm using these, or configure org-export-allow-BIND
+#+LINK_UP:     the ``up'' link of an exported page
+#+LINK_HOME:   the ``home'' link of an exported page
+#+LATEX_HEADER: extra line(s) for the LaTeX header, like \usepackage{xyz}
+#+EXPORT_SELECT_TAGS:   Tags that select a tree for export
+#+EXPORT_EXCLUDE_TAGS:  Tags that exclude a tree from export
+#+XSLT:        the XSLT stylesheet used by DocBook exporter to generate FO file
+</pre>
+
+<p>
+within your document, 
+but with your actual variable values instead of descriptions. Change any of 
+the variables to the value of your choice. These descriptions
+are provided here for your reference. 
+</p>
+
+<p>
+The <code>#+OPTIONS</code> variable is very useful for specific tweaks and will effect 
+both HTML and LaTeX exports. 
+</p>
+
+<pre class="example">
+H:         set the number of headline levels for export
+num:       turn on/off section-numbers
+toc:       turn on/off table of contents, or set level limit (integer)
+\n:        turn on/off line-break-preservation (DOES NOT WORK)
+@:         turn on/off quoted HTML tags
+::         turn on/off fixed-width sections
+|:         turn on/off tables
+^:         turn on/off TeX-like syntax for sub- and superscripts.  If
+you write "^:{}", a_{b} will be interpreted, but
+the simple a_b will be left as it is.
+-:         turn on/off conversion of special strings.
+f:         turn on/off footnotes like this[1].
+todo:      turn on/off inclusion of TODO keywords into exported text
+tasks:     turn on/off inclusion of tasks (TODO items), can be nil to remove
+all tasks, todo to remove DONE tasks, or list of kwds to keep
+pri:       turn on/off priority cookies
+tags:      turn on/off inclusion of tags, may also be not-in-toc
+&lt;:         turn on/off inclusion of any time/date stamps like DEADLINES
+*:         turn on/off emphasized text (bold, italic, underlined)
+TeX:       turn on/off simple TeX macros in plain text
+LaTeX:     configure export of LaTeX fragments.  Default auto
+skip:      turn on/off skipping the text before the first heading
+author:    turn on/off inclusion of author name/email into exported file
+email:     turn on/off inclusion of author email into exported file
+creator:   turn on/off inclusion of creator info into exported file
+timestamp: turn on/off inclusion creation time into exported file
+d:         turn on/off inclusion of drawers
+</pre>
+
+<p>
+Variables are set with <code>nil</code> or <code>t</code>, and sometimes take an argument. 
+For example
+</p>
+
+<pre class="example">
+#+OPTIONS:     H:2 num:t toc:t \n:nil @:t ::t |:t ^:t f:t TeX:t ...
+</pre>
+</div>
+
+
+<div id="outline-container-sec-8-1-1" class="outline-4">
+<h4 id="sec-8-1-1">Title</h4>
+<div class="outline-text-4" id="text-8-1-1">
+<p>
+The title is taken from the first non-comment line in the file. If there is
+none, ie your file starts with a heading, it uses the filename. 
+The title can be manually set using
+</p>
+
+<pre class="example">
+#+TITLE: This is the title of the document
+</pre>
+</div>
+</div>
+
+<div id="outline-container-sec-8-1-2" class="outline-4">
+<h4 id="sec-8-1-2">Table of Contents</h4>
+<div class="outline-text-4" id="text-8-1-2">
+<p>
+Normally inserted after the first headline, you can set manually by
+inserting <code>TABLE-OF-CONTENTS</code> inside square-brackets ([]) seperately on 
+a line.
+</p>
+
+<p>
+Some useful options are: 
+</p>
+<pre class="example">
+#+OPTIONS: toc:2          (only to two levels in TOC)
+#+OPTIONS: toc:nil        (no TOC at all)
+</pre>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-sec-8-2" class="outline-3">
+<h3 id="sec-8-2">Including Other Files</h3>
+<div class="outline-text-3" id="text-8-2">
+<p>
+You can include files in an org document, which will be rendered on export.
+This is done using the single line command
+</p>
+
+<pre class="example">
+#+INCLUDE: "file-path" [type] [src-language]
+</pre>
+
+<p>
+type can be either (quote, example, or src). 
+if type is src, then src-language can be any major-mode language.  
+</p>
+</div>
+</div>
+<div id="outline-container-sec-8-3" class="outline-3">
+<h3 id="sec-8-3">HTML Export</h3>
+<div class="outline-text-3" id="text-8-3">
+</div>
+<div id="outline-container-sec-8-3-1" class="outline-4">
+<h4 id="sec-8-3-1">Stylesheet</h4>
+<div class="outline-text-4" id="text-8-3-1">
+<p>
+You can include a stylesheet by using
+</p>
+
+<pre class="example">
+#+STYLE:    &lt;link rel="stylesheet" type="text/css" href="../stylesheet.css" /&gt;
+</pre>
+
+<p>
+The styles used by org-mode to export specific parts of your document
+can be set in your stylesheet with the following variables: 
+</p>
+
+<pre class="example">
+p.author            author information, including email
+p.date              publishing date
+p.creator           creator info, about org mode version
+.title              document title
+.todo               TODO keywords, all not-done states
+.done               the DONE keywords, all states that count as done
+.WAITING            each TODO keyword also uses a class named after itself
+.timestamp          timestamp
+.timestamp-kwd      keyword associated with a timestamp, like SCHEDULED
+.timestamp-wrapper  span around keyword plus timestamp
+.tag                tag in a headline
+._HOME              each tag uses itself as a class, "@" replaced by "_"
+.target             target for links
+.linenr             the line number in a code example
+.code-highlighted   for highlighting referenced code lines
+div.outline-N       div for outline level N (headline plus text))
+div.outline-text-N  extra div for text at outline level N
+.section-number-N   section number in headlines, different for each level
+div.figure          how to format an inlined image
+pre.src             formatted source code
+pre.example         normal example
+p.verse             verse paragraph
+div.footnotes       footnote section headline
+p.footnote          footnote definition paragraph, containing a footnote
+.footref            a footnote reference number (always a &lt;sup&gt;)
+.footnum            footnote number in footnote definition (always &lt;sup&gt;)
+</pre>
+</div>
+</div>
+
+<div id="outline-container-sec-8-3-2" class="outline-4">
+<h4 id="sec-8-3-2">Site Navigation</h4>
+<div class="outline-text-4" id="text-8-3-2">
+<p>
+You can verily easily add "Up" and "Home" buttons on each page with 
+</p>
+
+<pre class="example">
+    #+LINK_UP: 
+#+LINK_HOME: index.html
+</pre>
+</div>
+</div>
+
+<div id="outline-container-sec-8-3-3" class="outline-4">
+<h4 id="sec-8-3-3">Hyperlinks</h4>
+<div class="outline-text-4" id="text-8-3-3">
+<p>
+Hyperlinks are managed by links and automatically converted to their 
+html counterparts. See <i>Linking Files</i>. 
+</p>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-9" class="outline-2">
+<h2 id="sec-9">Publishing</h2>
+<div class="outline-text-2" id="text-9">
+<p>
+Publishing is simply automating your export pipeline. When you have
+many files that require export, it is a good idea to create a
+publishing script for this. 
+</p>
+</div>
+
+<div id="outline-container-sec-9-1" class="outline-3">
+<h3 id="sec-9-1">Publishing Script</h3>
+<div class="outline-text-3" id="text-9-1">
+<p>
+To enable project publishing with org-mode, create a local file in
+the project directory with the instructions. In our example we have
+named it <code>org_publish.el</code>. 
+</p>
+</div>
+</div>
+</div>
+    </div>
+    
+            <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"> </script><script type="text/x-mathjax-config">
+            MathJax.Hub.Config({tex2jax: {inlineMath: [['$latex ','$'], ['\\(','\\)']]}});
+            </script></article>
+</div>
+        <!--End of body content-->
+
+        <footer id="footer">
+            Contents © 2017         <a href="mailto:rod@shinypenny.org">Rodney Price</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         
+            
+        </footer>
+</div>
+</div>
+
+
+            <script src="/assets/js/jquery.min.js"></script><script src="/assets/js/bootstrap.min.js"></script><script src="/assets/js/moment-with-locales.min.js"></script><script src="/assets/js/fancydates.js"></script><script src="/assets/js/jquery.colorbox-min.js"></script><script>$('a.image-reference:not(.islink) img:not(.islink)').parent().colorbox({rel:"gal",maxWidth:"100%",maxHeight:"100%",scalePhotos:true});</script><!-- fancy dates --><script>
+    moment.locale("en");
+    fancydates(2, "YYYY-MM-DD HH:mm");
+    </script><!-- end fancy dates -->
+</body>
+</html>

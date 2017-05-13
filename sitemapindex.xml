@@ -19,7 +19,7 @@
  </sitemap>
  <sitemap>
   <loc>http://www.shinypenny.org/categories/balloon.xml</loc>
-  <lastmod>2017-05-11T05:49:00Z</lastmod>
+  <lastmod>2017-05-13T04:27:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://www.shinypenny.org/categories/camera.atom</loc>
@@ -35,7 +35,7 @@
  </sitemap>
  <sitemap>
   <loc>http://www.shinypenny.org/categories/cat_balloon.xml</loc>
-  <lastmod>2017-05-11T05:49:00Z</lastmod>
+  <lastmod>2017-05-13T04:27:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://www.shinypenny.org/categories/cat_projects.atom</loc>
@@ -44,6 +44,14 @@
  <sitemap>
   <loc>http://www.shinypenny.org/categories/cat_projects.xml</loc>
   <lastmod>2017-05-10T05:01:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>http://www.shinypenny.org/categories/mathjax.atom</loc>
+  <lastmod>2017-05-12T22:52:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>http://www.shinypenny.org/categories/mathjax.xml</loc>
+  <lastmod>2017-05-13T02:22:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://www.shinypenny.org/categories/projects.atom</loc>
@@ -79,14 +87,14 @@
  </sitemap>
  <sitemap>
   <loc>http://www.shinypenny.org/index.atom</loc>
-  <lastmod>2017-05-11T05:46:00Z</lastmod>
+  <lastmod>2017-05-13T04:27:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://www.shinypenny.org/rss.xml</loc>
-  <lastmod>2017-05-11T05:49:00Z</lastmod>
+  <lastmod>2017-05-13T04:27:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://www.shinypenny.org/sitemap.xml</loc>
-  <lastmod>2017-05-11T05:49:00Z</lastmod>
+  <lastmod>2017-05-13T04:27:00Z</lastmod>
  </sitemap>
 </sitemapindex>

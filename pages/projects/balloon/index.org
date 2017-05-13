@@ -9,7 +9,55 @@
 .. type: text
 #+END_COMMENT
 
+* Links
+  - [[https://www.rocketreviews.com/descent-rate-calculator.html][Descent rate calculator]] :: Meant for rockets, but it will do.
+  - [[http://vmr.engin.umich.edu/Model/_balloon/index.py][U Mich balloon flight prediction page]] :: Gives results as KML,
+       CSV, or a map.
+  - [[http://community.balloonchallenge.org/t/flight-prediction-overview/672][Cambridge flight prediction tool]] :: From habhub, an English
+       high-altitude ballooning group.
+  - [[http://habhub.org/calc/][Cambridge balloon burst calculator]] :: From habhub, again.
+  - [[http://community.balloonchallenge.org/t/regulations-overview-including-contacting-the-us-faa/676][Regulations overview]] :: An explanation of FAA regulations for
+       high-altitude balloons.  Here's a [[https://www.ecfr.gov/cgi-bin/retrieveECFR?gp%3D&SID%3D2ede283f148804503362bdc410923e24&r%3DPART&n%3D14y2.0.1.3.15][link]] to the regulations.
+  - [[http://www.projectaether.org/main/education/about.html][Aether Industries]] :: They have a [[http://www.projectaether.org/main/education/balloon-inflation.html][page]] with much useful information
+       on lift as a function of balloon diameter and cubic feet of
+       helium required.
+
 * Tasks
+
+** Helium source
+   Surprisingly (or maybe not) helium to fill the balloon is
+   expensive.  Our initial estimate was $150 to fill a smallish
+   balloon.  We're currently looking for a cheaper source.  This cost
+   drives most of our payload choices.  More weight means more helium,
+   means more cost.
+
+*** Inflation tube
+    Apparently we need an inflation tube, to keep the balloon neck
+    open while we're filling it.  A scale is helpful too, to tell you
+    when you have the amount of lift you designed for.  [[http://www.aetherandbeyond.com/main/store/product/14-balloon-inflation-tube-scale.html#hikashop_show_tabular_description][Here's]] one for
+    $106.  Ouch.  It's out of stock anyway.  Picture [[http://www.aetherandbeyond.com/main/store/product/14-balloon-inflation-tube-scale.html#hikashop_show_tabular_description][here]].  [[https://www.highaltitudescience.com/products/3-cm-max-safe-inflator][Here's]]
+    another one for $85.  The same site sells an [[https://www.highaltitudescience.com/collections/kits/products/audio-beacon-kit][audio beacon kit]] that
+    will beep loudly (90+ dB) on landing.
+
+*** [[https://www.airgas.com/category/Gases-Industrial-Application-Gases-Helium-Industrial/_/N-82p][Airgas]]
+    They have [[https://locations.airgas.com/denver-co?q%3D80237][several locations]] around Denver, including one at 7825 E
+    40th Ave that seems to have the most comprehensive inventory.
+    They sell "balloon-grade" helium as well as industrial grade.
+    I've read that balloon-grade helium is mostly nitrogen, and is to
+    be avoided.  No pricing yet.
+
+*** [[http://www.mathesongas.com/gases-main][Matheson]]
+    Matheson offers a nice [[http://www.mathesongas.com/industrialgas/pdfs/Helium-Industrial.pdf][information sheet]] on their helium.  They
+    have a location at 4705 Nome Street, Denver, CO 80239, phone
+    303-373-5633.
+
+*** [[http://www.generalair.com/][General Air]]
+    "[[http://www.generalair.com/Whats-New.aspx#2][Give the gift of welding]]."  You can order a gift certificate for
+    welding school.  Who knew?  Apparently they offer a class for Boy
+    Scouts to help them get the [[https://events.r20.constantcontact.com/register/eventReg?oeidk%3Da07edq9yo6rcb275fd1&oseq%3D&c%3D&ch%3D][Welding merit badge]].  They have a
+    store nearby at 1105 Zuni Street, Denver CO 80204, phone
+    303-892-7003.  They also have locations in Greeley and Boulder.
+    No pricing yet.
 
 ** APRS tracker
    [[https://en.wikipedia.org/wiki/Automatic_Packet_Reporting_System][APRS]] (Automatic Packet Reporting System) is an amateur radio
@@ -37,45 +85,40 @@
    APRS tracker.  If that isn't working when the balloon lands, we'll
    use this to find the balloon's location.
 
-** 432 MHz antenna
-   Build a quarter-wave antenna that usually lands right-side up when
-   it hits the ground.  We've asked the young men to help us with
-   this.  It's important to land upright so the transmitter can get a
-   strong signal out.
+*** 432 MHz antenna
+    Build a quarter-wave antenna that usually lands right-side up when
+    it hits the ground.  We've asked the young men to help us with
+    this.  It's important to land upright so the transmitter can get a
+    strong signal out.
 
-** Fox hunt
-   Hide the 432 MHz beacon somewhere in the woods and have the Scouts
-   make the adults find it, using some variety of antenna and portable
-   receiver.  Amateur radio types call this a "fox hunt," and they
-   have regular contests to see who can get to the "fox" first.  This
-   is our way of testing the 432 MHz beacon.
+*** Fox hunt
+    Hide the 432 MHz beacon somewhere in the woods and have the Scouts
+    make the adults find it, using some variety of antenna and portable
+    receiver.  Amateur radio types call this a "fox hunt," and they
+    have regular contests to see who can get to the "fox" first.  This
+    is our way of testing the 432 MHz beacon.
+
+*** Ham radio installation
+    Rod Price (callsign KD0FFJ) has an old 144/432 MHz mobile ham
+    radio.  It was in my old 1994 Nissan Altima, but that car went the
+    way of all the earth, and now I have a new Mazda 3.  I drilled
+    holes in the Altima to install the radio; my wife and I aren't
+    quite so sure that's a good idea in our Mazda.  We do need a mobile
+    radio to track the balloon, so I need to get busy and install the
+    thing.  With it we should be able to receive both APRS packets (144
+    MHz) and 432 MHz beacon "beeps."
 
 ** Parachute drop
    Test the parachute by dropping it off a tall building, or
    something.  With permission, of course.
 
-** Ham radio installation
-   Rod Price (callsign KD0FFJ) has an old 144/432 MHz mobile ham
-   radio.  It was in my old 1994 Nissan Altima, but that car went the
-   way of all the earth, and now I have a new Mazda 3.  I drilled
-   holes in the Altima to install the radio; my wife and I aren't
-   quite so sure that's a good idea in our Mazda.  We do need a mobile
-   radio to track the balloon, so I need to get busy and install the
-   thing.  With it we should be able to receive both APRS packets (144
-   MHz) and 432 MHz beacon "beeps."
-
-** Helium source
-   Surprisingly (or maybe not) helium to fill the balloon is
-   expensive.  Our initial estimate was $150 to fill a smallish
-   balloon.  We're currently looking for a cheaper source.  This cost
-   drives most of our payload choices.  More weight means more helium,
-   means more cost.
-
 ** FAA authorization
    The FAA likes to know when people launch a balloon, but they're
    reasonable about it.  For a balloon under four pounds (I think)
    they just ask for notification a few days in advance.  Yet another
-   reason to be careful about payload weight.
+   reason to be careful about payload weight.  Here's a [[https://www.ecfr.gov/cgi-bin/retrieveECFR?gp%3D&SID%3D2ede283f148804503362bdc410923e24&r%3DPART&n%3D14y2.0.1.3.15][link]] to the
+   part of the Code of Federal Regulations having to do with
+   high-altitude balloons.
 
 ** Camera
    Why fly a balloon if you can't take pictures?  Options include a

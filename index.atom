@@ -3,7 +3,7 @@
 <feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>Shiny Penny</title>
   <id>http://www.shinypenny.org/index.atom</id>
-  <updated>2017-05-11T05:46:10Z</updated>
+  <updated>2017-05-13T04:27:18Z</updated>
   <author>
     <name>Rodney Price</name>
   </author>
@@ -11,7 +11,7 @@
   <link rel="alternate" type="text/html" href="http://www.shinypenny.org/"/>
   <generator uri="https://getnikola.com/">Nikola</generator>
   <entry>
-    <title>432 MHz Beacon antenna, first attempt</title>
+    <title>432 MHz beacon antenna, first attempt</title>
     <id>http://www.shinypenny.org/posts/432-mhz-beacon-antenna-first-attempt.html</id>
     <updated>2017-05-10T21:34:37-06:00</updated>
     <published>2017-05-10T21:34:37-06:00</published>

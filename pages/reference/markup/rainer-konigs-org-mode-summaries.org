@@ -1,0 +1,95 @@
+#+BEGIN_COMMENT
+.. title: Rainer Konig's org-mode summaries
+.. slug: rainer-konigs-org-mode-summaries
+.. date: 2017-05-12 19:49:22 UTC-06:00
+.. tags: reference, emacs
+.. category: reference
+.. link: https://www.youtube.com/playlist?list=PLVtKhBrRV_ZkPnBtt_TD1Cs9PJlU0IIdE
+.. description: The short summaries from Rainer Konig's videos.
+.. type: text
+#+END_COMMENT
+
+
+The following are notes from Rainer Konig's videos.  I'll fill these
+in as I view them.
+
+* Headlines and outline mode
+
+* Todo keywords
+
+* Schedule, deadlines, and agenda views
+
+* Repeating tasks
+
+* Checklists
+
+* Tags
+
+* Agenda view (advanced)
+
+* Customized agenda views
+
+* Drawers, logging, and quick notes
+
+* Archiving
+
+* Automatic logging of status changes
+
+* Splitting your system into several files
+
+* The first capture template(s)
+
+* The :PROPERTIES: drawer
+
+* Archiving to different files
+
+* Ordered tasks
+
+* Timers
+
+* Clocking (a.k.a. time tracking)
+
+* Column view
+
+* Effort estimates
+
+* Linking (internal)
+
+* Linking (external)
+
+* Attachments
+
+* Priorities
+
+* [[https://www.youtube.com/watch?v%3DJHKrTsiz4JU&index%3D25&list%3DPLVtKhBrRV_ZkPnBtt_TD1Cs9PJlU0IIdE&t%3D633s][Tables]]
+
+ - *Goal*: Organize reference material in tables
+ - *Recipe*: Orgmode has a built-in table editor
+    =|= :: use to separate columns
+    =|- <tab>= :: insert a horizontal line
+    =alt-<left>= :: or =alt-<right>= Move column left or right
+    =alt-shift-<left>= :: delete column
+    =alt-shift-<right>= :: insert column left
+    =C-c -= :: insert a horizontal line
+    =#+constants:= :: define a constant
+    =#+tblfm:= ::
+     - Columns referenced by number =$column=
+     - Rows referenced by number =$row=
+
+* Exporting
+
+* Advanced exporting
+
+* Publishing
+
+* Dynamic blocks
+
+* Tracking habits
+
+* Bulk agenda items
+
+* Presenting my system
+
+* Google Calendar integration
+
+* Source code in org-mode

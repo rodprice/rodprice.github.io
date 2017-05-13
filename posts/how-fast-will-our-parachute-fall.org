@@ -1,0 +1,30 @@
+#+BEGIN_COMMENT
+.. title: How fast will our payload fall?
+.. slug: how-fast-will-our-parachute-fall
+.. date: 2017-05-12 15:34:24 UTC-06:00
+.. tags: mathjax, balloon, draft
+.. category: balloon
+.. link: https://spaceraceblog.wordpress.com/2016/02/17/parachute-size-estimator-for-high-altitude-balloons/
+.. description: Parachute math
+.. type: text
+#+END_COMMENT
+
+At equilibrium (that is, when the parachute and payload are not
+accelerating) the following equation determines the drag force exerted
+by the parachute, and therefore the payload's velocity.
+
+\begin{equation}
+D = 1/2 \rho v^2 ( A_1 C_1 + A_2 C_2 )
+\end{equation}
+
+where
+
+#+attr_html: :class table table-condensed table-striped
+| \(D\)    | Drag                              |
+| \(\rho\) | Air density                       |
+| \(v\)    | Velocity                          |
+| \(A_1\)  | Area of the parachute             |
+| \(A_2\)  | Area of the payload               |
+| \(C_1\)  | Drag coefficient of the parachute |
+| \(C_2\)  | Drag coefficient of the payload   |
+

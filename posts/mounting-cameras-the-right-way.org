@@ -1,0 +1,40 @@
+#+BEGIN_COMMENT
+.. title: Mounting cameras the right way
+.. slug: mounting-cameras-the-right-way
+.. date: 2017-05-15 23:31:27 UTC-06:00
+.. tags: draft, balloon
+.. category: balloon
+.. link: 
+.. description: 
+.. type: text
+#+END_COMMENT
+
+
+Video from camera pointed straight up.
+
+#+begin_html
+<iframe width="640" height="390" 
+    src="https://www.youtube.com/embed/0HbXVVVFahM" 
+    frameborder="0" allowfullscreen>
+</iframe>
+#+end_html
+
+
+We should put this one on the front page.
+
+#+begin_html
+<iframe width="640" height="390" 
+    src="https://www.youtube.com/embed/kAhaIDNVyC0" 
+    frameborder="0" allowfullscreen>
+</iframe>
+#+end_html
+
+
+Very nice phtography with the GoPro
+
+#+begin_html
+<iframe width="426" height="240"
+    src="https://www.youtube.com/embed/95NDkABAsSk" 
+    frameborder="0" allowfullscreen>
+</iframe>
+#+end_html

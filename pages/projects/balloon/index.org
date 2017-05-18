@@ -9,6 +9,22 @@
 .. type: text
 #+END_COMMENT
 
+* What is this?
+A high-altitude balloon is a balloon that flys up to 100,000 feet, a
+place often called "near space" because it looks a lot like space.
+You can see the curvature of the Earth.  The sky is black, and the
+temperature can get as low as -50 C.  Atmospheric pressure is 1/100 of
+that at sea level, about the same as on the surface of Mars.
+
+Here's a fun video of a balloon launch from somewhere in Georgia.
+
+#+begin_html
+<iframe width="640" height="390" 
+    src="https://www.youtube.com/embed/kAhaIDNVyC0" 
+    frameborder="0" allowfullscreen>
+</iframe>
+#+end_html
+
 * Links
   - [[https://www.rocketreviews.com/descent-rate-calculator.html][Descent rate calculator]] :: Meant for rockets, but it will do.
   - [[http://vmr.engin.umich.edu/Model/_balloon/index.py][U Mich balloon flight prediction page]] :: Gives results as KML,
@@ -31,25 +47,25 @@
    drives most of our payload choices.  More weight means more helium,
    means more cost.
 
-*** Inflation tube
-    Apparently we need an inflation tube, to keep the balloon neck
-    open while we're filling it.  A scale is helpful too, to tell you
-    when you have the amount of lift you designed for.  [[http://www.aetherandbeyond.com/main/store/product/14-balloon-inflation-tube-scale.html#hikashop_show_tabular_description][Here's]] one for
-    $106.  Ouch.  It's out of stock anyway.  Picture [[http://www.aetherandbeyond.com/main/store/product/14-balloon-inflation-tube-scale.html#hikashop_show_tabular_description][here]].  [[https://www.highaltitudescience.com/products/3-cm-max-safe-inflator][Here's]]
-    another one for $85.  The same site sells an [[https://www.highaltitudescience.com/collections/kits/products/audio-beacon-kit][audio beacon kit]] that
-    will beep loudly (90+ dB) on landing.
+   All the suppliers below require an account, involving a credit
+   check, in order to rent a cylinder of helium.  Without an account,
+   they ask you to buy the cylinder rather than rent it.  Rental fees
+   are low: anywhere from 50 cents to a couple dollars a day.
+
+   Cylinders come in a range of sizes.  The two of most interest to us
+   are 125 ft^3 and 200 ft^3.  Lift produced by helium-filled balloons
+   is listed [[http://www.aetherandbeyond.com/main/education/balloon-inflation.html][here]].  125 ft^3 of helium gives about 8 lbs of lift,
+   while 200 ft^3 gives about 13 lbs.
 
 *** [[https://www.airgas.com/category/Gases-Industrial-Application-Gases-Helium-Industrial/_/N-82p][Airgas]]
-    They have [[https://locations.airgas.com/denver-co?q%3D80237][several locations]] around Denver, including one at 7825 E
-    40th Ave that seems to have the most comprehensive inventory.
-    They sell "balloon-grade" helium as well as industrial grade.
-    I've read that balloon-grade helium is mostly nitrogen, and is to
-    be avoided.  No pricing yet.
+    They have [[https://locations.airgas.com/denver-co?q%3D80237][several locations]] around Denver.  I was directed to the
+    one at 303-370-7800.  125 ft^3 goes for about $151, while 200 ft^3
+    is about $195.
 
 *** [[http://www.mathesongas.com/gases-main][Matheson]]
     Matheson offers a nice [[http://www.mathesongas.com/industrialgas/pdfs/Helium-Industrial.pdf][information sheet]] on their helium.  They
     have a location at 4705 Nome Street, Denver, CO 80239, phone
-    303-373-5633.
+    303-373-5633.  They quoted me $120 for 200 ft^3 of helium.
 
 *** [[http://www.generalair.com/][General Air]]
     "[[http://www.generalair.com/Whats-New.aspx#2][Give the gift of welding]]."  You can order a gift certificate for
@@ -57,7 +73,16 @@
     Scouts to help them get the [[https://events.r20.constantcontact.com/register/eventReg?oeidk%3Da07edq9yo6rcb275fd1&oseq%3D&c%3D&ch%3D][Welding merit badge]].  They have a
     store nearby at 1105 Zuni Street, Denver CO 80204, phone
     303-892-7003.  They also have locations in Greeley and Boulder.
-    No pricing yet.
+    They quoted me $237 for 219 ft^3.  99.99% pure.  Way more than we
+    need. 
+
+*** Inflation tube
+    Apparently we need an inflation tube, to keep the balloon neck
+    open while we're filling it.  A scale is helpful too, to tell you
+    when you have the amount of lift you designed for.  [[http://www.aetherandbeyond.com/main/store/product/14-balloon-inflation-tube-scale.html#hikashop_show_tabular_description][Here's]] one for
+    $106.  Ouch.  It's out of stock anyway.  Picture [[http://www.aetherandbeyond.com/main/store/product/14-balloon-inflation-tube-scale.html#hikashop_show_tabular_description][here]].  [[https://www.highaltitudescience.com/products/3-cm-max-safe-inflator][Here's]]
+    another one for $85.  The same site sells an [[https://www.highaltitudescience.com/collections/kits/products/audio-beacon-kit][audio beacon kit]] that
+    will beep loudly (90+ dB) on landing.
 
 ** APRS tracker
    [[https://en.wikipedia.org/wiki/Automatic_Packet_Reporting_System][APRS]] (Automatic Packet Reporting System) is an amateur radio

@@ -2,8 +2,9 @@
 <html prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article# " lang="en">
 <head>
 <meta charset="utf-8">
+<meta name="description" content="Progress on the 70cm beacon">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>A hypothetical flight from my house | Shiny Penny</title>
+<title>70cm beacon progress | Shiny Penny</title>
 <link href="/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
 <link href="/assets/css/rst.css" rel="stylesheet" type="text/css">
 <link href="/assets/css/code.css" rel="stylesheet" type="text/css">
@@ -16,19 +17,18 @@
 <meta name="generator" content="Nikola (getnikola.com)">
 <link rel="alternate" type="application/rss+xml" title="RSS" href="/rss.xml">
 <link rel="alternate" type="application/atom+xml" title="Atom" href="/index.atom">
-<link rel="canonical" href="http://www.shinypenny.org/posts/a-hypothetical-flight-from-my-house.html">
+<link rel="canonical" href="http://www.shinypenny.org/posts/70cm-beacon-progress.html">
 <!--[if lt IE 9]><script src="/assets/js/html5.js"></script><![endif]--><style>body{background-image:url(/images/topography.png);}</style>
 <meta name="author" content="Rodney Price">
-<link rel="prev" href="/posts/432-mhz-beacon-antenna-first-attempt.html" title="432 MHz beacon antenna, first attempt" type="text/html">
-<link rel="next" href="/posts/70cm-beacon-progress.html" title="70cm beacon progress" type="text/html">
+<link rel="prev" href="/posts/a-hypothetical-flight-from-my-house.html" title="A hypothetical flight from my house" type="text/html">
 <meta property="og:site_name" content="Shiny Penny">
-<meta property="og:title" content="A hypothetical flight from my house">
-<meta property="og:url" content="http://www.shinypenny.org/posts/a-hypothetical-flight-from-my-house.html">
-<meta property="og:description" content="If we launched a high-altitude balloon from my house tomorrow morning,
-here's what might happen.">
+<meta property="og:title" content="70cm beacon progress">
+<meta property="og:url" content="http://www.shinypenny.org/posts/70cm-beacon-progress.html">
+<meta property="og:description" content="Progress on the 70cm beacon">
 <meta property="og:type" content="article">
-<meta property="article:published_time" content="2017-05-12T23:11:42-06:00">
+<meta property="article:published_time" content="2017-07-04T17:07:37-06:00">
 <meta property="article:tag" content="balloon">
+<meta property="article:tag" content="radio">
 </head>
 <body>
 <a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
@@ -89,7 +89,7 @@ here's what might happen.">
 </ul>
 <ul class="nav navbar-nav navbar-right">
 <li>
-    <a href="/posts/a-hypothetical-flight-from-my-house.org" id="sourcelink">Source</a>
+    <a href="/posts/70cm-beacon-progress.org" id="sourcelink">Source</a>
     </li>
 
                 
@@ -104,48 +104,91 @@ here's what might happen.">
         <div class="row">
             
             
-<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="/posts/a-hypothetical-flight-from-my-house.html" class="u-url">A hypothetical flight from my house</a></h1>
+<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="/posts/70cm-beacon-progress.html" class="u-url">70cm beacon progress</a></h1>
 
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
                     Rodney Price
             </span></p>
-            <p class="dateline"><a href="/posts/a-hypothetical-flight-from-my-house.html" rel="bookmark"><time class="published dt-published" datetime="2017-05-12T23:11:42-06:00" itemprop="datePublished" title="2017-05-12 23:11">2017-05-12 23:11</time></a></p>
+            <p class="dateline"><a href="/posts/70cm-beacon-progress.html" rel="bookmark"><time class="published dt-published" datetime="2017-07-04T17:07:37-06:00" itemprop="datePublished" title="2017-07-04 17:07">2017-07-04 17:07</time></a></p>
                 <p class="commentline">
         
-    <a href="/posts/a-hypothetical-flight-from-my-house.html#disqus_thread" data-disqus-identifier="cache/posts/a-hypothetical-flight-from-my-house.html">Comments</a>
+    <a href="/posts/70cm-beacon-progress.html#disqus_thread" data-disqus-identifier="cache/posts/70cm-beacon-progress.html">Comments</a>
 
 
             
         </p>
-<p class="sourceline"><a href="/posts/a-hypothetical-flight-from-my-house.org" id="sourcelink">Source</a></p>
+<p class="sourceline"><a href="/posts/70cm-beacon-progress.org" id="sourcelink">Source</a></p>
 
-                    <p class="linkline"><a href="http://s3research.com/tools/flightpredictor/">Original site</a></p>
         </div>
         
 
     </header><div class="e-content entry-content" itemprop="articleBody text">
     <p>
-If we launched a high-altitude balloon from my house tomorrow morning,
-here's what might happen.
+We're putting two radios on the high-altitude balloon, just to have a
+backup in case one of them fails.  We're pretty confident that the 
+balloon will fly, but we'd like to get it back, and radio beacons are
+the best way to do that.
+</p>
+
+<p>
+Soldering tiny little parts can be painful – especially when you
+really would prefer not to fry your part with too much heat.  Such was
+the case when I tried to attach wires to the 70 cm transmitter modules
+I had bought for the balloon.  You can see one of them in the picture
+with the quarter, to the left.
 </p>
 
 <!-- TEASER_END -->
 
 <p>
-<a href="/images/balloon/balloon-flight-prediction-20170512.png">
-<img alt="Balloon track" src="/images/balloon/balloon-flight-prediction-20170512.png" title="Balloon track" style="float:right;width:100%;margin:10px"></a>
+<a href="/images/balloon/434-mhz-wireless-transceiver-rfm69hcw.jpg">
+<img alt="My first try at soldering a transmitter" src="/images/balloon/434-mhz-wireless-transceiver-rfm69hcw.jpg" title="My first try at soldering a transmitter" style="float:left;width:35%;margin:10px"></a>
+</p>
+
+<p>
+And I had bought two of them, just in case!  Normally, you solder to
+these things using a header, which has pins every 0.1 inches.  Not
+this thing.  It had to have them every 2 mm.  Just different enough to
+make things difficult.
+</p>
+
+<p>
+So I fried two of them, so badly that I actually cracked several of
+the parts on the boards in pieces.  For those of you who've never
+soldered electronic parts before, that's really bad.  
+</p>
+
+<p>
+When I was in college, I had a summer job soldering electronic parts 8
+hours a day.  I got pretty good at it, I thought.  Maybe not so much.
+</p>
+
+<p>
+After I tossed out the two blackened transmitters, I found that I was
+just stubborn enough to try again.  I ordered a new transmitter, this
+time with 10 times the output power (an entire watt).  I got a new,
+smaller tip for the soldering iron, made a plan this time instead of
+just having at it, and … success!
+</p>
+
+<p>
+<a href="/images/balloon/transmitter-soldered.gif">
+<img alt="A successful soldering job" src="/images/balloon/transmitter-soldered.gif" title="A successful soldering job" style="float:right;width:35%;margin:10px"></a>
+</p>
+
+<p>
+You can see the result in the picture below, with the penny next to
+the transmitter.
 </p>
     </div>
     <aside class="postpromonav"><nav><ul itemprop="keywords" class="tags">
 <li><a class="tag p-category" href="/categories/balloon.html" rel="tag">balloon</a></li>
+            <li><a class="tag p-category" href="/categories/radio.html" rel="tag">radio</a></li>
         </ul>
 <ul class="pager hidden-print">
 <li class="previous">
-                <a href="/posts/432-mhz-beacon-antenna-first-attempt.html" rel="prev" title="432 MHz beacon antenna, first attempt">Previous post</a>
-            </li>
-            <li class="next">
-                <a href="/posts/70cm-beacon-progress.html" rel="next" title="70cm beacon progress">Next post</a>
+                <a href="/posts/a-hypothetical-flight-from-my-house.html" rel="prev" title="A hypothetical flight from my house">Previous post</a>
             </li>
         </ul></nav></aside><section class="comments hidden-print"><h2>Comments</h2>
         
@@ -153,9 +196,9 @@ here's what might happen.
         <div id="disqus_thread"></div>
         <script>
         var disqus_shortname ="shiny-penny",
-            disqus_url="http://www.shinypenny.org/posts/a-hypothetical-flight-from-my-house.html",
-        disqus_title="A hypothetical flight from my house",
-        disqus_identifier="cache/posts/a-hypothetical-flight-from-my-house.html",
+            disqus_url="http://www.shinypenny.org/posts/70cm-beacon-progress.html",
+        disqus_title="70cm beacon progress",
+        disqus_identifier="cache/posts/70cm-beacon-progress.html",
         disqus_config = function () {
             this.language = "en";
         };

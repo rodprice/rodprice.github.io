@@ -15,11 +15,11 @@
  </url>
  <url>
   <loc>http://www.shinypenny.org/archive.html</loc>
-  <lastmod>2017-05-13T05:16:00Z</lastmod>
+  <lastmod>2017-07-23T18:31:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.shinypenny.org/categories/</loc>
-  <lastmod>2017-05-13T04:48:00Z</lastmod>
+  <lastmod>2017-07-23T18:30:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.shinypenny.org/categories/antenna.html</loc>
@@ -27,7 +27,7 @@
  </url>
  <url>
   <loc>http://www.shinypenny.org/categories/balloon.html</loc>
-  <lastmod>2017-05-13T05:16:00Z</lastmod>
+  <lastmod>2017-07-23T18:28:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.shinypenny.org/categories/camera.html</loc>
@@ -35,11 +35,23 @@
  </url>
  <url>
   <loc>http://www.shinypenny.org/categories/cat_balloon.html</loc>
-  <lastmod>2017-05-13T05:16:00Z</lastmod>
+  <lastmod>2017-07-23T18:28:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://www.shinypenny.org/categories/cat_draft.html</loc>
+  <lastmod>2017-07-23T18:30:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.shinypenny.org/categories/cat_projects.html</loc>
   <lastmod>2017-05-10T05:01:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://www.shinypenny.org/categories/cat_radio.html</loc>
+  <lastmod>2017-07-23T18:28:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://www.shinypenny.org/categories/construction.html</loc>
+  <lastmod>2017-07-05T00:02:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.shinypenny.org/categories/projects.html</loc>
@@ -47,7 +59,7 @@
  </url>
  <url>
   <loc>http://www.shinypenny.org/categories/radio.html</loc>
-  <lastmod>2017-05-11T05:49:00Z</lastmod>
+  <lastmod>2017-07-23T18:28:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.shinypenny.org/categories/testing.html</loc>
@@ -194,12 +206,24 @@
   <lastmod>2017-05-13T05:15:00Z</lastmod>
  </url>
  <url>
+  <loc>http://www.shinypenny.org/posts/43475-mhz-beacon-design.html</loc>
+  <lastmod>2017-07-05T00:02:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://www.shinypenny.org/posts/70cm-beacon-progress.html</loc>
+  <lastmod>2017-07-23T18:31:00Z</lastmod>
+ </url>
+ <url>
   <loc>http://www.shinypenny.org/posts/a-hypothetical-flight-from-my-house.html</loc>
-  <lastmod>2017-05-13T05:16:00Z</lastmod>
+  <lastmod>2017-07-23T18:28:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.shinypenny.org/posts/hacking-an-18-dollar-camera.html</loc>
   <lastmod>2017-05-10T05:01:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://www.shinypenny.org/posts/if-two-little-girls-can-do-it-why-not-us.html</loc>
+  <lastmod>2017-07-23T18:30:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.shinypenny.org/posts/maybe-this-will-work.html</loc>
@@ -208,6 +232,10 @@
  <url>
   <loc>http://www.shinypenny.org/posts/miles-science-fair-project.html</loc>
   <lastmod>2017-05-10T05:01:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://www.shinypenny.org/posts/soldering-travails.html</loc>
+  <lastmod>2017-07-05T00:02:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.shinypenny.org/posts/testing-testing-testing.html</loc>

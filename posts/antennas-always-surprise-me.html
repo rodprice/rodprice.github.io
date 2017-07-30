@@ -2,9 +2,9 @@
 <html prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article# " lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="description" content="Progress on the 70cm beacon">
+<meta name="description" content="Making a better antenna with a modeling program">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>70cm beacon progress | Shiny Penny</title>
+<title>Antennas always surprise me | Shiny Penny</title>
 <link href="/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
 <link href="/assets/css/rst.css" rel="stylesheet" type="text/css">
 <link href="/assets/css/code.css" rel="stylesheet" type="text/css">
@@ -17,17 +17,17 @@
 <meta name="generator" content="Nikola (getnikola.com)">
 <link rel="alternate" type="application/rss+xml" title="RSS" href="/rss.xml">
 <link rel="alternate" type="application/atom+xml" title="Atom" href="/index.atom">
-<link rel="canonical" href="http://www.shinypenny.org/posts/70cm-beacon-progress.html">
+<link rel="canonical" href="http://www.shinypenny.org/posts/antennas-always-surprise-me.html">
 <!--[if lt IE 9]><script src="/assets/js/html5.js"></script><![endif]--><style>body{background-image:url(/images/topography.png);}</style>
 <meta name="author" content="Rodney Price">
-<link rel="prev" href="/posts/a-hypothetical-flight-from-my-house.html" title="A hypothetical flight from my house" type="text/html">
-<link rel="next" href="/posts/antennas-always-surprise-me.html" title="Antennas always surprise me" type="text/html">
+<link rel="prev" href="/posts/70cm-beacon-progress.html" title="70cm beacon progress" type="text/html">
 <meta property="og:site_name" content="Shiny Penny">
-<meta property="og:title" content="70cm beacon progress">
-<meta property="og:url" content="http://www.shinypenny.org/posts/70cm-beacon-progress.html">
-<meta property="og:description" content="Progress on the 70cm beacon">
+<meta property="og:title" content="Antennas always surprise me">
+<meta property="og:url" content="http://www.shinypenny.org/posts/antennas-always-surprise-me.html">
+<meta property="og:description" content="Making a better antenna with a modeling program">
 <meta property="og:type" content="article">
-<meta property="article:published_time" content="2017-07-04T17:07:37-06:00">
+<meta property="article:published_time" content="2017-07-30T00:08:44-06:00">
+<meta property="article:tag" content="antenna">
 <meta property="article:tag" content="balloon">
 <meta property="article:tag" content="radio">
 </head>
@@ -90,7 +90,7 @@
 </ul>
 <ul class="nav navbar-nav navbar-right">
 <li>
-    <a href="/posts/70cm-beacon-progress.org" id="sourcelink">Source</a>
+    <a href="/posts/antennas-always-surprise-me.org" id="sourcelink">Source</a>
     </li>
 
                 
@@ -105,94 +105,72 @@
         <div class="row">
             
             
-<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="/posts/70cm-beacon-progress.html" class="u-url">70cm beacon progress</a></h1>
+<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="/posts/antennas-always-surprise-me.html" class="u-url">Antennas always surprise me</a></h1>
 
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
                     Rodney Price
             </span></p>
-            <p class="dateline"><a href="/posts/70cm-beacon-progress.html" rel="bookmark"><time class="published dt-published" datetime="2017-07-04T17:07:37-06:00" itemprop="datePublished" title="2017-07-04 17:07">2017-07-04 17:07</time></a></p>
+            <p class="dateline"><a href="/posts/antennas-always-surprise-me.html" rel="bookmark"><time class="published dt-published" datetime="2017-07-30T00:08:44-06:00" itemprop="datePublished" title="2017-07-30 00:08">2017-07-30 00:08</time></a></p>
                 <p class="commentline">
         
-    <a href="/posts/70cm-beacon-progress.html#disqus_thread" data-disqus-identifier="cache/posts/70cm-beacon-progress.html">Comments</a>
+    <a href="/posts/antennas-always-surprise-me.html#disqus_thread" data-disqus-identifier="cache/posts/antennas-always-surprise-me.html">Comments</a>
 
 
             
         </p>
-<p class="sourceline"><a href="/posts/70cm-beacon-progress.org" id="sourcelink">Source</a></p>
+<p class="sourceline"><a href="/posts/antennas-always-surprise-me.org" id="sourcelink">Source</a></p>
 
         </div>
         
 
     </header><div class="e-content entry-content" itemprop="articleBody text">
     <p>
-We're putting two radios on the high-altitude balloon, just to have a
-backup in case one of them fails.  We're pretty confident that the 
-balloon will fly, but we'd like to get it back, and radio beacons are
-the best way to do that.
-</p>
-
-<p>
-Soldering tiny little parts can be painful – especially when you
-really would prefer not to fry your part with too much heat.  Such was
-the case when I tried to attach wires to the 70 cm transmitter modules
-I had bought for the balloon.  You can see one of them in the picture
-with the quarter, to the left.
+Antennas always surprise me.  My intuition just doesn't work very
+well.  For instance, you would think that the big radials I put on the
+70 cm beacon antenna would block the RF radiated below it to at least
+some degree.  Modeling it with the <a href="http://www.qsl.net/4nec2/">4NEC2</a> code shows that it doesn't!
+Not at all.  It's supposed to act like a ground plane, and RF doesn't
+go through ground planes…
 </p>
 
 <!-- TEASER_END -->
 
 <p>
-<a href="/images/balloon/434-mhz-wireless-transceiver-rfm69hcw.jpg">
-<img alt="My first try at soldering a transmitter" src="/images/balloon/434-mhz-wireless-transceiver-rfm69hcw.jpg" title="My first try at soldering a transmitter" style="float:left;width:35%;margin:10px"></a>
+<a href="/images/balloon/bent-antenna-model-with-plane-radiation-pattern.png">
+<img alt="Radiation pattern for bent antenna with plane model" src="/images/balloon/bent-antenna-model-with-plane-radiation-pattern.png" title="Radiation pattern for bent antenna with plane model" style="float:left;width:35%;margin:10px"></a>
 </p>
 
 <p>
-And I had bought two of them, just in case!  Normally, you solder to
-these things using a header, which has pins every 0.1 inches.  Not
-this thing.  It had to have them every 2 mm.  Just different enough to
-make things difficult.
+<a href="/images/balloon/bent-antenna-model-with-plane.png">
+<img alt="Bent antenna model with plane" src="/images/balloon/bent-antenna-model-with-plane.png" title="Bent antenna model with plane" style="float:leftright;width:30%;margin:10px"></a>
 </p>
 
 <p>
-So I fried two of them, so badly that I actually cracked several of
-the parts on the boards in pieces.  For those of you who've never
-soldered electronic parts before, that's really bad.  
+The radiation pattern I got from 4NEC2 (in the vertical plane) is
+shown at right.  The symmetry from top to bottom is precise.  Weird.
+Another thing I learned from 4NEC2: it turns out that the angle of the
+radials with respect to the antenna vertical really does matter.  I
+thought you could do just about anything you wanted with them, but
+while it doesn't affect the radiation pattern of the antenna, it does
+affect its impedance at the feed point.
 </p>
 
 <p>
-When I was in college, I had a summer job soldering electronic parts 8
-hours a day.  I got pretty good at it, I thought.  Maybe not so much.
-</p>
-
-<p>
-After I tossed out the two blackened transmitters, I found that I was
-just stubborn enough to try again.  I ordered a new transmitter, this
-time with 10 times the output power (an entire watt).  I got a new,
-smaller tip for the soldering iron, made a plan this time instead of
-just having at it, and … success!
-</p>
-
-<p>
-<a href="/images/balloon/transmitter-soldered.gif">
-<img alt="A successful soldering job" src="/images/balloon/transmitter-soldered.gif" title="A successful soldering job" style="float:right;width:35%;margin:10px"></a>
-</p>
-
-<p>
-You can see the result in the picture below, with the penny next to
-the transmitter.
+So here's the new antenna, shown below.  The radials go down at about
+60 degrees, to give 50 ohms at the feed point.  I spent about a day
+getting the modeling software to work, and about two minutes bending
+the antenna radials to spec.
 </p>
     </div>
     <aside class="postpromonav"><nav><ul itemprop="keywords" class="tags">
-<li><a class="tag p-category" href="/categories/balloon.html" rel="tag">balloon</a></li>
+<li><a class="tag p-category" href="/categories/antenna.html" rel="tag">antenna</a></li>
+            <li><a class="tag p-category" href="/categories/balloon.html" rel="tag">balloon</a></li>
             <li><a class="tag p-category" href="/categories/radio.html" rel="tag">radio</a></li>
         </ul>
 <ul class="pager hidden-print">
 <li class="previous">
-                <a href="/posts/a-hypothetical-flight-from-my-house.html" rel="prev" title="A hypothetical flight from my house">Previous post</a>
-            </li>
-            <li class="next">
-                <a href="/posts/antennas-always-surprise-me.html" rel="next" title="Antennas always surprise me">Next post</a>
+                <a href="/posts/70cm-beacon-progress.html" rel="prev" title="70cm beacon progress">Previous post</a>
             </li>
         </ul></nav></aside><section class="comments hidden-print"><h2>Comments</h2>
         
@@ -200,9 +178,9 @@ the transmitter.
         <div id="disqus_thread"></div>
         <script>
         var disqus_shortname ="shiny-penny",
-            disqus_url="http://www.shinypenny.org/posts/70cm-beacon-progress.html",
-        disqus_title="70cm beacon progress",
-        disqus_identifier="cache/posts/70cm-beacon-progress.html",
+            disqus_url="http://www.shinypenny.org/posts/antennas-always-surprise-me.html",
+        disqus_title="Antennas always surprise me",
+        disqus_identifier="cache/posts/antennas-always-surprise-me.html",
         disqus_config = function () {
             this.language = "en";
         };

@@ -1,5 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="/assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Shiny Penny</title><link>http://www.shinypenny.org/</link><description>Distraction is us</description><atom:link href="http://www.shinypenny.org/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2017 &lt;a href="mailto:rod@shinypenny.org"&gt;Rodney Price&lt;/a&gt; </copyright><lastBuildDate>Sun, 23 Jul 2017 18:31:18 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>70cm beacon progress</title><link>http://www.shinypenny.org/posts/70cm-beacon-progress.html</link><dc:creator>Rodney Price</dc:creator><description>&lt;div&gt;&lt;p&gt;
+<?xml-stylesheet type="text/xsl" href="/assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Shiny Penny</title><link>http://www.shinypenny.org/</link><description>Distraction is us</description><atom:link href="http://www.shinypenny.org/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2017 &lt;a href="mailto:rod@shinypenny.org"&gt;Rodney Price&lt;/a&gt; </copyright><lastBuildDate>Sun, 30 Jul 2017 06:34:53 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Antennas always surprise me</title><link>http://www.shinypenny.org/posts/antennas-always-surprise-me.html</link><dc:creator>Rodney Price</dc:creator><description>&lt;div&gt;&lt;p&gt;
+Antennas always surprise me.  My intuition just doesn't work very
+well.  For instance, you would think that the big radials I put on the
+70 cm beacon antenna would block the RF radiated below it to at least
+some degree.  Modeling it with the &lt;a href="http://www.qsl.net/4nec2/"&gt;4NEC2&lt;/a&gt; code shows that it doesn't!
+Not at all.  It's supposed to act like a ground plane, and RF doesn't
+go through ground planes…
+&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="http://www.shinypenny.org/posts/antennas-always-surprise-me.html"&gt;Read more…&lt;/a&gt; (1 min remaining to read)&lt;/p&gt;&lt;/div&gt;</description><category>antenna</category><category>balloon</category><category>radio</category><guid>http://www.shinypenny.org/posts/antennas-always-surprise-me.html</guid><pubDate>Sun, 30 Jul 2017 06:08:44 GMT</pubDate></item><item><title>70cm beacon progress</title><link>http://www.shinypenny.org/posts/70cm-beacon-progress.html</link><dc:creator>Rodney Price</dc:creator><description>&lt;div&gt;&lt;p&gt;
 We're putting two radios on the high-altitude balloon, just to have a
 backup in case one of them fails.  We're pretty confident that the 
 balloon will fly, but we'd like to get it back, and radio beacons are

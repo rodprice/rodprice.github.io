@@ -1,0 +1,61 @@
+#+BEGIN_COMMENT
+.. title: Antennas always surprise me
+.. slug: antennas-always-surprise-me
+.. date: 2017-07-30 00:08:44 UTC-06:00
+.. tags: balloon, radio, antenna
+.. category: balloon
+.. link: 
+.. description: Making a better antenna with a modeling program
+.. type: text
+#+END_COMMENT
+
+Antennas always surprise me.  My intuition just doesn't work very
+well.  For instance, you would think that the big radials I put on the
+70 cm beacon antenna would block the RF radiated below it to at least
+some degree.  Modeling it with the [[http://www.qsl.net/4nec2/][4NEC2]] code shows that it doesn't!
+Not at all.  It's supposed to act like a ground plane, and RF doesn't
+go through ground planes...
+
+#+begin_html
+<!-- TEASER_END -->
+#+end_html
+
+#+name: fig:bent-antenna-model-with-plane-radiation-pattern
+#+caption: Radiation pattern for bent antenna with plane model
+#+begin_html
+<p>
+<a href="/images/balloon/bent-antenna-model-with-plane-radiation-pattern.png">
+<img alt="Radiation pattern for bent antenna with plane model"
+src="/images/balloon/bent-antenna-model-with-plane-radiation-pattern.png"
+title="Radiation pattern for bent antenna with plane model"
+style="float:left;width:35%;margin:10px">
+</a>
+</p>
+#+end_html
+
+#+name: fig:bent-antenna-model-with-plane
+#+caption: Bent antenna model with plane
+#+begin_html
+<p>
+<a href="/images/balloon/bent-antenna-model-with-plane.png">
+<img alt="Bent antenna model with plane"
+src="/images/balloon/bent-antenna-model-with-plane.png"
+title="Bent antenna model with plane"
+style="float:leftright;width:30%;margin:10px">
+</a>
+</p>
+#+end_html
+
+The radiation pattern I got from 4NEC2 (in the vertical plane) is
+shown at right.  The symmetry from top to bottom is precise.  Weird.
+Another thing I learned from 4NEC2: it turns out that the angle of the
+radials with respect to the antenna vertical really does matter.  I
+thought you could do just about anything you wanted with them, but
+while it doesn't affect the radiation pattern of the antenna, it does
+affect its impedance at the feed point.
+
+So here's the new antenna, shown below.  The radials go down at about
+60 degrees, to give 50 ohms at the feed point.  I spent about a day
+getting the modeling software to work, and about two minutes bending
+the antenna radials to spec.
+

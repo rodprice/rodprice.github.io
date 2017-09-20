@@ -51,7 +51,7 @@ Richard sent me a couple of links:
 
 This guy used the transmitter-receiver pair and an Arduino Pro Mini to
 build a very simple beacon for his RC model.  He had it send out an
-identifier in Morse code (Arduino code [[http://shinypenny.org/listings/morse-code.py][here]]).
+identifier in Morse code (Arduino code [[http://shinypenny.org/listings/morse-code.ino][here]]).
 
  - [[https://www.droids-corp.org/blog/html/2013/07/14/a_simple_lost_rc_beacon__part_2_.html][A simple lost beacon, part 2]]
 

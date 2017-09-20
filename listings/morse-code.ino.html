@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article# " lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="morse-code.ino">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>morse-code.ino | Shiny Penny</title>
+<link href="/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="/assets/css/rst.css" rel="stylesheet" type="text/css">
+<link href="/assets/css/code.css" rel="stylesheet" type="text/css">
+<link href="/assets/css/colorbox.css" rel="stylesheet" type="text/css">
+<link href="/assets/css/theme.css" rel="stylesheet" type="text/css">
+<link href="/assets/css/custom.css" rel="stylesheet" type="text/css">
+<link href="/assets/css/ipython.min.css" rel="stylesheet" type="text/css">
+<link href="/assets/css/nikola_ipython.css" rel="stylesheet" type="text/css">
+<meta name="theme-color" content="#5670d4">
+<meta name="generator" content="Nikola (getnikola.com)">
+<link rel="alternate" type="application/rss+xml" title="RSS" href="/rss.xml">
+<link rel="alternate" type="application/atom+xml" title="Atom" href="/index.atom">
+<link rel="canonical" href="http://www.shinypenny.org/listings/morse-code.ino.html">
+<!--[if lt IE 9]><script src="/assets/js/html5.js"></script><![endif]--><style>body{background-image:url(/images/topography.png);}</style>
+</head>
+<body>
+<a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
+
+<!-- Menubar -->
+
+<nav class="navbar navbar-inverse navbar-static-top"><div class="container">
+<!-- This keeps the margins nice -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar" aria-controls="bs-navbar" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="http://www.shinypenny.org/">
+
+                <span id="blog-title">Shiny Penny</span>
+            </a>
+        </div>
+<!-- /.navbar-header -->
+        <div class="collapse navbar-collapse" id="bs-navbar" aria-expanded="false">
+            <ul class="nav navbar-nav">
+<li>
+<a href="/pages/about/index.html">About</a>
+            </li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Projects <b class="caret"></b></a>
+            <ul class="dropdown-menu"><li>
+<a href="/pages/projects/balloon/">High-altitude balloon</a>
+            </li></ul>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Reference <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+<li>
+<a href="/pages/reference/markup/">Markup</a>
+                    </li>
+<li>
+<a href="/pages/reference/software/">Software</a>
+                    </li>
+<li>
+<a href="/pages/reference/hardware/">Hardware</a>
+            </li>
+</ul>
+</li>
+<li>
+<a href="http://github.com/rodprice">GitHub</a>
+                </li>
+<li>
+<a href="/archive.html">Archive</a>
+                </li>
+<li>
+<a href="/categories/">Tags</a>
+
+                
+            </li>
+</ul>
+<ul class="nav navbar-nav navbar-right">
+<li>
+    <a href="/listings/morse-code.ino" id="sourcelink">Source</a>
+    </li>
+
+                
+            </ul>
+</div>
+<!-- /.navbar-collapse -->
+    </div>
+<!-- /.container -->
+</nav><!-- End of Menubar --><div class="container" id="content" role="main">
+    <div class="body-content">
+        <!--Body content-->
+        <div class="row">
+            
+            
+
+<nav class="breadcrumbs"><ul class="breadcrumb">
+<li><a href="/listings/">listings</a></li>
+                <li>morse-code.ino</li>
+</ul></nav><h1>morse-code.ino
+        <small><a href="/listings/morse-code.ino">(Source)</a></small>
+    </h1>
+    <table class="codetable"><tr>
+<td class="linenos"><div class="linenodiv"><pre><a href="#listingsmorse-codeino-1">  1</a>
+<a href="#listingsmorse-codeino-2">  2</a>
+<a href="#listingsmorse-codeino-3">  3</a>
+<a href="#listingsmorse-codeino-4">  4</a>
+<a href="#listingsmorse-codeino-5">  5</a>
+<a href="#listingsmorse-codeino-6">  6</a>
+<a href="#listingsmorse-codeino-7">  7</a>
+<a href="#listingsmorse-codeino-8">  8</a>
+<a href="#listingsmorse-codeino-9">  9</a>
+<a href="#listingsmorse-codeino-10"> 10</a>
+<a href="#listingsmorse-codeino-11"> 11</a>
+<a href="#listingsmorse-codeino-12"> 12</a>
+<a href="#listingsmorse-codeino-13"> 13</a>
+<a href="#listingsmorse-codeino-14"> 14</a>
+<a href="#listingsmorse-codeino-15"> 15</a>
+<a href="#listingsmorse-codeino-16"> 16</a>
+<a href="#listingsmorse-codeino-17"> 17</a>
+<a href="#listingsmorse-codeino-18"> 18</a>
+<a href="#listingsmorse-codeino-19"> 19</a>
+<a href="#listingsmorse-codeino-20"> 20</a>
+<a href="#listingsmorse-codeino-21"> 21</a>
+<a href="#listingsmorse-codeino-22"> 22</a>
+<a href="#listingsmorse-codeino-23"> 23</a>
+<a href="#listingsmorse-codeino-24"> 24</a>
+<a href="#listingsmorse-codeino-25"> 25</a>
+<a href="#listingsmorse-codeino-26"> 26</a>
+<a href="#listingsmorse-codeino-27"> 27</a>
+<a href="#listingsmorse-codeino-28"> 28</a>
+<a href="#listingsmorse-codeino-29"> 29</a>
+<a href="#listingsmorse-codeino-30"> 30</a>
+<a href="#listingsmorse-codeino-31"> 31</a>
+<a href="#listingsmorse-codeino-32"> 32</a>
+<a href="#listingsmorse-codeino-33"> 33</a>
+<a href="#listingsmorse-codeino-34"> 34</a>
+<a href="#listingsmorse-codeino-35"> 35</a>
+<a href="#listingsmorse-codeino-36"> 36</a>
+<a href="#listingsmorse-codeino-37"> 37</a>
+<a href="#listingsmorse-codeino-38"> 38</a>
+<a href="#listingsmorse-codeino-39"> 39</a>
+<a href="#listingsmorse-codeino-40"> 40</a>
+<a href="#listingsmorse-codeino-41"> 41</a>
+<a href="#listingsmorse-codeino-42"> 42</a>
+<a href="#listingsmorse-codeino-43"> 43</a>
+<a href="#listingsmorse-codeino-44"> 44</a>
+<a href="#listingsmorse-codeino-45"> 45</a>
+<a href="#listingsmorse-codeino-46"> 46</a>
+<a href="#listingsmorse-codeino-47"> 47</a>
+<a href="#listingsmorse-codeino-48"> 48</a>
+<a href="#listingsmorse-codeino-49"> 49</a>
+<a href="#listingsmorse-codeino-50"> 50</a>
+<a href="#listingsmorse-codeino-51"> 51</a>
+<a href="#listingsmorse-codeino-52"> 52</a>
+<a href="#listingsmorse-codeino-53"> 53</a>
+<a href="#listingsmorse-codeino-54"> 54</a>
+<a href="#listingsmorse-codeino-55"> 55</a>
+<a href="#listingsmorse-codeino-56"> 56</a>
+<a href="#listingsmorse-codeino-57"> 57</a>
+<a href="#listingsmorse-codeino-58"> 58</a>
+<a href="#listingsmorse-codeino-59"> 59</a>
+<a href="#listingsmorse-codeino-60"> 60</a>
+<a href="#listingsmorse-codeino-61"> 61</a>
+<a href="#listingsmorse-codeino-62"> 62</a>
+<a href="#listingsmorse-codeino-63"> 63</a>
+<a href="#listingsmorse-codeino-64"> 64</a>
+<a href="#listingsmorse-codeino-65"> 65</a>
+<a href="#listingsmorse-codeino-66"> 66</a>
+<a href="#listingsmorse-codeino-67"> 67</a>
+<a href="#listingsmorse-codeino-68"> 68</a>
+<a href="#listingsmorse-codeino-69"> 69</a>
+<a href="#listingsmorse-codeino-70"> 70</a>
+<a href="#listingsmorse-codeino-71"> 71</a>
+<a href="#listingsmorse-codeino-72"> 72</a>
+<a href="#listingsmorse-codeino-73"> 73</a>
+<a href="#listingsmorse-codeino-74"> 74</a>
+<a href="#listingsmorse-codeino-75"> 75</a>
+<a href="#listingsmorse-codeino-76"> 76</a>
+<a href="#listingsmorse-codeino-77"> 77</a>
+<a href="#listingsmorse-codeino-78"> 78</a>
+<a href="#listingsmorse-codeino-79"> 79</a>
+<a href="#listingsmorse-codeino-80"> 80</a>
+<a href="#listingsmorse-codeino-81"> 81</a>
+<a href="#listingsmorse-codeino-82"> 82</a>
+<a href="#listingsmorse-codeino-83"> 83</a>
+<a href="#listingsmorse-codeino-84"> 84</a>
+<a href="#listingsmorse-codeino-85"> 85</a>
+<a href="#listingsmorse-codeino-86"> 86</a>
+<a href="#listingsmorse-codeino-87"> 87</a>
+<a href="#listingsmorse-codeino-88"> 88</a>
+<a href="#listingsmorse-codeino-89"> 89</a>
+<a href="#listingsmorse-codeino-90"> 90</a>
+<a href="#listingsmorse-codeino-91"> 91</a>
+<a href="#listingsmorse-codeino-92"> 92</a>
+<a href="#listingsmorse-codeino-93"> 93</a>
+<a href="#listingsmorse-codeino-94"> 94</a>
+<a href="#listingsmorse-codeino-95"> 95</a>
+<a href="#listingsmorse-codeino-96"> 96</a>
+<a href="#listingsmorse-codeino-97"> 97</a>
+<a href="#listingsmorse-codeino-98"> 98</a>
+<a href="#listingsmorse-codeino-99"> 99</a>
+<a href="#listingsmorse-codeino-100">100</a>
+<a href="#listingsmorse-codeino-101">101</a>
+<a href="#listingsmorse-codeino-102">102</a>
+<a href="#listingsmorse-codeino-103">103</a>
+<a href="#listingsmorse-codeino-104">104</a>
+<a href="#listingsmorse-codeino-105">105</a>
+<a href="#listingsmorse-codeino-106">106</a>
+<a href="#listingsmorse-codeino-107">107</a>
+<a href="#listingsmorse-codeino-108">108</a>
+<a href="#listingsmorse-codeino-109">109</a>
+<a href="#listingsmorse-codeino-110">110</a>
+<a href="#listingsmorse-codeino-111">111</a>
+<a href="#listingsmorse-codeino-112">112</a>
+<a href="#listingsmorse-codeino-113">113</a>
+<a href="#listingsmorse-codeino-114">114</a>
+<a href="#listingsmorse-codeino-115">115</a>
+<a href="#listingsmorse-codeino-116">116</a>
+<a href="#listingsmorse-codeino-117">117</a>
+<a href="#listingsmorse-codeino-118">118</a>
+<a href="#listingsmorse-codeino-119">119</a>
+<a href="#listingsmorse-codeino-120">120</a></pre></div></td>
+<td class="code"><pre class="code literal-block"><a name="listingsmorse-codeino-1"></a><span class="c1">// A simple uhf beacon using 433 mhz rf module</span>
+<a name="listingsmorse-codeino-2"></a><span class="c1">// credits to the author of the morse code generator</span>
+<a name="listingsmorse-codeino-3"></a><span class="c1">// more details on http://blog.riyas.org</span>
+<a name="listingsmorse-codeino-4"></a>
+<a name="listingsmorse-codeino-5"></a><span class="k">struct</span> <span class="n">t_mtab</span> <span class="p">{</span> <span class="kt">char</span> <span class="n">c</span><span class="p">,</span> <span class="n">pat</span><span class="p">;</span> <span class="p">}</span> <span class="p">;</span>
+<a name="listingsmorse-codeino-6"></a>
+<a name="listingsmorse-codeino-7"></a><span class="k">struct</span> <span class="n">t_mtab</span> <span class="n">morsetab</span><span class="p">[]</span> <span class="o">=</span> <span class="p">{</span>
+<a name="listingsmorse-codeino-8"></a>  <span class="p">{</span><span class="sc">'+'</span><span class="p">,</span> <span class="mi">42</span><span class="p">},</span>   
+<a name="listingsmorse-codeino-9"></a>  <span class="p">{</span><span class="sc">'-'</span><span class="p">,</span> <span class="mi">97</span><span class="p">},</span>
+<a name="listingsmorse-codeino-10"></a>  <span class="p">{</span><span class="sc">'='</span><span class="p">,</span> <span class="mi">49</span><span class="p">},</span>
+<a name="listingsmorse-codeino-11"></a>  <span class="p">{</span><span class="sc">'.'</span><span class="p">,</span> <span class="mi">106</span><span class="p">},</span>
+<a name="listingsmorse-codeino-12"></a>  <span class="p">{</span><span class="sc">','</span><span class="p">,</span> <span class="mi">115</span><span class="p">},</span>
+<a name="listingsmorse-codeino-13"></a>  <span class="p">{</span><span class="sc">'?'</span><span class="p">,</span> <span class="mi">76</span><span class="p">},</span>
+<a name="listingsmorse-codeino-14"></a>  <span class="p">{</span><span class="sc">'/'</span><span class="p">,</span> <span class="mi">41</span><span class="p">},</span>
+<a name="listingsmorse-codeino-15"></a>  <span class="p">{</span><span class="sc">'A'</span><span class="p">,</span> <span class="mi">6</span><span class="p">},</span>
+<a name="listingsmorse-codeino-16"></a>  <span class="p">{</span><span class="sc">'B'</span><span class="p">,</span> <span class="mi">17</span><span class="p">},</span>
+<a name="listingsmorse-codeino-17"></a>  <span class="p">{</span><span class="sc">'C'</span><span class="p">,</span> <span class="mi">21</span><span class="p">},</span>
+<a name="listingsmorse-codeino-18"></a>  <span class="p">{</span><span class="sc">'D'</span><span class="p">,</span> <span class="mi">9</span><span class="p">},</span>
+<a name="listingsmorse-codeino-19"></a>  <span class="p">{</span><span class="sc">'E'</span><span class="p">,</span> <span class="mi">2</span><span class="p">},</span>
+<a name="listingsmorse-codeino-20"></a>  <span class="p">{</span><span class="sc">'F'</span><span class="p">,</span> <span class="mi">20</span><span class="p">},</span>
+<a name="listingsmorse-codeino-21"></a>  <span class="p">{</span><span class="sc">'G'</span><span class="p">,</span> <span class="mi">11</span><span class="p">},</span>
+<a name="listingsmorse-codeino-22"></a>  <span class="p">{</span><span class="sc">'H'</span><span class="p">,</span> <span class="mi">16</span><span class="p">},</span>
+<a name="listingsmorse-codeino-23"></a>  <span class="p">{</span><span class="sc">'I'</span><span class="p">,</span> <span class="mi">4</span><span class="p">},</span>
+<a name="listingsmorse-codeino-24"></a>  <span class="p">{</span><span class="sc">'J'</span><span class="p">,</span> <span class="mi">30</span><span class="p">},</span>
+<a name="listingsmorse-codeino-25"></a>  <span class="p">{</span><span class="sc">'K'</span><span class="p">,</span> <span class="mi">13</span><span class="p">},</span>
+<a name="listingsmorse-codeino-26"></a>  <span class="p">{</span><span class="sc">'L'</span><span class="p">,</span> <span class="mi">18</span><span class="p">},</span>
+<a name="listingsmorse-codeino-27"></a>  <span class="p">{</span><span class="sc">'M'</span><span class="p">,</span> <span class="mi">7</span><span class="p">},</span>
+<a name="listingsmorse-codeino-28"></a>  <span class="p">{</span><span class="sc">'N'</span><span class="p">,</span> <span class="mi">5</span><span class="p">},</span>
+<a name="listingsmorse-codeino-29"></a>  <span class="p">{</span><span class="sc">'O'</span><span class="p">,</span> <span class="mi">15</span><span class="p">},</span>
+<a name="listingsmorse-codeino-30"></a>  <span class="p">{</span><span class="sc">'P'</span><span class="p">,</span> <span class="mi">22</span><span class="p">},</span>
+<a name="listingsmorse-codeino-31"></a>  <span class="p">{</span><span class="sc">'Q'</span><span class="p">,</span> <span class="mi">27</span><span class="p">},</span>
+<a name="listingsmorse-codeino-32"></a>  <span class="p">{</span><span class="sc">'R'</span><span class="p">,</span> <span class="mi">10</span><span class="p">},</span>
+<a name="listingsmorse-codeino-33"></a>  <span class="p">{</span><span class="sc">'S'</span><span class="p">,</span> <span class="mi">8</span><span class="p">},</span>
+<a name="listingsmorse-codeino-34"></a>  <span class="p">{</span><span class="sc">'T'</span><span class="p">,</span> <span class="mi">3</span><span class="p">},</span>
+<a name="listingsmorse-codeino-35"></a>  <span class="p">{</span><span class="sc">'U'</span><span class="p">,</span> <span class="mi">12</span><span class="p">},</span>
+<a name="listingsmorse-codeino-36"></a>  <span class="p">{</span><span class="sc">'V'</span><span class="p">,</span> <span class="mi">24</span><span class="p">},</span>
+<a name="listingsmorse-codeino-37"></a>  <span class="p">{</span><span class="sc">'W'</span><span class="p">,</span> <span class="mi">14</span><span class="p">},</span>
+<a name="listingsmorse-codeino-38"></a>  <span class="p">{</span><span class="sc">'X'</span><span class="p">,</span> <span class="mi">25</span><span class="p">},</span>
+<a name="listingsmorse-codeino-39"></a>  <span class="p">{</span><span class="sc">'Y'</span><span class="p">,</span> <span class="mi">29</span><span class="p">},</span>
+<a name="listingsmorse-codeino-40"></a>  <span class="p">{</span><span class="sc">'Z'</span><span class="p">,</span> <span class="mi">19</span><span class="p">},</span>
+<a name="listingsmorse-codeino-41"></a>  <span class="p">{</span><span class="sc">'1'</span><span class="p">,</span> <span class="mi">62</span><span class="p">},</span>
+<a name="listingsmorse-codeino-42"></a>  <span class="p">{</span><span class="sc">'2'</span><span class="p">,</span> <span class="mi">60</span><span class="p">},</span>
+<a name="listingsmorse-codeino-43"></a>  <span class="p">{</span><span class="sc">'3'</span><span class="p">,</span> <span class="mi">56</span><span class="p">},</span>
+<a name="listingsmorse-codeino-44"></a>  <span class="p">{</span><span class="sc">'4'</span><span class="p">,</span> <span class="mi">48</span><span class="p">},</span>
+<a name="listingsmorse-codeino-45"></a>  <span class="p">{</span><span class="sc">'5'</span><span class="p">,</span> <span class="mi">32</span><span class="p">},</span>
+<a name="listingsmorse-codeino-46"></a>  <span class="p">{</span><span class="sc">'6'</span><span class="p">,</span> <span class="mi">33</span><span class="p">},</span>
+<a name="listingsmorse-codeino-47"></a>  <span class="p">{</span><span class="sc">'7'</span><span class="p">,</span> <span class="mi">35</span><span class="p">},</span>
+<a name="listingsmorse-codeino-48"></a>  <span class="p">{</span><span class="sc">'8'</span><span class="p">,</span> <span class="mi">39</span><span class="p">},</span>
+<a name="listingsmorse-codeino-49"></a>  <span class="p">{</span><span class="sc">'9'</span><span class="p">,</span> <span class="mi">47</span><span class="p">},</span>
+<a name="listingsmorse-codeino-50"></a>  <span class="p">{</span><span class="sc">'0'</span><span class="p">,</span> <span class="mi">63</span><span class="p">}</span>
+<a name="listingsmorse-codeino-51"></a><span class="p">}</span> <span class="p">;</span>
+<a name="listingsmorse-codeino-52"></a>
+<a name="listingsmorse-codeino-53"></a><span class="cp">#define N_MORSE  (sizeof(morsetab)/sizeof(morsetab[0]))</span>
+<a name="listingsmorse-codeino-54"></a><span class="cp">#define SPEED  (13) </span>
+<a name="listingsmorse-codeino-55"></a><span class="cp">#define txpin    (13)</span>
+<a name="listingsmorse-codeino-56"></a><span class="cp">#define DOTLEN  (1200/SPEED)</span>
+<a name="listingsmorse-codeino-57"></a><span class="cp">#define DASHLEN  (3*(1200/SPEED))</span>
+<a name="listingsmorse-codeino-58"></a>
+<a name="listingsmorse-codeino-59"></a>
+<a name="listingsmorse-codeino-60"></a><span class="kt">void</span>
+<a name="listingsmorse-codeino-61"></a><span class="nf">dash</span><span class="p">()</span>
+<a name="listingsmorse-codeino-62"></a><span class="p">{</span>
+<a name="listingsmorse-codeino-63"></a>  <span class="nf">digitalWrite</span><span class="p">(</span><span class="n">txpin</span><span class="p">,</span> <span class="kc">HIGH</span><span class="p">);</span>
+<a name="listingsmorse-codeino-64"></a>  <span class="nf">delay</span><span class="p">(</span><span class="n">DASHLEN</span><span class="p">);</span>
+<a name="listingsmorse-codeino-65"></a>  <span class="nf">digitalWrite</span><span class="p">(</span><span class="n">txpin</span><span class="p">,</span> <span class="kc">LOW</span><span class="p">);</span>
+<a name="listingsmorse-codeino-66"></a>  <span class="nf">delay</span><span class="p">(</span><span class="n">DOTLEN</span><span class="p">);</span>
+<a name="listingsmorse-codeino-67"></a><span class="p">}</span>
+<a name="listingsmorse-codeino-68"></a>
+<a name="listingsmorse-codeino-69"></a><span class="kt">void</span>
+<a name="listingsmorse-codeino-70"></a><span class="nf">dit</span><span class="p">()</span>
+<a name="listingsmorse-codeino-71"></a><span class="p">{</span>
+<a name="listingsmorse-codeino-72"></a>  <span class="nf">digitalWrite</span><span class="p">(</span><span class="n">txpin</span><span class="p">,</span> <span class="kc">HIGH</span><span class="p">);</span>
+<a name="listingsmorse-codeino-73"></a>  <span class="nf">delay</span><span class="p">(</span><span class="n">DOTLEN</span><span class="p">);</span>
+<a name="listingsmorse-codeino-74"></a>  <span class="nf">digitalWrite</span><span class="p">(</span><span class="n">txpin</span><span class="p">,</span> <span class="kc">LOW</span><span class="p">);</span>
+<a name="listingsmorse-codeino-75"></a>  <span class="nf">delay</span><span class="p">(</span><span class="n">DOTLEN</span><span class="p">);</span>
+<a name="listingsmorse-codeino-76"></a><span class="p">}</span>
+<a name="listingsmorse-codeino-77"></a>
+<a name="listingsmorse-codeino-78"></a>
+<a name="listingsmorse-codeino-79"></a><span class="kt">void</span>
+<a name="listingsmorse-codeino-80"></a><span class="nf">send</span><span class="p">(</span><span class="kt">char</span> <span class="n">c</span><span class="p">)</span>
+<a name="listingsmorse-codeino-81"></a><span class="p">{</span>
+<a name="listingsmorse-codeino-82"></a>  <span class="kt">int</span> <span class="n">i</span> <span class="p">;</span>
+<a name="listingsmorse-codeino-83"></a>  <span class="k">if</span> <span class="p">(</span><span class="n">c</span> <span class="o">==</span> <span class="sc">' '</span><span class="p">)</span> <span class="p">{</span>
+<a name="listingsmorse-codeino-84"></a>    <span class="nf">delay</span><span class="p">(</span><span class="mi">7</span><span class="o">*</span><span class="n">DOTLEN</span><span class="p">)</span> <span class="p">;</span>
+<a name="listingsmorse-codeino-85"></a>    <span class="k">return</span> <span class="p">;</span>
+<a name="listingsmorse-codeino-86"></a>  <span class="p">}</span>
+<a name="listingsmorse-codeino-87"></a>  <span class="k">for</span> <span class="p">(</span><span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="n">i</span><span class="o">&lt;</span><span class="n">N_MORSE</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+<a name="listingsmorse-codeino-88"></a>    <span class="k">if</span> <span class="p">(</span><span class="n">morsetab</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">c</span> <span class="o">==</span> <span class="n">c</span><span class="p">)</span> <span class="p">{</span>
+<a name="listingsmorse-codeino-89"></a>      <span class="kt">unsigned</span> <span class="kt">char</span> <span class="n">p</span> <span class="o">=</span> <span class="n">morsetab</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">pat</span> <span class="p">;</span>
+<a name="listingsmorse-codeino-90"></a>
+<a name="listingsmorse-codeino-91"></a>      <span class="k">while</span> <span class="p">(</span><span class="n">p</span> <span class="o">!=</span> <span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
+<a name="listingsmorse-codeino-92"></a>        <span class="k">if</span> <span class="p">(</span><span class="n">p</span> <span class="o">&amp;</span> <span class="mi">1</span><span class="p">)</span>
+<a name="listingsmorse-codeino-93"></a>          <span class="n">dash</span><span class="p">()</span> <span class="p">;</span>
+<a name="listingsmorse-codeino-94"></a>        <span class="k">else</span>
+<a name="listingsmorse-codeino-95"></a>          <span class="n">dit</span><span class="p">()</span> <span class="p">;</span>
+<a name="listingsmorse-codeino-96"></a>        <span class="n">p</span> <span class="o">=</span> <span class="n">p</span> <span class="o">/</span> <span class="mi">2</span> <span class="p">;</span>
+<a name="listingsmorse-codeino-97"></a>      <span class="p">}</span>
+<a name="listingsmorse-codeino-98"></a>      <span class="nf">delay</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">DOTLEN</span><span class="p">)</span> <span class="p">;</span>
+<a name="listingsmorse-codeino-99"></a>    <span class="p">}</span>
+<a name="listingsmorse-codeino-100"></a>    <span class="nf">Serial</span><span class="p">.</span><span class="nf">print</span><span class="p">(</span><span class="s">"?"</span><span class="p">)</span> <span class="p">;</span>
+<a name="listingsmorse-codeino-101"></a>  <span class="p">}</span>
+<a name="listingsmorse-codeino-102"></a><span class="p">}</span>
+<a name="listingsmorse-codeino-103"></a>
+<a name="listingsmorse-codeino-104"></a>
+<a name="listingsmorse-codeino-105"></a><span class="kt">void</span>
+<a name="listingsmorse-codeino-106"></a><span class="nf">sendmsg</span><span class="p">(</span><span class="kt">char</span> <span class="o">*</span><span class="n">str</span><span class="p">)</span>
+<a name="listingsmorse-codeino-107"></a><span class="p">{</span>
+<a name="listingsmorse-codeino-108"></a>  <span class="k">while</span> <span class="p">(</span><span class="o">*</span><span class="n">str</span><span class="p">)</span>
+<a name="listingsmorse-codeino-109"></a>    <span class="n">send</span><span class="p">(</span><span class="o">*</span><span class="n">str</span><span class="o">++</span><span class="p">)</span> <span class="p">;</span>
+<a name="listingsmorse-codeino-110"></a><span class="p">}</span>
+<a name="listingsmorse-codeino-111"></a>
+<a name="listingsmorse-codeino-112"></a>
+<a name="listingsmorse-codeino-113"></a><span class="kt">void</span> <span class="nx">setup</span><span class="p">()</span> <span class="p">{</span>                
+<a name="listingsmorse-codeino-114"></a>  <span class="nf">pinMode</span><span class="p">(</span><span class="n">txpin</span><span class="p">,</span> <span class="kc">OUTPUT</span><span class="p">);</span>     
+<a name="listingsmorse-codeino-115"></a><span class="p">}</span>
+<a name="listingsmorse-codeino-116"></a>
+<a name="listingsmorse-codeino-117"></a><span class="c1">// the loop </span>
+<a name="listingsmorse-codeino-118"></a><span class="kt">void</span> <span class="nx">loop</span><span class="p">()</span> <span class="p">{</span>
+<a name="listingsmorse-codeino-119"></a>  <span class="n">sendmsg</span><span class="p">(</span><span class="s">"VVV VVV VVV TESTING TESTING "</span><span class="p">)</span> <span class="p">;</span> 
+<a name="listingsmorse-codeino-120"></a>  <span class="nf">delay</span><span class="p">(</span><span class="mi">1500</span><span class="p">)</span> <span class="p">;</span>  <span class="c1">//delay can be increased to save battery</span>
+</pre></td>
+</tr></table>
+</div>
+        <!--End of body content-->
+
+        <footer id="footer">
+            Contents © 2017         <a href="mailto:rod@shinypenny.org">Rodney Price</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         
+            
+        </footer>
+</div>
+</div>
+
+
+            <script src="/assets/js/jquery.min.js"></script><script src="/assets/js/bootstrap.min.js"></script><script src="/assets/js/moment-with-locales.min.js"></script><script src="/assets/js/fancydates.js"></script><script src="/assets/js/jquery.colorbox-min.js"></script><script>$('a.image-reference:not(.islink) img:not(.islink)').parent().colorbox({rel:"gal",maxWidth:"100%",maxHeight:"100%",scalePhotos:true});</script><!-- fancy dates --><script>
+    moment.locale("en");
+    fancydates(2, "YYYY-MM-DD HH:mm");
+    </script><!-- end fancy dates -->
+</body>
+</html>

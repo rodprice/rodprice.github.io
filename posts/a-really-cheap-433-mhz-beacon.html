@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article# " lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="A cheap (in more than one sense) 433 MHz radio transmitter">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>A really cheap 433 MHz beacon | Shiny Penny</title>
+<link href="/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="/assets/css/rst.css" rel="stylesheet" type="text/css">
+<link href="/assets/css/code.css" rel="stylesheet" type="text/css">
+<link href="/assets/css/colorbox.css" rel="stylesheet" type="text/css">
+<link href="/assets/css/theme.css" rel="stylesheet" type="text/css">
+<link href="/assets/css/custom.css" rel="stylesheet" type="text/css">
+<link href="/assets/css/ipython.min.css" rel="stylesheet" type="text/css">
+<link href="/assets/css/nikola_ipython.css" rel="stylesheet" type="text/css">
+<meta name="theme-color" content="#5670d4">
+<meta name="generator" content="Nikola (getnikola.com)">
+<link rel="alternate" type="application/rss+xml" title="RSS" href="/rss.xml">
+<link rel="alternate" type="application/atom+xml" title="Atom" href="/index.atom">
+<link rel="canonical" href="http://www.shinypenny.org/posts/a-really-cheap-433-mhz-beacon.html">
+<!--[if lt IE 9]><script src="/assets/js/html5.js"></script><![endif]--><style>body{background-image:url(/images/topography.png);}</style>
+<meta name="author" content="Rodney Price">
+<link rel="prev" href="/posts/antennas-always-surprise-me.html" title="Antennas always surprise me" type="text/html">
+<meta property="og:site_name" content="Shiny Penny">
+<meta property="og:title" content="A really cheap 433 MHz beacon">
+<meta property="og:url" content="http://www.shinypenny.org/posts/a-really-cheap-433-mhz-beacon.html">
+<meta property="og:description" content="A cheap (in more than one sense) 433 MHz radio transmitter">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2017-09-05T21:51:43-06:00">
+<meta property="article:tag" content="balloon">
+<meta property="article:tag" content="beacon">
+<meta property="article:tag" content="radio">
+</head>
+<body>
+<a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
+
+<!-- Menubar -->
+
+<nav class="navbar navbar-inverse navbar-static-top"><div class="container">
+<!-- This keeps the margins nice -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar" aria-controls="bs-navbar" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="http://www.shinypenny.org/">
+
+                <span id="blog-title">Shiny Penny</span>
+            </a>
+        </div>
+<!-- /.navbar-header -->
+        <div class="collapse navbar-collapse" id="bs-navbar" aria-expanded="false">
+            <ul class="nav navbar-nav">
+<li>
+<a href="/pages/about/index.html">About</a>
+            </li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Projects <b class="caret"></b></a>
+            <ul class="dropdown-menu"><li>
+<a href="/pages/projects/balloon/">High-altitude balloon</a>
+            </li></ul>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Reference <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+<li>
+<a href="/pages/reference/markup/">Markup</a>
+                    </li>
+<li>
+<a href="/pages/reference/software/">Software</a>
+                    </li>
+<li>
+<a href="/pages/reference/hardware/">Hardware</a>
+            </li>
+</ul>
+</li>
+<li>
+<a href="http://github.com/rodprice">GitHub</a>
+                </li>
+<li>
+<a href="/archive.html">Archive</a>
+                </li>
+<li>
+<a href="/categories/">Tags</a>
+
+                
+            </li>
+</ul>
+<ul class="nav navbar-nav navbar-right">
+<li>
+    <a href="/posts/a-really-cheap-433-mhz-beacon.org" id="sourcelink">Source</a>
+    </li>
+
+                
+            </ul>
+</div>
+<!-- /.navbar-collapse -->
+    </div>
+<!-- /.container -->
+</nav><!-- End of Menubar --><div class="container" id="content" role="main">
+    <div class="body-content">
+        <!--Body content-->
+        <div class="row">
+            
+            
+<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="/posts/a-really-cheap-433-mhz-beacon.html" class="u-url">A really cheap 433 MHz beacon</a></h1>
+
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                    Rodney Price
+            </span></p>
+            <p class="dateline"><a href="/posts/a-really-cheap-433-mhz-beacon.html" rel="bookmark"><time class="published dt-published" datetime="2017-09-05T21:51:43-06:00" itemprop="datePublished" title="2017-09-05 21:51">2017-09-05 21:51</time></a></p>
+                <p class="commentline">
+        
+    <a href="/posts/a-really-cheap-433-mhz-beacon.html#disqus_thread" data-disqus-identifier="cache/posts/a-really-cheap-433-mhz-beacon.html">Comments</a>
+
+
+            
+        </p>
+<p class="sourceline"><a href="/posts/a-really-cheap-433-mhz-beacon.org" id="sourcelink">Source</a></p>
+
+        </div>
+        
+
+    </header><div class="e-content entry-content" itemprop="articleBody text">
+    <p>
+We've been having trouble getting the 433 MHz beacon (otherwise known
+as the 70 cm beacon) going, so one of our partners Richard suggested
+we use a very simple beacon that just needs power and a bit stream.
+I've shown a picture of the two at right.  I thought I'd give it a
+try, so I bought a few.  Sparkfun was backordered so I searched on
+Amazon and found people selling six transmitter-receiver pairs for
+$10.
+</p>
+
+<!-- TEASER_END -->
+
+<p>
+<a href="/images/xy-mk-5v.jpg">
+<img alt="Cheap 433 MHz receiver-transmitter pair" src="/images/xy-mk-5v.jpg" title="Cheap 433 MHz receiver-transmitter pair" style="float:right;width:35%;margin:10px"></a>
+</p>
+
+<p>
+The transmitters are 25 mW at 12V power supply.  We could use a 9V
+battery and get 15-20 mW out of it.  I checked the frequency against
+the Colorado ham radio <a href="http://shinypenny.org/papers/colorado-70cm-band-plan.pdf">band plan for 70 cm</a> (tells you what modulations
+are allowed where) and found that 433.92 MHz was right in the middle
+of a band where the FCC does not allow repeaters – good for us.
+Nothing would infuriate a bunch of hams, and generate complaints to
+the FCC, faster than running a beacon on a repeater frequency.  The
+transmitter modules are so cheap that their center frequency can drift
+over +/- 0.5 MHz, and probably will when the temperature varies.
+Fortunately the band is about 1.5 MHz wide.
+</p>
+
+<p>
+Richard sent me a couple of links:
+</p>
+
+<ul class="org-ul">
+<li>
+<a href="https://www.riyas.org/2015/06/a-simple-uhf-beacon-for-fox-hunt-arduino-rf-433MHZ.html">A simple UHF beacon for fox hunt or lost RC model using Arduino</a>
+</li>
+</ul>
+<p>
+This guy used the transmitter-receiver pair and an Arduino Pro Mini to
+build a very simple beacon for his RC model.  He had it send out an
+identifier in Morse code (Arduino code <a href="http://shinypenny.org/listings/morse-code.py">here</a>).
+</p>
+
+<ul class="org-ul">
+<li>
+<a href="https://www.droids-corp.org/blog/html/2013/07/14/a_simple_lost_rc_beacon__part_2_.html">A simple lost beacon, part 2</a>
+</li>
+</ul>
+<p>
+These receivers are pretty bad ($1.66 doesn't buy you much in terms of
+quality).  Because the transmitters drift so badly, (or because it
+costs more for a narrower bandwidth) the receivers just grab around 2
+MHz of bandwidth and effectively measure the power in the band.
+Nothing more.  This guy tried it out, saw they weren't too good, and
+came up with an idea to make it better.
+</p>
+
+<p>
+The transmitters are on-off keyed, meaning they do only two things.
+They either transmit a pure tone at 433.92 MHz (+/- 0.5 MHz) or they
+don't.  On or off.  He decided to transmit a square wave at 500 Hz,
+digitize the receiver output with his Arduino, and implement three
+digital bandpass filters in his code.  One, the fundamental, was at
+500 Hz; the next was at the second harmonic, 1000 Hz; and the third
+was at the third harmonic, 1500 Hz.  
+</p>
+
+<p>
+He then measured the power output from each filter.  If they were all
+approximately equal, he assumed that no transmission occurred.  If
+there was a lot of power in the 500 Hz filter, not much from the 1000
+Hz filter, and roughly 1/3 as much from the 1500 Hz filter as from the
+500 Hz filter, he assumed that a transmission was underway.  The idea
+was that a square wave has energy only at the fundamental and odd
+harmonics.
+</p>
+
+<p>
+It worked better than the first guy's.
+</p>
+
+<p>
+I could do quite a bit better with a scheme I used for my master's
+thesis at BYU back in the day.  You generate a maximum-length binary
+sequence (m-sequence) and push it through the transmitter.  This is
+easy; you implement a linear-feedback shift register in software on
+the transmitter side.  On the receiver side, you digitize the output
+of the receiver.  Once you have the right number of samples in memory,
+use a related shift register to permute the samples, apply a fast
+Hadamard transform (an FFT without the twiddle factors, using adds and
+subtracts only) and permute the results again.  You've just
+implemented a fast cross-correlation operation without using any
+multiplies.
+</p>
+
+<p>
+The m-sequences have an almost ideal thumbtack-like autocorrelation.
+You can get a lot of coding gain out of this scheme, limited only by
+the amount of memory you have available in your microcontroller.  An
+Arduino Pro Mini has only 2kB, and you have to reserve some of that
+for the program itself.  M-sequences come in lengths of 2<sup>n</sup>-1, so the
+best you could do is a 511-bit sequence.  (You need to use 16-bit
+arithmetic to avoid overflows.)  That gives you 26 dB of coding gain.
+Not bad!
+</p>
+    </div>
+    <aside class="postpromonav"><nav><ul itemprop="keywords" class="tags">
+<li><a class="tag p-category" href="/categories/balloon.html" rel="tag">balloon</a></li>
+            <li><a class="tag p-category" href="/categories/beacon.html" rel="tag">beacon</a></li>
+            <li><a class="tag p-category" href="/categories/radio.html" rel="tag">radio</a></li>
+        </ul>
+<ul class="pager hidden-print">
+<li class="previous">
+                <a href="/posts/antennas-always-surprise-me.html" rel="prev" title="Antennas always surprise me">Previous post</a>
+            </li>
+        </ul></nav></aside><section class="comments hidden-print"><h2>Comments</h2>
+        
+        
+        <div id="disqus_thread"></div>
+        <script>
+        var disqus_shortname ="shiny-penny",
+            disqus_url="http://www.shinypenny.org/posts/a-really-cheap-433-mhz-beacon.html",
+        disqus_title="A really cheap 433 MHz beacon",
+        disqus_identifier="cache/posts/a-really-cheap-433-mhz-beacon.html",
+        disqus_config = function () {
+            this.language = "en";
+        };
+        (function() {
+            var dsq = document.createElement('script'); dsq.async = true;
+            dsq.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script><noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a>
+</noscript>
+    <a href="https://disqus.com" class="dsq-brlink" rel="nofollow">Comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+        </section></article><script>var disqus_shortname="shiny-penny";(function(){var a=document.createElement("script");a.async=true;a.src="https://"+disqus_shortname+".disqus.com/count.js";(document.getElementsByTagName("head")[0]||document.getElementsByTagName("body")[0]).appendChild(a)}());</script>
+</div>
+        <!--End of body content-->
+
+        <footer id="footer">
+            Contents © 2017         <a href="mailto:rod@shinypenny.org">Rodney Price</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         
+            
+        </footer>
+</div>
+</div>
+
+
+            <script src="/assets/js/jquery.min.js"></script><script src="/assets/js/bootstrap.min.js"></script><script src="/assets/js/moment-with-locales.min.js"></script><script src="/assets/js/fancydates.js"></script><script src="/assets/js/jquery.colorbox-min.js"></script><script>$('a.image-reference:not(.islink) img:not(.islink)').parent().colorbox({rel:"gal",maxWidth:"100%",maxHeight:"100%",scalePhotos:true});</script><!-- fancy dates --><script>
+    moment.locale("en");
+    fancydates(2, "YYYY-MM-DD HH:mm");
+    </script><!-- end fancy dates -->
+</body>
+</html>

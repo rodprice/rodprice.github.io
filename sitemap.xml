@@ -7,222 +7,234 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
   <loc>http://www.shinypenny.org/</loc>
-  <lastmod>2017-05-10T05:01:00Z</lastmod>
+  <lastmod>2017-09-20T17:14:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.shinypenny.org/404.html</loc>
-  <lastmod>2017-05-10T05:01:00Z</lastmod>
+  <lastmod>2017-09-20T17:14:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.shinypenny.org/archive.html</loc>
-  <lastmod>2017-07-30T06:34:00Z</lastmod>
+  <lastmod>2017-09-20T18:22:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.shinypenny.org/categories/</loc>
-  <lastmod>2017-07-23T18:34:00Z</lastmod>
+  <lastmod>2017-09-20T17:14:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.shinypenny.org/categories/antenna.html</loc>
-  <lastmod>2017-07-30T06:34:00Z</lastmod>
+  <lastmod>2017-09-20T17:14:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.shinypenny.org/categories/balloon.html</loc>
-  <lastmod>2017-07-30T06:34:00Z</lastmod>
+  <lastmod>2017-09-20T18:22:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://www.shinypenny.org/categories/beacon.html</loc>
+  <lastmod>2017-09-20T18:22:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.shinypenny.org/categories/camera.html</loc>
-  <lastmod>2017-05-10T05:01:00Z</lastmod>
+  <lastmod>2017-09-20T17:14:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.shinypenny.org/categories/cat_balloon.html</loc>
-  <lastmod>2017-07-30T06:34:00Z</lastmod>
+  <lastmod>2017-09-20T17:14:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.shinypenny.org/categories/cat_projects.html</loc>
-  <lastmod>2017-05-10T05:01:00Z</lastmod>
+  <lastmod>2017-09-20T17:14:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.shinypenny.org/categories/cat_radio.html</loc>
-  <lastmod>2017-07-23T18:28:00Z</lastmod>
+  <lastmod>2017-09-20T18:22:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.shinypenny.org/categories/projects.html</loc>
-  <lastmod>2017-05-10T05:01:00Z</lastmod>
+  <lastmod>2017-09-20T17:14:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.shinypenny.org/categories/radio.html</loc>
-  <lastmod>2017-07-30T06:34:00Z</lastmod>
+  <lastmod>2017-09-20T18:22:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.shinypenny.org/categories/testing.html</loc>
-  <lastmod>2017-05-10T05:01:00Z</lastmod>
+  <lastmod>2017-09-20T17:14:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.shinypenny.org/galleries/</loc>
-  <lastmod>2017-05-10T05:01:00Z</lastmod>
+  <lastmod>2017-09-20T17:14:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.shinypenny.org/galleries/demo/</loc>
-  <lastmod>2017-05-10T05:01:00Z</lastmod>
+  <lastmod>2017-09-20T17:14:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.shinypenny.org/listings/</loc>
-  <lastmod>2017-05-10T05:01:00Z</lastmod>
+  <lastmod>2017-09-20T18:22:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.shinypenny.org/listings/__pycache__/</loc>
-  <lastmod>2017-05-10T05:01:00Z</lastmod>
+  <lastmod>2017-09-20T17:13:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.shinypenny.org/listings/hello.py.html</loc>
-  <lastmod>2017-05-10T05:01:00Z</lastmod>
+  <lastmod>2017-09-20T17:13:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://www.shinypenny.org/listings/morse-code.ino.html</loc>
+  <lastmod>2017-09-20T18:22:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.shinypenny.org/pages/about/</loc>
-  <lastmod>2017-05-10T05:01:00Z</lastmod>
+  <lastmod>2017-09-20T17:14:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.shinypenny.org/pages/projects/balloon/</loc>
-  <lastmod>2017-05-10T05:01:00Z</lastmod>
+  <lastmod>2017-09-20T17:14:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.shinypenny.org/pages/projects/potatogun/</loc>
-  <lastmod>2017-05-10T05:01:00Z</lastmod>
+  <lastmod>2017-09-20T17:14:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.shinypenny.org/pages/reference/hardware/</loc>
-  <lastmod>2017-05-10T05:01:00Z</lastmod>
+  <lastmod>2017-09-20T17:14:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.shinypenny.org/pages/reference/markup/</loc>
-  <lastmod>2017-05-13T04:48:00Z</lastmod>
+  <lastmod>2017-09-20T17:14:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.shinypenny.org/pages/reference/markup/display-system.html</loc>
-  <lastmod>2017-05-10T05:01:00Z</lastmod>
+  <lastmod>2017-09-20T17:14:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.shinypenny.org/pages/reference/markup/ipythons-display-system.html</loc>
-  <lastmod>2017-05-10T05:01:00Z</lastmod>
+  <lastmod>2017-09-20T17:14:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.shinypenny.org/pages/reference/markup/markdown-quick-reference.html</loc>
-  <lastmod>2017-05-10T05:01:00Z</lastmod>
+  <lastmod>2017-09-20T17:14:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.shinypenny.org/pages/reference/markup/nikola/</loc>
-  <lastmod>2017-05-10T05:01:00Z</lastmod>
+  <lastmod>2017-09-20T17:14:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.shinypenny.org/pages/reference/markup/nikola/about-nikola.html</loc>
-  <lastmod>2017-05-10T05:01:00Z</lastmod>
+  <lastmod>2017-09-20T17:14:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.shinypenny.org/pages/reference/markup/nikola/bootstrap-demo.html</loc>
-  <lastmod>2017-05-10T05:01:00Z</lastmod>
+  <lastmod>2017-09-20T17:14:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.shinypenny.org/pages/reference/markup/nikola/charts.html</loc>
-  <lastmod>2017-05-10T05:01:00Z</lastmod>
+  <lastmod>2017-09-20T17:14:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.shinypenny.org/pages/reference/markup/nikola/creating-a-theme.html</loc>
-  <lastmod>2017-05-10T05:01:00Z</lastmod>
+  <lastmod>2017-09-20T17:14:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.shinypenny.org/pages/reference/markup/nikola/dr-nikolas-vendetta.html</loc>
-  <lastmod>2017-05-10T05:01:00Z</lastmod>
+  <lastmod>2017-09-20T17:14:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.shinypenny.org/pages/reference/markup/nikola/extending.html</loc>
-  <lastmod>2017-05-10T05:01:00Z</lastmod>
+  <lastmod>2017-09-20T17:14:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.shinypenny.org/pages/reference/markup/nikola/handbook.html</loc>
-  <lastmod>2017-05-10T05:01:00Z</lastmod>
+  <lastmod>2017-09-20T17:14:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.shinypenny.org/pages/reference/markup/nikola/internals.html</loc>
-  <lastmod>2017-05-10T05:01:00Z</lastmod>
+  <lastmod>2017-09-20T17:14:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.shinypenny.org/pages/reference/markup/nikola/listings-demo.html</loc>
-  <lastmod>2017-05-10T05:01:00Z</lastmod>
+  <lastmod>2017-09-20T17:14:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.shinypenny.org/pages/reference/markup/nikola/path-handlers.html</loc>
-  <lastmod>2017-05-10T05:01:00Z</lastmod>
+  <lastmod>2017-09-20T17:14:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.shinypenny.org/pages/reference/markup/nikola/quickref.html</loc>
-  <lastmod>2017-05-10T05:01:00Z</lastmod>
+  <lastmod>2017-09-20T17:14:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.shinypenny.org/pages/reference/markup/nikola/quickstart.html</loc>
-  <lastmod>2017-05-10T05:01:00Z</lastmod>
+  <lastmod>2017-09-20T17:14:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.shinypenny.org/pages/reference/markup/nikola/slides-demo.html</loc>
-  <lastmod>2017-05-10T05:01:00Z</lastmod>
+  <lastmod>2017-09-20T17:14:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.shinypenny.org/pages/reference/markup/nikola/social_buttons.html</loc>
-  <lastmod>2017-05-10T05:01:00Z</lastmod>
+  <lastmod>2017-09-20T17:14:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.shinypenny.org/pages/reference/markup/nikola/theming.html</loc>
-  <lastmod>2017-05-10T05:01:00Z</lastmod>
+  <lastmod>2017-09-20T17:14:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.shinypenny.org/pages/reference/markup/org-mode-command-reference.html</loc>
-  <lastmod>2017-05-10T05:01:00Z</lastmod>
+  <lastmod>2017-09-20T17:14:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.shinypenny.org/pages/reference/markup/org-mode-tutorial.html</loc>
-  <lastmod>2017-05-13T01:42:00Z</lastmod>
+  <lastmod>2017-09-20T17:14:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.shinypenny.org/pages/reference/markup/rainer-konigs-org-mode-summaries.html</loc>
-  <lastmod>2017-05-13T02:14:00Z</lastmod>
+  <lastmod>2017-09-20T17:14:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.shinypenny.org/pages/reference/markup/restructured-text-demo.html</loc>
-  <lastmod>2017-05-10T05:01:00Z</lastmod>
+  <lastmod>2017-09-20T17:14:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.shinypenny.org/pages/reference/software/</loc>
-  <lastmod>2017-05-10T05:01:00Z</lastmod>
+  <lastmod>2017-09-20T17:14:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.shinypenny.org/posts/432-mhz-beacon-antenna-first-attempt.html</loc>
-  <lastmod>2017-05-13T05:15:00Z</lastmod>
+  <lastmod>2017-09-20T17:14:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.shinypenny.org/posts/70cm-beacon-progress.html</loc>
-  <lastmod>2017-07-30T06:21:00Z</lastmod>
+  <lastmod>2017-09-20T17:14:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.shinypenny.org/posts/a-hypothetical-flight-from-my-house.html</loc>
-  <lastmod>2017-07-23T18:28:00Z</lastmod>
+  <lastmod>2017-09-20T17:14:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://www.shinypenny.org/posts/a-really-cheap-433-mhz-beacon.html</loc>
+  <lastmod>2017-09-20T18:22:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.shinypenny.org/posts/antennas-always-surprise-me.html</loc>
-  <lastmod>2017-07-30T06:34:00Z</lastmod>
+  <lastmod>2017-09-20T17:14:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.shinypenny.org/posts/hacking-an-18-dollar-camera.html</loc>
-  <lastmod>2017-05-10T05:01:00Z</lastmod>
+  <lastmod>2017-09-20T17:14:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.shinypenny.org/posts/maybe-this-will-work.html</loc>
-  <lastmod>2017-05-10T05:01:00Z</lastmod>
+  <lastmod>2017-09-20T17:14:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.shinypenny.org/posts/miles-science-fair-project.html</loc>
-  <lastmod>2017-05-10T05:01:00Z</lastmod>
+  <lastmod>2017-09-20T17:14:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.shinypenny.org/posts/testing-testing-testing.html</loc>
-  <lastmod>2017-05-11T05:43:00Z</lastmod>
+  <lastmod>2017-09-20T17:14:00Z</lastmod>
  </url>
 </urlset>

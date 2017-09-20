@@ -3,7 +3,7 @@
 <feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>Posts about radio</title>
   <id>http://www.shinypenny.org/categories/cat_radio.atom</id>
-  <updated>2017-07-04T23:24:18Z</updated>
+  <updated>2017-09-20T17:14:10Z</updated>
   <author>
     <name>Rodney Price</name>
   </author>
@@ -11,22 +11,54 @@
   <link rel="alternate" type="text/html" href="http://www.shinypenny.org/categories/cat_radio.html"/>
   <generator uri="https://getnikola.com/">Nikola</generator>
   <entry>
-    <title>434.75 MHz Beacon design</title>
-    <id>http://www.shinypenny.org/posts/43475-mhz-beacon-design.html</id>
+    <title>A really cheap 433 MHz beacon</title>
+    <id>http://www.shinypenny.org/posts/a-really-cheap-433-mhz-beacon.html</id>
+    <updated>2017-09-05T21:51:43-06:00</updated>
+    <published>2017-09-05T21:51:43-06:00</published>
+    <author>
+      <name>Rodney Price</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://www.shinypenny.org/posts/a-really-cheap-433-mhz-beacon.html"/>
+    <summary type="html">&lt;div&gt;&lt;p&gt;
+We've been having trouble getting the 433 MHz beacon (otherwise known
+as the 70 cm beacon) going, so one of our partners Richard suggested
+we use a very simple beacon that just needs power and a bit stream.
+I've shown a picture of the two at right.  I thought I'd give it a
+try, so I bought a few.  Sparkfun was backordered so I searched on
+Amazon and found people selling six transmitter-receiver pairs for
+$10.
+&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="http://www.shinypenny.org/posts/a-really-cheap-433-mhz-beacon.html"&gt;Read more…&lt;/a&gt; (3 min remaining to read)&lt;/p&gt;&lt;/div&gt;</summary>
+    <category term="balloon" label="balloon"/>
+    <category term="beacon" label="beacon"/>
+    <category term="radio" label="radio"/>
+  </entry>
+  <entry>
+    <title>70cm beacon progress</title>
+    <id>http://www.shinypenny.org/posts/70cm-beacon-progress.html</id>
     <updated>2017-07-04T17:07:37-06:00</updated>
     <published>2017-07-04T17:07:37-06:00</published>
     <author>
       <name>Rodney Price</name>
     </author>
-    <link rel="alternate" type="text/html" href="http://www.shinypenny.org/posts/43475-mhz-beacon-design.html"/>
+    <link rel="alternate" type="text/html" href="http://www.shinypenny.org/posts/70cm-beacon-progress.html"/>
     <summary type="html">&lt;div&gt;&lt;p&gt;
+We're putting two radios on the high-altitude balloon, just to have a
+backup in case one of them fails.  We're pretty confident that the 
+balloon will fly, but we'd like to get it back, and radio beacons are
+the best way to do that.
+&lt;/p&gt;
+
+&lt;p&gt;
 Soldering tiny little parts can be painful – especially when you
 really would prefer not to fry your part with too much heat.  Such was
 the case when I tried to attach wires to the 70 cm transmitter modules
-I had bought for the balloon.  
+I had bought for the balloon.  You can see one of them in the picture
+with the quarter, to the left.
 &lt;/p&gt;
 
-&lt;p&gt;&lt;a href="http://www.shinypenny.org/posts/43475-mhz-beacon-design.html"&gt;Read more…&lt;/a&gt; (1 min remaining to read)&lt;/p&gt;&lt;/div&gt;</summary>
+&lt;p&gt;&lt;a href="http://www.shinypenny.org/posts/70cm-beacon-progress.html"&gt;Read more…&lt;/a&gt; (1 min remaining to read)&lt;/p&gt;&lt;/div&gt;</summary>
     <category term="balloon" label="balloon"/>
     <category term="radio" label="radio"/>
   </entry>

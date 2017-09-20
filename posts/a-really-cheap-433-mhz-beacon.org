@@ -1,0 +1,102 @@
+#+BEGIN_COMMENT
+.. title: A really cheap 433 MHz beacon
+.. slug: a-really-cheap-433-mhz-beacon
+.. date: 2017-09-05 21:51:43 UTC-06:00
+.. tags: balloon, beacon, radio
+.. category: radio
+.. link: 
+.. description: A cheap (in more than one sense) 433 MHz radio transmitter
+.. type: text
+#+END_COMMENT
+
+We've been having trouble getting the 433 MHz beacon (otherwise known
+as the 70 cm beacon) going, so one of our partners Richard suggested
+we use a very simple beacon that just needs power and a bit stream.
+I've shown a picture of the two at right.  I thought I'd give it a
+try, so I bought a few.  Sparkfun was backordered so I searched on
+Amazon and found people selling six transmitter-receiver pairs for
+$10.
+
+#+begin_html
+<!-- TEASER_END -->
+#+end_html
+
+#+name: fig:xy-mk-5v
+#+caption: Cheap 433 MHz receiver-transmitter pair
+#+begin_html
+<p>
+<a href="/images/xy-mk-5v.jpg">
+<img alt="Cheap 433 MHz receiver-transmitter pair"
+src="/images/xy-mk-5v.jpg"
+title="Cheap 433 MHz receiver-transmitter pair"
+style="float:right;width:35%;margin:10px">
+</a>
+</p>
+#+end_html
+
+The transmitters are 25 mW at 12V power supply.  We could use a 9V
+battery and get 15-20 mW out of it.  I checked the frequency against
+the Colorado ham radio [[http://shinypenny.org/papers/colorado-70cm-band-plan.pdf][band plan for 70 cm]] (tells you what modulations
+are allowed where) and found that 433.92 MHz was right in the middle
+of a band where the FCC does not allow repeaters -- good for us.
+Nothing would infuriate a bunch of hams, and generate complaints to
+the FCC, faster than running a beacon on a repeater frequency.  The
+transmitter modules are so cheap that their center frequency can drift
+over +/- 0.5 MHz, and probably will when the temperature varies.
+Fortunately the band is about 1.5 MHz wide.
+
+Richard sent me a couple of links:
+
+ - [[https://www.riyas.org/2015/06/a-simple-uhf-beacon-for-fox-hunt-arduino-rf-433MHZ.html][A simple UHF beacon for fox hunt or lost RC model using Arduino]]
+
+This guy used the transmitter-receiver pair and an Arduino Pro Mini to
+build a very simple beacon for his RC model.  He had it send out an
+identifier in Morse code (Arduino code [[http://shinypenny.org/listings/morse-code.py][here]]).
+
+ - [[https://www.droids-corp.org/blog/html/2013/07/14/a_simple_lost_rc_beacon__part_2_.html][A simple lost beacon, part 2]]
+
+These receivers are pretty bad ($1.66 doesn't buy you much in terms of
+quality).  Because the transmitters drift so badly, (or because it
+costs more for a narrower bandwidth) the receivers just grab around 2
+MHz of bandwidth and effectively measure the power in the band.
+Nothing more.  This guy tried it out, saw they weren't too good, and
+came up with an idea to make it better.
+
+The transmitters are on-off keyed, meaning they do only two things.
+They either transmit a pure tone at 433.92 MHz (+/- 0.5 MHz) or they
+don't.  On or off.  He decided to transmit a square wave at 500 Hz,
+digitize the receiver output with his Arduino, and implement three
+digital bandpass filters in his code.  One, the fundamental, was at
+500 Hz; the next was at the second harmonic, 1000 Hz; and the third
+was at the third harmonic, 1500 Hz.  
+
+He then measured the power output from each filter.  If they were all
+approximately equal, he assumed that no transmission occurred.  If
+there was a lot of power in the 500 Hz filter, not much from the 1000
+Hz filter, and roughly 1/3 as much from the 1500 Hz filter as from the
+500 Hz filter, he assumed that a transmission was underway.  The idea
+was that a square wave has energy only at the fundamental and odd
+harmonics.
+
+It worked better than the first guy's.
+
+I could do quite a bit better with a scheme I used for my master's
+thesis at BYU back in the day.  You generate a maximum-length binary
+sequence (m-sequence) and push it through the transmitter.  This is
+easy; you implement a linear-feedback shift register in software on
+the transmitter side.  On the receiver side, you digitize the output
+of the receiver.  Once you have the right number of samples in memory,
+use a related shift register to permute the samples, apply a fast
+Hadamard transform (an FFT without the twiddle factors, using adds and
+subtracts only) and permute the results again.  You've just
+implemented a fast cross-correlation operation without using any
+multiplies.
+
+The m-sequences have an almost ideal thumbtack-like autocorrelation.
+You can get a lot of coding gain out of this scheme, limited only by
+the amount of memory you have available in your microcontroller.  An
+Arduino Pro Mini has only 2kB, and you have to reserve some of that
+for the program itself.  M-sequences come in lengths of 2^n-1, so the
+best you could do is a 511-bit sequence.  (You need to use 16-bit
+arithmetic to avoid overflows.)  That gives you 26 dB of coding gain.
+Not bad!

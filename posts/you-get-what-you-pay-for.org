@@ -61,8 +61,8 @@ in toy walkie-talkies... and here.  Examining the board, I find two
 inexpensive [[https://www.renesas.com/ja-jp/doc/YOUSYS/document/003/r09ds0021ej0300_microwave.pdf][RF transistors]] and an [[http://www.ti.com/lit/ds/symlink/lm158-n.pdf][LM358]] dual op amp.  Apparently these
 super-regens need to be turned off periodically to keep the oscillator
 from oscillating even without a signal.  That's probably what one of
-the op amps is for (I think).  It's in a circuit that ticks away about
-once every millisecond to kick the oscillator, so it stops oscillating.
+the op amps is for (I think).  It's in a circuit that ticks away every
+so often to kick the oscillator, so it stops oscillating.
 
 Then there's another circuit -- probably the second op amp in the
 LM358, that "pegs the meter" high or low every time the received

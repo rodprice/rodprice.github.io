@@ -115,7 +115,7 @@ title="Receiver output with no signal, 50 msec/div."
 It drops out for no apparent reason every few hundred milliseconds.
 So much for the low-pass filter.  This is dreadful behavior.  How are
 you supposed to average this signal out with a low-pass filter when
-every once in a while the signal yanks the filter input low?  It just
+every once in a while the receiver yanks the filter input low?  It just
 won't work.
 
 Here's the receiver behavior when it's getting a signal.  The bottom

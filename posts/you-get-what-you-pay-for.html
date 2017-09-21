@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article# " lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="Bench testing the really cheap transmitter/receiver pair.">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>You get what you pay for | Shiny Penny</title>
+<link href="/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="/assets/css/rst.css" rel="stylesheet" type="text/css">
+<link href="/assets/css/code.css" rel="stylesheet" type="text/css">
+<link href="/assets/css/colorbox.css" rel="stylesheet" type="text/css">
+<link href="/assets/css/theme.css" rel="stylesheet" type="text/css">
+<link href="/assets/css/custom.css" rel="stylesheet" type="text/css">
+<link href="/assets/css/ipython.min.css" rel="stylesheet" type="text/css">
+<link href="/assets/css/nikola_ipython.css" rel="stylesheet" type="text/css">
+<meta name="theme-color" content="#5670d4">
+<meta name="generator" content="Nikola (getnikola.com)">
+<link rel="alternate" type="application/rss+xml" title="RSS" href="/rss.xml">
+<link rel="alternate" type="application/atom+xml" title="Atom" href="/index.atom">
+<link rel="canonical" href="http://www.shinypenny.org/posts/you-get-what-you-pay-for.html">
+<!--[if lt IE 9]><script src="/assets/js/html5.js"></script><![endif]--><style>body{background-image:url(/images/topography.png);}</style>
+<meta name="author" content="Rodney Price">
+<link rel="prev" href="/posts/a-really-cheap-433-mhz-beacon.html" title="A really cheap 433 MHz beacon" type="text/html">
+<meta property="og:site_name" content="Shiny Penny">
+<meta property="og:title" content="You get what you pay for">
+<meta property="og:url" content="http://www.shinypenny.org/posts/you-get-what-you-pay-for.html">
+<meta property="og:description" content="Bench testing the really cheap transmitter/receiver pair.">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2017-09-21T07:13:05-06:00">
+<meta property="article:tag" content="balloon">
+<meta property="article:tag" content="radio">
+</head>
+<body>
+<a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
+
+<!-- Menubar -->
+
+<nav class="navbar navbar-inverse navbar-static-top"><div class="container">
+<!-- This keeps the margins nice -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar" aria-controls="bs-navbar" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="http://www.shinypenny.org/">
+
+                <span id="blog-title">Shiny Penny</span>
+            </a>
+        </div>
+<!-- /.navbar-header -->
+        <div class="collapse navbar-collapse" id="bs-navbar" aria-expanded="false">
+            <ul class="nav navbar-nav">
+<li>
+<a href="/pages/about/index.html">About</a>
+            </li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Projects <b class="caret"></b></a>
+            <ul class="dropdown-menu"><li>
+<a href="/pages/projects/balloon/">High-altitude balloon</a>
+            </li></ul>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Reference <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+<li>
+<a href="/pages/reference/markup/">Markup</a>
+                    </li>
+<li>
+<a href="/pages/reference/software/">Software</a>
+                    </li>
+<li>
+<a href="/pages/reference/hardware/">Hardware</a>
+            </li>
+</ul>
+</li>
+<li>
+<a href="http://github.com/rodprice">GitHub</a>
+                </li>
+<li>
+<a href="/archive.html">Archive</a>
+                </li>
+<li>
+<a href="/categories/">Tags</a>
+
+                
+            </li>
+</ul>
+<ul class="nav navbar-nav navbar-right">
+<li>
+    <a href="/posts/you-get-what-you-pay-for.org" id="sourcelink">Source</a>
+    </li>
+
+                
+            </ul>
+</div>
+<!-- /.navbar-collapse -->
+    </div>
+<!-- /.container -->
+</nav><!-- End of Menubar --><div class="container" id="content" role="main">
+    <div class="body-content">
+        <!--Body content-->
+        <div class="row">
+            
+            
+<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="/posts/you-get-what-you-pay-for.html" class="u-url">You get what you pay for</a></h1>
+
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                    Rodney Price
+            </span></p>
+            <p class="dateline"><a href="/posts/you-get-what-you-pay-for.html" rel="bookmark"><time class="published dt-published" datetime="2017-09-21T07:13:05-06:00" itemprop="datePublished" title="2017-09-21 07:13">2017-09-21 07:13</time></a></p>
+                <p class="commentline">
+        
+    <a href="/posts/you-get-what-you-pay-for.html#disqus_thread" data-disqus-identifier="cache/posts/you-get-what-you-pay-for.html">Comments</a>
+
+
+            
+        </p>
+<p class="sourceline"><a href="/posts/you-get-what-you-pay-for.org" id="sourcelink">Source</a></p>
+
+        </div>
+        
+
+    </header><div class="e-content entry-content" itemprop="articleBody text">
+    <p>
+Amazon delivered the really cheap transmitter/receiver pair that I
+talked about in my last blog entry, and I wired them up on the
+breadboard.  I programmed an Arduino to turn the transmitter on for a
+moment, pause for a while, then repeat.  Here's what the spectrum
+analyzer had to say:
+</p>
+
+<!-- TEASER_END -->
+
+<p>
+<a href="/images/balloon/spectrum-waterfall-40mhz.png">
+<img alt="Transmitter on the spectrum analyzer" src="/images/balloon/spectrum-waterfall-40mhz.png" title="Transmitter on the spectrum analyzer"></a></p>
+
+<p>
+Not pretty.  Maybe 60 kHz bandwidth at 3 dB, 200 kHz at 40 dB down
+from the peak, and an ugly little spur at around 400 kHz up in the
+spectrum.  At least it's about 40 dB down.  This barely scrapes by the
+FCC requirements, but it does.  The center frequency is about right at
+approximately 434 MHz.
+</p>
+
+<p>
+But look at the waterfall below the spectrum.  You can see how
+inconsistent the transmitter is on each pulse.  The pulses at the
+bottom are relatively clean, while the pulses at the top are a bit
+messier.  That spur shows up every time.
+</p>
+
+<p>
+So do I want to put this on the air?  I guess so.  Its only virtue is
+that it runs at such low power that it's not likely to bother anyone.
+</p>
+
+<p>
+On to the receiver.  This is ugly.  It's a <a href="http://earlyradiohistory.us/1922sup.htm">super-regenerative</a>
+receiver, which means that it's basically an oscillater that doesn't
+have enough feedback to oscillate, but it really, really wants to.
+When it sees a signal, it goes "oh yeah," and oscillates away.  Unless
+you surround it with a metal box, it turns into a transmitter, too.
+Radios built in the 1920's and 30's used these circuits because the
+vacuum tubes of the day were expensive and kind of a pain to operate,
+with high voltages and such.  Super-regens operated with as few tubes
+as possible, and were still somewhat sensitive.
+</p>
+
+<p>
+Today. the super-regen lives on in the ultra-cheap receivers you find
+in toy walkie-talkies… and here.  Examining the board, I find two
+inexpensive <a href="https://www.renesas.com/ja-jp/doc/YOUSYS/document/003/r09ds0021ej0300_microwave.pdf">RF transistors</a> and an <a href="http://www.ti.com/lit/ds/symlink/lm158-n.pdf">LM358</a> dual op amp.  Apparently these
+super-regens need to be turned off periodically to keep the oscillator
+from oscillating even without a signal.  That's probably what one of
+the op amps is for (I think).  It's in a circuit that ticks away about
+once every millisecond to kick the oscillator, so it stops oscillating.
+</p>
+
+<p>
+Then there's another circuit – probably the second op amp in the
+LM358, that "pegs the meter" high or low every time the received
+signal goes above or below the average.  That's so you get a digital
+output that a microcontroller like the Arduino can read on a digital
+I/O pin.  Once you do that, you can drive the transmitter with the
+bits you want to transmit and you'll get the same bits on the receive
+end.  
+</p>
+
+<p>
+Sounds simple, but in practice it's not so easy.  The <a href="http://www.airspayce.com/mikem/arduino/VirtualWire/">VirtualWire</a>
+Arduino library (now superseded by the <a href="http://www.airspayce.com/mikem/arduino/RadioHead/">RadioHead</a> library) takes care
+of the details for you.  See <a href="https://www.pjrc.com/teensy/td_libs_VirtualWire.html">this</a> to set realistic expectations of
+what these cheap little things can do, if you're transmitting data.
+</p>
+
+<p>
+If you're interested in receiving an analog signal, as we are, that
+comparator on the output can be a pain.  Watch what happens on the
+receiver end when it doesn't see a signal.  (Mouse over the graphic
+for details.)  You get a series of pulses 100-300 usecs wide, randomly
+distributed.  
+</p>
+
+<p>
+That doesn't sound so bad.  You could just use a little
+low-pass RC circuit to filter the output and you're fine.
+</p>
+
+<p>
+<a href="/images/balloon/no-signal-receiver-output-200us-div.png">
+<img alt="Receiver output with no signal, 200 usec per division." src="/images/balloon/no-signal-receiver-output-200us-div.png" title="Receiver output with no signal, 200 usec per division."></a></p>
+
+<p>
+But then there's this behavior:
+</p>
+
+<p>
+<a href="/images/balloon/no-signal-receiver-output-50ms-div.png">
+<img alt="Receiver output with no signal, 50 msec/div." src="/images/balloon/no-signal-receiver-output-50ms-div.png" title="Receiver output with no signal, 50 msec/div."></a></p>
+
+<p>
+It just drops out for no apparent reason every few hundred
+milliseconds.  So much for the low-pass filter.  This is dreadful
+behavior.  How are you supposed to average this signal out with a
+low-pass filter when every once in a while the signal yanks the filter
+input low?  It just won't work.
+</p>
+
+<p>
+Here's the receiver behavior when it's getting a signal.  The bottom
+trace is the digital input driving the transmitter, and the top trace
+is the output of the receiver after low-pass filtering with a 10 msec
+RC circuit.  You should see a copy of the pulse at the receiver,
+followed by a return to the average.  Or at least that's what I
+wanted to see.
+</p>
+
+<p>
+<a href="/images/balloon/triggered-receiver-1s-div-100-ms.png">
+<img alt="Receiver output, 1 second pulse, after low-pass filtering with a 10 msec RC circuit." src="/images/balloon/triggered-receiver-1s-div-100-ms.png" title="Receiver output, 1 second pulse, after low-pass filtering with a 10 msec RC circuit."></a></p>
+
+<p>
+Not even close.  The signal goes high right away when the transmitter
+turns on, but it doesn't last.  After about 50 msec of the 100 msec
+pulse, it just gets tired and dies.  (To be honest, I'm not sure
+whether the transmitter or the receiver is the guilty party.) Then it
+goes high again, followed by a sort-of high period, followed by the
+nasty up-and-down behavior caused by all the dropouts that occur in
+the absence of a signal.
+</p>
+
+<p>
+Wow.  You really do get what you pay for.
+</p>
+    </div>
+    <aside class="postpromonav"><nav><ul itemprop="keywords" class="tags">
+<li><a class="tag p-category" href="/categories/balloon.html" rel="tag">balloon</a></li>
+            <li><a class="tag p-category" href="/categories/radio.html" rel="tag">radio</a></li>
+        </ul>
+<ul class="pager hidden-print">
+<li class="previous">
+                <a href="/posts/a-really-cheap-433-mhz-beacon.html" rel="prev" title="A really cheap 433 MHz beacon">Previous post</a>
+            </li>
+        </ul></nav></aside><section class="comments hidden-print"><h2>Comments</h2>
+        
+        
+        <div id="disqus_thread"></div>
+        <script>
+        var disqus_shortname ="shiny-penny",
+            disqus_url="http://www.shinypenny.org/posts/you-get-what-you-pay-for.html",
+        disqus_title="You get what you pay for",
+        disqus_identifier="cache/posts/you-get-what-you-pay-for.html",
+        disqus_config = function () {
+            this.language = "en";
+        };
+        (function() {
+            var dsq = document.createElement('script'); dsq.async = true;
+            dsq.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script><noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a>
+</noscript>
+    <a href="https://disqus.com" class="dsq-brlink" rel="nofollow">Comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+        </section></article><script>var disqus_shortname="shiny-penny";(function(){var a=document.createElement("script");a.async=true;a.src="https://"+disqus_shortname+".disqus.com/count.js";(document.getElementsByTagName("head")[0]||document.getElementsByTagName("body")[0]).appendChild(a)}());</script>
+</div>
+        <!--End of body content-->
+
+        <footer id="footer">
+            Contents © 2017         <a href="mailto:rod@shinypenny.org">Rodney Price</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         
+            
+        </footer>
+</div>
+</div>
+
+
+            <script src="/assets/js/jquery.min.js"></script><script src="/assets/js/bootstrap.min.js"></script><script src="/assets/js/moment-with-locales.min.js"></script><script src="/assets/js/fancydates.js"></script><script src="/assets/js/jquery.colorbox-min.js"></script><script>$('a.image-reference:not(.islink) img:not(.islink)').parent().colorbox({rel:"gal",maxWidth:"100%",maxHeight:"100%",scalePhotos:true});</script><!-- fancy dates --><script>
+    moment.locale("en");
+    fancydates(2, "YYYY-MM-DD HH:mm");
+    </script><!-- end fancy dates -->
+</body>
+</html>

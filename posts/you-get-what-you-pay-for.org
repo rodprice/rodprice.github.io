@@ -1,0 +1,149 @@
+#+BEGIN_COMMENT
+.. title: You get what you pay for
+.. slug: you-get-what-you-pay-for
+.. date: 2017-09-21 07:13:05 UTC-06:00
+.. tags: radio, balloon
+.. category: balloon
+.. link: 
+.. description: Bench testing the really cheap transmitter/receiver pair.
+.. type: text
+#+END_COMMENT
+
+
+Amazon delivered the really cheap transmitter/receiver pair that I
+talked about in my last blog entry, and I wired them up on the
+breadboard.  I programmed an Arduino to turn the transmitter on for a
+moment, pause for a while, then repeat.  Here's what the spectrum
+analyzer had to say:
+
+#+begin_html
+<!-- TEASER_END -->
+#+end_html
+
+#+name: fig:spectrum-waterfall-40mhz
+#+caption: Transmitter on the spectrum analyzer
+#+begin_html
+<p>
+<a href="/images/balloon/spectrum-waterfall-40mhz.png">
+<img alt="Transmitter on the spectrum analyzer"
+src="/images/balloon/spectrum-waterfall-40mhz.png"
+title="Transmitter on the spectrum analyzer"
+</a>
+</p>
+#+end_html
+
+Not pretty.  Maybe 60 kHz bandwidth at 3 dB, 200 kHz at 40 dB down
+from the peak, and an ugly little spur at around 400 kHz up in the
+spectrum.  At least it's about 40 dB down.  This barely scrapes by the
+FCC requirements, but it does.  The center frequency is about right at
+approximately 434 MHz.
+
+But look at the waterfall below the spectrum.  You can see how
+inconsistent the transmitter is on each pulse.  The pulses at the
+bottom are relatively clean, while the pulses at the top are a bit
+messier.  That spur shows up every time.
+
+So do I want to put this on the air?  I guess so.  Its only virtue is
+that it runs at such low power that it's not likely to bother anyone.
+
+On to the receiver.  This is ugly.  It's a [[http://earlyradiohistory.us/1922sup.htm][super-regenerative]]
+receiver, which means that it's basically an oscillater that doesn't
+have enough feedback to oscillate, but it really, really wants to.
+When it sees a signal, it goes "oh yeah," and oscillates away.  Unless
+you surround it with a metal box, it turns into a transmitter, too.
+Radios built in the 1920's and 30's used these circuits because the
+vacuum tubes of the day were expensive and kind of a pain to operate,
+with high voltages and such.  Super-regens operated with as few tubes
+as possible, and were still somewhat sensitive.
+
+Today. the super-regen lives on in the ultra-cheap receivers you find
+in toy walkie-talkies... and here.  Examining the board, I find two
+inexpensive [[https://www.renesas.com/ja-jp/doc/YOUSYS/document/003/r09ds0021ej0300_microwave.pdf][RF transistors]] and an [[http://www.ti.com/lit/ds/symlink/lm158-n.pdf][LM358]] dual op amp.  Apparently these
+super-regens need to be turned off periodically to keep the oscillator
+from oscillating even without a signal.  That's probably what one of
+the op amps is for (I think).  It's in a circuit that ticks away about
+once every millisecond to kick the oscillator, so it stops oscillating.
+
+Then there's another circuit -- probably the second op amp in the
+LM358, that "pegs the meter" high or low every time the received
+signal goes above or below the average.  That's so you get a digital
+output that a microcontroller like the Arduino can read on a digital
+I/O pin.  Once you do that, you can drive the transmitter with the
+bits you want to transmit and you'll get the same bits on the receive
+end.  
+
+Sounds simple, but in practice it's not so easy.  The [[http://www.airspayce.com/mikem/arduino/VirtualWire/][VirtualWire]]
+Arduino library (now superseded by the [[http://www.airspayce.com/mikem/arduino/RadioHead/][RadioHead]] library) takes care
+of the details for you.  See [[https://www.pjrc.com/teensy/td_libs_VirtualWire.html][this]] to set realistic expectations of
+what these cheap little things can do, if you're transmitting data.
+
+If you're interested in receiving an analog signal, as we are, that
+comparator on the output can be a pain.  Watch what happens on the
+receiver end when it doesn't see a signal.  (Mouse over the graphic
+for details.)  You get a series of pulses 100-300 usecs wide, randomly
+distributed.  
+
+That doesn't sound so bad.  You could just use a little
+low-pass RC circuit to filter the output and you're fine.
+
+#+name: fig:no-signal-receiver-output-200us-div
+#+caption: Receiver output with no signal, 200 usec per division.
+#+begin_html
+<p>
+<a href="/images/balloon/no-signal-receiver-output-200us-div.png">
+<img alt="Receiver output with no signal, 200 usec per division."
+src="/images/balloon/no-signal-receiver-output-200us-div.png"
+title="Receiver output with no signal, 200 usec per division."
+</a>
+</p>
+#+end_html
+
+But then there's this behavior:
+
+#+name: fig:no-signal-receiver-output-50ms-div
+#+caption: Receiver output with no signal, 50 msec/div.
+#+begin_html
+<p>
+<a href="/images/balloon/no-signal-receiver-output-50ms-div.png">
+<img alt="Receiver output with no signal, 50 msec/div."
+src="/images/balloon/no-signal-receiver-output-50ms-div.png"
+title="Receiver output with no signal, 50 msec/div."
+</a>
+</p>
+#+end_html
+
+It just drops out for no apparent reason every few hundred
+milliseconds.  So much for the low-pass filter.  This is dreadful
+behavior.  How are you supposed to average this signal out with a
+low-pass filter when every once in a while the signal yanks the filter
+input low?  It just won't work.
+
+Here's the receiver behavior when it's getting a signal.  The bottom
+trace is the digital input driving the transmitter, and the top trace
+is the output of the receiver after low-pass filtering with a 10 msec
+RC circuit.  You should see a copy of the pulse at the receiver,
+followed by a return to the average.  Or at least that's what I
+wanted to see.
+
+#+name: fig:triggered-receiver-1s-div-100-ms
+#+caption: Receiver output, 1 second pulse, after low-pass filtering with a 10 msec RC circuit.
+#+begin_html
+<p>
+<a href="/images/balloon/triggered-receiver-1s-div-100-ms.png">
+<img alt="Receiver output, 1 second pulse, after low-pass filtering with a 10 msec RC circuit."
+src="/images/balloon/triggered-receiver-1s-div-100-ms.png"
+title="Receiver output, 1 second pulse, after low-pass filtering with a 10 msec RC circuit."
+</a>
+</p>
+#+end_html
+
+Not even close.  The signal goes high right away when the transmitter
+turns on, but it doesn't last.  After about 50 msec of the 100 msec
+pulse, it just gets tired and dies.  (To be honest, I'm not sure
+whether the transmitter or the receiver is the guilty party.) Then it
+goes high again, followed by a sort-of high period, followed by the
+nasty up-and-down behavior caused by all the dropouts that occur in
+the absence of a signal.
+
+Wow.  You really do get what you pay for.
+

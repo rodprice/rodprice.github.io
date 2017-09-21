@@ -83,8 +83,8 @@ receiver end when it doesn't see a signal.  (Mouse over the graphic
 for details.)  You get a series of pulses 100-300 usecs wide, randomly
 distributed.  
 
-That doesn't sound so bad.  You could just use a little
-low-pass RC circuit to filter the output and you're fine.
+That doesn't sound so bad.  You could use a little low-pass RC circuit
+to filter the output and you're fine.
 
 #+name: fig:no-signal-receiver-output-200us-div
 #+caption: Receiver output with no signal, 200 usec per division.
@@ -112,11 +112,11 @@ title="Receiver output with no signal, 50 msec/div."
 </p>
 #+end_html
 
-It just drops out for no apparent reason every few hundred
-milliseconds.  So much for the low-pass filter.  This is dreadful
-behavior.  How are you supposed to average this signal out with a
-low-pass filter when every once in a while the signal yanks the filter
-input low?  It just won't work.
+It drops out for no apparent reason every few hundred milliseconds.
+So much for the low-pass filter.  This is dreadful behavior.  How are
+you supposed to average this signal out with a low-pass filter when
+every once in a while the signal yanks the filter input low?  It just
+won't work.
 
 Here's the receiver behavior when it's getting a signal.  The bottom
 trace is the digital input driving the transmitter, and the top trace
@@ -139,11 +139,11 @@ title="Receiver output, 1 second pulse, after low-pass filtering with a 10 msec 
 
 Not even close.  The signal goes high right away when the transmitter
 turns on, but it doesn't last.  After about 500 msec of the 1 second
-pulse, it just gets tired and dies.  (To be honest, I'm not sure
-whether the transmitter or the receiver is the guilty party.) Then it
-goes high again, followed by a sort-of high period, followed by the
-nasty up-and-down behavior caused by all the dropouts that occur in
-the absence of a signal.
+pulse, it gets tired and dies.  (To be honest, I'm not sure whether
+the transmitter or the receiver is the guilty party.) Then it goes
+high again, followed by a sort-of high period, followed by the nasty
+up-and-down behavior caused by all the dropouts that occur in the
+absence of a signal.
 
 Wow.  You really do get what you pay for.
 

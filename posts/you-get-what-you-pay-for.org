@@ -47,7 +47,7 @@ So do I want to put this on the air?  I guess so.  Its only virtue is
 that it runs at such low power that it's not likely to bother anyone.
 
 On to the receiver.  This is ugly.  It's a [[http://earlyradiohistory.us/1922sup.htm][super-regenerative]]
-receiver, which means that it's basically an oscillater that doesn't
+receiver, which means that it's basically an oscillator that doesn't
 have enough feedback to oscillate, but it really, really wants to.
 When it sees a signal, it goes "oh yeah," and oscillates away.  Unless
 you surround it with a metal box, it turns into a transmitter, too.
@@ -138,7 +138,7 @@ title="Receiver output, 1 second pulse, after low-pass filtering with a 10 msec 
 #+end_html
 
 Not even close.  The signal goes high right away when the transmitter
-turns on, but it doesn't last.  After about 50 msec of the 100 msec
+turns on, but it doesn't last.  After about 500 msec of the 1 second
 pulse, it just gets tired and dies.  (To be honest, I'm not sure
 whether the transmitter or the receiver is the guilty party.) Then it
 goes high again, followed by a sort-of high period, followed by the

@@ -9,21 +9,6 @@
 .. type: text
 #+END_COMMENT
 
-We're putting two radios on the high-altitude balloon, just to have a
-backup in case one of them fails.  We're pretty confident that the 
-balloon will fly, but we'd like to get it back, and radio beacons are
-the best way to do that.
-
-Soldering tiny little parts can be painful -- especially when you
-really would prefer not to fry your part with too much heat.  Such was
-the case when I tried to attach wires to the 70 cm transmitter modules
-I had bought for the balloon.  You can see one of them in the picture
-with the quarter, to the left.
-
-#+begin_html
-<!-- TEASER_END -->
-#+end_html
-
 #+name: fig:434-mhz-wireless-transceiver-rfm69hcw
 #+caption: My first try at soldering a transmitter
 #+begin_html
@@ -37,6 +22,17 @@ style="float:left;width:35%;margin:10px">
 </p>
 #+end_html
 
+We're putting two radios on the high-altitude balloon, just to have a
+backup in case one of them fails.  We're pretty confident that the 
+balloon will fly, but we'd like to get it back, and radio beacons are
+the best way to do that.
+
+Soldering tiny little parts can be painful -- especially when you
+really would prefer not to fry your part with too much heat.  Such was
+the case when I tried to attach wires to the 70 cm transmitter modules
+I had bought for the balloon.  You can see one of them in the picture
+with the quarter, to the left.
+
 And I had bought two of them, just in case!  Normally, you solder to
 these things using a header, which has pins every 0.1 inches.  Not
 this thing.  It had to have them every 2 mm.  Just different enough to
@@ -48,6 +44,10 @@ soldered electronic parts before, that's really bad.
 
 When I was in college, I had a summer job soldering electronic parts 8
 hours a day.  I got pretty good at it, I thought.  Maybe not so much.
+
+#+begin_html
+<!-- TEASER_END -->
+#+end_html
 
 After I tossed out the two blackened transmitters, I found that I was
 just stubborn enough to try again.  I ordered a new transmitter, this

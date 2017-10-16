@@ -16,10 +16,6 @@ some degree.  Modeling it with the [[http://www.qsl.net/4nec2/][4NEC2]] code sho
 Not at all.  It's supposed to act like a ground plane, and RF doesn't
 go through ground planes...
 
-#+begin_html
-<!-- TEASER_END -->
-#+end_html
-
 #+name: fig:bent-antenna-model-with-plane-radiation-pattern
 #+caption: Radiation pattern for bent antenna with plane model
 #+begin_html
@@ -44,6 +40,10 @@ title="Bent antenna model with plane"
 style="float:leftright;width:30%;margin:10px">
 </a>
 </p>
+#+end_html
+
+#+begin_html
+<!-- TEASER_END -->
 #+end_html
 
 The radiation pattern I got from 4NEC2 (in the vertical plane) is

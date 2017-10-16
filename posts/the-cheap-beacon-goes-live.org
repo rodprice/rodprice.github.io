@@ -1,0 +1,28 @@
+#+BEGIN_COMMENT
+.. title: The cheap beacon goes live
+.. slug: the-cheap-beacon-goes-live
+.. date: 2017-10-21 21:14:13 UTC-06:00
+.. tags: balloon, radio
+.. category: balloon, draft
+.. link: 
+.. description: What happens when I really build the thing.
+.. type: text
+#+END_COMMENT
+
+
+Experimenting with driving the transmitter with various voltages gives
+the following results:
+
+| voltage | current | power  |
+|---------+---------+--------|
+| 12 V    | 32 mA   | -27 dB |
+| 9 V     | 25 mA   | -29 dB |
+| 6 V     | 19 mA   | -30 dB |
+| 5 V     | 17 mA   | -32 dB |
+| 3 V     | 12 mA   | -36 dB |
+
+These power readings are very highly variable, but they definitely
+show a trend.  And the transmitter is a real power hog.  I'll probably
+go with a 9 volt battery.
+
+Just so.

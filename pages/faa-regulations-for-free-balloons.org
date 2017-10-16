@@ -1,0 +1,178 @@
+#+BEGIN_COMMENT
+.. title: FAA Regulations for free balloons
+.. slug: faa-regulations-for-free-balloons
+.. date: 2017-10-12 17:47:06 UTC-06:00
+.. tags: balloon, legal
+.. category: balloon
+.. link: http://community.balloonchallenge.org/t/regulations-overview-including-contacting-the-us-faa/676
+.. description: FAA regulations for free balloon flights
+.. type: text
+#+END_COMMENT
+* FCC regulations
+** 22.925 Prohibition on airborne operation of cellular telephones
+
+Cellular telephones installed in or carried aboard airplanes, balloons
+or any other type of aircraft must not be operated while such aircraft
+are airborne (not touching the ground). When any aircraft leaves the
+ground, all cellular telephones on board that aircraft must be turned
+off. The following notice must be posted on or near each cellular
+telephone installed in any aircraft:
+
+“The use of cellular telephones while this aircraft is airborne is
+prohibited by FCC rules, and the violation of this rule could result
+in suspension of service and/or a fine. The use of cellular telephones
+while this aircraft is on the ground is subject to FAA regulations.”
+
+
+* FAA Part D regulations
+** 101.31 Applicability
+
+This subpart applies to the operation of unmanned free
+balloons. However, a person operating an unmanned free balloon within
+a restricted area must comply only with §101.33 (d) and (e) and with
+any additional limitations that are imposed by the using or
+controlling agency, as appropriate.
+
+** 101.33 Operating limitations
+
+No person may operate an unmanned free balloon—
+
+(a) Unless otherwise authorized by ATC, below 2,000 feet above the
+surface within the lateral boundaries of the surface areas of Class B,
+Class C, Class D, or Class E airspace designated for an airport;
+
+(b) At any altitude where there are clouds or obscuring phenomena of
+more than five-tenths coverage;
+
+(c) At any altitude below 60,000 feet standard pressure altitude where
+the horizontal visibility is less than five miles;
+
+(d) During the first 1,000 feet of ascent, over a congested area of a
+city, town, or settlement or an open-air assembly of persons not
+associated with the operation; or
+
+(e) In such a manner that impact of the balloon, or part thereof
+including its payload, with the surface creates a hazard to persons or
+property not associated with the operation.
+
+** 101.35 Equipment and marking requirements
+
+(a) No person may operate an unmanned free balloon unless—
+
+    (1) It is equipped with at least two payload cut-down systems or
+        devices that operate independently of each other;
+
+    (2) At least two methods, systems, devices, or combinations
+        thereof, that function independently of each other, are
+        employed for terminating the flight of the balloon envelope;
+        and
+
+    (3) The balloon envelope is equipped with a radar reflective
+        device(s) or material that will present an echo to surface
+        radar operating in the 200 MHz to 2700 MHz frequency range.
+
+    The operator shall activate the appropriate devices required by
+    paragraphs (a) (1) and (2) of this section when weather conditions
+    are less than those prescribed for operation under this subpart,
+    or if a malfunction or any other reason makes the further
+    operation hazardous to other air traffic or to persons and
+    property on the surface.
+
+(b) No person may operate an unmanned free balloon below 60,000 feet
+    standard pressure altitude between sunset and sunrise (as
+    corrected to the altitude of operation) unless the balloon and its
+    attachments and payload, whether or not they become separated
+    during the operation, are equipped with lights that are visible
+    for at least 5 miles and have a flash frequency of at least 40,
+    and not more than 100, cycles per minute.
+
+(c) No person may operate an unmanned free balloon that is equipped
+    with a trailing antenna that requires an impact force of more than
+    50 pounds to break it at any point, unless the antenna has colored
+    pennants or streamers that are attached at not more than 50 foot
+    intervals and that are visible for at least one mile.
+
+(d) No person may operate between sunrise and sunset an unmanned free
+    balloon that is equipped with a suspension device (other than a
+    highly conspicuously colored open parachute) more than 50 feet
+    along, unless the suspension device is colored in alternate bands
+    of high conspicuity colors or has colored pennants or streamers
+    attached which are visible for at least one mile.
+
+** 101.37 Notice requirements
+
+(a) Prelaunch notice: Except as provided in paragraph (b) of this
+    section, no person may operate an unmanned free balloon unless,
+    within 6 to 24 hours before beginning the operation, he gives the
+    following information to the FAA ATC facility that is nearest to
+    the place of intended operation:
+
+    (1) The balloon identification.
+
+    (2) The estimated date and time of launching, amended as necessary
+        to remain within plus or minus 30 minutes.
+
+    (3) The location of the launching site.
+
+    (4) The cruising altitude.
+
+    (5) The forecast trajectory and estimated time to cruising
+        altitude or 60,000 feet standard pressure altitude, whichever
+        is lower.
+
+    (6) The length and diameter of the balloon, length of the
+        suspension device, weight of the payload, and length of the
+        trailing antenna.
+
+    (7) The duration of flight.
+
+    (8) The forecast time and location of impact with the surface of
+        the earth.
+
+(b) For solar or cosmic disturbance investigations involving a
+    critical time element, the information in paragraph (a) of this
+    section shall be given within 30 minutes to 24 hours before
+    beginning the operation.
+
+(c) Cancellation notice: If the operation is canceled, the person who
+    intended to conduct the operation shall immediately notify the
+    nearest FAA ATC facility.
+
+(d) Launch notice: Each person operating an unmanned free balloon
+    shall notify the nearest FAA or military ATC facility of the
+    launch time immediately after the balloon is launched.
+
+** 101.39 Balloon position reports
+
+(a) Each person operating an unmanned free balloon shall:
+
+    (1) Unless ATC requires otherwise, monitor the course of the
+        balloon and record its position at least every two hours; and
+
+    (2) Forward any balloon position reports requested by ATC.
+
+(b) One hour before beginning descent, each person operating an
+    unmanned free balloon shall forward to the nearest FAA ATC
+    facility the following information regarding the balloon:
+
+(1) The current geographical position.
+
+(2) The altitude.
+
+(3) The forecast time of penetration of 60,000 feet standard pressure
+    altitude (if applicable).
+
+(4) The forecast trajectory for the balance of the flight.
+
+(5) The forecast time and location of impact with the surface of the earth.
+
+(c) If a balloon position report is not recorded for any two-hour
+    period of flight, the person operating an unmanned free balloon
+    shall immediately notify the nearest FAA ATC facility. The notice
+    shall include the last recorded position and any revision of the
+    forecast trajectory. The nearest FAA ATC facility shall be
+    notified immediately when tracking of the balloon is
+    re-established.
+
+(d) Each person operating an unmanned free balloon shall notify the
+    nearest FAA ATC facility when the operation is ended.

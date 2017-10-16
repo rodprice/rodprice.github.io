@@ -13,10 +13,6 @@
 If we launched a high-altitude balloon from my house tomorrow morning,
 here's what might happen.
 
-#+begin_html
-<!-- TEASER_END -->
-#+end_html
-
 #+name: fig:balloon-flight-prediction-20170512
 #+caption: Balloon track
 #+begin_html
@@ -25,7 +21,7 @@ here's what might happen.
 <img alt="Balloon track"
 src="/images/balloon/balloon-flight-prediction-20170512.png"
 title="Balloon track"
-style="float:right;width:100%;margin:10px">
+style="width:100%;margin:10px">
 </a>
 </p>
 #+end_html

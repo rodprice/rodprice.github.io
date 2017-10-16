@@ -9,18 +9,6 @@
 .. type: text
 #+END_COMMENT
 
-We've been having trouble getting the 433 MHz beacon (otherwise known
-as the 70 cm beacon) going, so one of our partners Richard suggested
-we use a very simple beacon that just needs power and a bit stream.
-I've shown a picture of the two at right.  I thought I'd give it a
-try, so I bought a few.  Sparkfun was backordered so I searched on
-Amazon and found people selling six transmitter-receiver pairs for
-$10.
-
-#+begin_html
-<!-- TEASER_END -->
-#+end_html
-
 #+name: fig:xy-mk-5v
 #+caption: Cheap 433 MHz receiver-transmitter pair
 #+begin_html
@@ -34,6 +22,14 @@ style="float:right;width:35%;margin:10px">
 </p>
 #+end_html
 
+We've been having trouble getting the 433 MHz beacon (otherwise known
+as the 70 cm beacon) going, so one of our partners Richard suggested
+we use a very simple beacon that just needs power and a bit stream.
+I've shown a picture of the two at right.  I thought I'd give it a
+try, so I bought a few.  Sparkfun was backordered so I searched on
+Amazon and found people selling six transmitter-receiver pairs for
+$10.
+
 The transmitters are 25 mW at 12V power supply.  We could use a 9V
 battery and get 15-20 mW out of it.  I checked the frequency against
 the Colorado ham radio [[http://shinypenny.org/papers/colorado-70cm-band-plan.pdf][band plan for 70 cm]] (tells you what modulations
@@ -44,6 +40,10 @@ the FCC, faster than running a beacon on a repeater frequency.  The
 transmitter modules are so cheap that their center frequency can drift
 over +/- 0.5 MHz, and probably will when the temperature varies.
 Fortunately the band is about 1.5 MHz wide.
+
+#+begin_html
+<!-- TEASER_END -->
+#+end_html
 
 Richard sent me a couple of links:
 

@@ -1,0 +1,286 @@
+#+BEGIN_COMMENT
+.. title: Morse code is surprisingly hard
+.. slug: morse-code-is-surprisingly-hard
+.. date: 2017-10-11 22:11:49 UTC-06:00
+.. tags: radio, balloon, embedded, 
+.. category: embedded
+.. link: 
+.. description: How an over-engineered Morse code generator works.
+.. type: text
+#+END_COMMENT
+
+
+#+name: fig:morse-code
+#+caption: International Morse code
+#+begin_html
+<p>
+<a href="/images/balloon/morse-code.png">
+<img alt="International Morse code"
+src="/images/balloon/morse-code.png"
+title="International Morse code"
+style="float:right;width:25%;margin:10px">
+</a>
+</p>
+#+end_html
+
+Hubris: "Morse code was invented 150 years ago.  It's trivial."  And,
+"that guy did a pathetically bad job with his code.  I could knock out
+something way better in an hour or two."
+
+Perhaps my particular variation on hubris began with my insistence on
+cramming a Morse code generator, pseudo-noise generator, and a couple
+of other bits into a processor with 128 bytes of RAM and 2 kB flash,
+an [[http://www.mouser.com/ProductDetail/Texas-Instruments/MSP430G2231IPW14R/][MSP430G2231]].  This little guy sells for 62 cents each in quantity.
+I had a few on hand, and since this was going to be a throwaway
+project -- we wanted to test it by strapping it to a party balloon and
+letting it fly away until we couldn't hear it anymore -- I thought I'd
+give it a try.  Perhaps another day I'll write about all the things I
+like about the MSP430.  This post is about 128 bytes of RAM, 2 kB
+flash memory, and a 1 MHz clock rate.
+
+Truth be told, the trouble really got started when I decided that I
+would implement an [[http://in.ncu.edu.tw/~ncume_ee/digilogi/prbs.htm][m-sequence]] generator as well as a Morse code
+generator.  You can get a lot of coding gain out of m-sequences, for
+which there's a surprisingly fast and simple algorithm.  The problem
+isn't implementing it -- it literally took four lines of C code --
+but I wanted to run it at audio rates.  That meant I needed to run it
+in an interrupt-driven way.  In turn, that persuaded me that I should
+build an interrupt-driven Morse code generator.
+
+#+begin_html
+<!-- TEASER_END -->
+#+end_html
+
+There's nothing wrong with interrupt-driven code.  In fact, for the
+MSP430 it's the Right Way to Do It.  The [[https://en.wikipedia.org/wiki/Morse_code#Timing][Wikipedia article]] on Morse
+code gives specs for timing: one time unit (tick) for a dot, three for
+a dash, with one tick between symbols (dots and dashes), three between
+letters, and seven between words.  Nice and regular, and therefore a
+good fit for interrupt-driven code.
+
+That lead me to think about a state machine.  At each trip through the
+interrupt code, that is, at each time tick, the state machine
+advances, sending out a dot, a space, a third of a dash, etc.  It
+ticks through the message to be sent until it's all done, and then it
+quits.  
+
+I came up with what I still think is a clever way to represent the
+state, involving two 8-bit registers, ~mcode~ and ~mchar~.  ~mcode~
+holds the dots and dashes comprising a letter, where 1 represents a
+dash and 0 represents a dot.  For example, the Morse code for the
+letter C in this scheme is 1010, dash-dot-dash-dot.  No Morse code
+letter has more than seven dots and dashes, so it all fits in a byte.
+
+The structure of the dots and dashes is found in the second register,
+~mchar~.  A dot followed by a space is 10, and a dash followed by a
+space is 1110.  The space between letters followed by a dot and space
+is 0010, and the space between letters followed by a dash and a space
+is 001110.  The space between words, seven ticks, is 0000.  Again,
+this fits into a single byte.
+
+The state machine proceeds by sending the left-most bit (MSB) in
+~mchar~ to the transmitter and shifting ~mchar~ to the left on each
+tick.  When the symbol (dot or dash) is completely done, the MSB of
+~mcode~ is read to determine whether the next symbol is a dot or a
+dash, the new symbol is put into ~mchar~, and ~mcode~ is shifted to the
+left.
+
+The rub, and I think the clever part, comes when the state machine has
+finished a complete symbol ~mchar~ or letter ~mcode~.  How does the
+state machine know when to stop?  The answer lies in the value of the
+bit that goes in the right-most bit (LSB) when the left-shift takes
+place.
+
+For ~mchar~, it's simple.  I always put in a 1.  The bits comprising
+~mchar~ always end in 0.  When the last 0 (space) is shifted out, the
+register contains all 1's.  When that happens, it's time to look at
+the next symbol in ~mcode~.
+
+This gives us five symbols to deal with, shown in the C code below.
+
+#+name: code: test
+#+begin_src  C
+
+#define DOT       0b10111111
+#define DASH      0b11101111
+#define SPACEDOT  0b00101111
+#define SPACEDASH 0b00111011
+#define SPACEWORD 0b00001111
+
+#+end_src
+
+You can see that the relevant bits of the symbol are pushed as far to
+the left as possible, with 1's padding the symbol on the right.  The
+spaces between symbols, letters, and words fall out correctly, as you
+can see in this example:
+
+#+name: Linux debug code output
+#+begin_example
+
+    A -> __o_ooo___
+    D -> ooo_o_o___
+    0 -> ooo_ooo_ooo_ooo_ooo___
+    Y -> ooo_o_ooo_ooo___
+    X -> ooo_o_o_ooo___
+      -> ____
+    s -> o_o_o___
+    e -> o___
+    n -> ooo_o___
+    d -> ooo_o_o___
+    i -> o_o___
+    n -> ooo_o___
+    g -> ooo_ooo_o___
+      -> ____
+    m -> ooo_ooo___
+    - -> ooo_o_o_o_o_ooo_
+
+#+end_example
+
+Here I'm showing the beginning of the message "AD0YX sending
+m-sequence".  An underscore =_= denotes a space and =o= denotes a
+"mark"; that is, a space means no signal and a mark means a signal.
+You can see that this is generating correct Morse code, and with the
+proper timing.
+
+So now we know how to generate dots and dashes, and put in appropriate
+spaces.  I haven't yet explained how to assemble those dots and dashes
+into meaningful Morse code.  To do that, we use the ~mcode~ register.
+When the ~mchar~ register is all 1's, that signals the state machine
+to pop off the next dot or dash from the ~mcode~ register and load the
+next symbol into ~mchar~.  A left-shift of ~mcode~ queues up the next
+dot or dash.
+
+I use a lookup table to go from ASCII to the ~mcode~ templates.
+Here's a small section:
+
+#+name: ASCII to Morse lookup table
+#+begin_src C
+
+static const uint8_t morse[MORSE_LUT_SIZE] =
+  {
+    0b11111000,                 /* '0' */
+    0b01111000,                 /* '1' */
+    0b00111000,                 /* '2' */
+    0b00011000,                 /* '3' */
+    0b00001000,                 /* '4' */
+    0b00000111,                 /* '5' */
+    0b10000111,                 /* '6' */
+    0b11000111,                 /* '7' */
+    0b11100111,                 /* '8' */
+    0b11110111,                 /* '9' */
+    0b01000000,                 /* 'A' */
+    0b10001111,                 /* 'B' */
+    0b10101111,                 /* 'C' */
+    ...
+
+#+end_src
+
+In the notation I used above, an 'A' is =o_ooo_=.  Here it's just
+written =01=, for a dot followed by a dash.  =0= for a dot; =1= for a
+dash.  That leaves six more bits in ~mcode~.  This time there's no
+guarantee that the last information-carrying bit will be a =0=, as it
+was in ~mchar~.  Now the state machine is looking for either all 0's
+or all 1's to signal that the current letter is completely sent.  If
+the letter ends in a dash, so that the last meaningful bit is =1=, I
+fill the rest with 0's.  If, on the other hand, the letter ends in a
+dot, I fill the rest with 1's.
+
+Once the state machine sees that it's time for a new letter (a new
+~mcode~ template) we have to put in three spaces to indicate that a
+full letter has been sent.  That's what the symbols  ~SPACEDOT~ and
+~SPACEDASH~ are for.  The next dot or dash to go out uses one of those
+two rather than ~DOT~ or ~DASH~, and there are the three required
+spaces between letters.
+
+How about spaces between words?  For this I use a bit of a trick.  If
+the lookup table can't find a Morse code template for a letter, it
+returns an error code.  This error code doesn't correspond to any
+Morse code template.  The state machine sees that, and inserts a
+~SPACEWORD~ into ~mcode~.  The next time through the lookup table,
+either the state machine gets a valid ~mcode~, or it hits the end of
+the message string and stops.
+
+All this sounds straightforward, but getting it right was really
+painful.  I spent almost a week of nights after work struggling with
+it.  I think I threw away four or five attempts before I got it right.
+This was far from "knock it out in an hour or two."  And that was just
+to get it running under Linux.  Getting it onto the MSP430 chip was
+another matter entirely.
+
+Here is the logic that finally worked:
+
+#+name: State machine logic
+#+begin_src C
+
+/* Sends a new bit at every call until ring buffer is empty */
+BIT tock() {
+  if (donechar()) {
+    if (donecode()) {
+      if (rbempty(&ring)) { 
+        mcode = ZEROS;
+        mchar = ZEROS;
+        return 0;         /* wait for new letters */
+      } else {
+        mcode = rbget(&ring);
+        if (mcode == ONES)
+          mchar = SPACEWORD;
+        else
+          nextspacecode();
+      }
+    } else {
+      nextcode();
+    }
+  }
+  iowrite(nextchar());
+  return 1;
+}
+
+#+end_src
+
+Notice the bit about the ring buffer?  (shiver..)  It's a little queue
+that takes Morse code from the main loop and makes it available to the
+interrupt routine above.  That way you can asynchronously push Morse
+code into the queue whenever it becomes available from the main loop,
+and have it sent out from the interrupt routine timed correctly.
+
+I won't put you through the pain I had trying to get that to work.  It
+worked fine on Linux, where everything runs sequentially and there's
+no running out of time before the next interrupt comes along.  Running
+concurrently in real time on the MSP430 just didn't work, and I still
+don't know why.  In the end, rather than throw the thing down on the
+floor and stomp on it, I just stuffed every last bit of code into the
+interrupt routine and called it good.
+
+If I ever get it to work, I'll write a post about it.  (Bet you can't
+wait for that.)  This got me so cranked up that I pulled out my formal
+methods [[http://alloy.mit.edu][book]] and started building a model before I came to myself.
+It's only a little throw-away transmitter, after all.  Sheesh.
+
+After all that, I've got running code on the MSP430 that pushes out
+Morse code as fast as you would like.  On an ARM chip you could
+probably do 100,000 wpm with it, it's that lean and efficient.  Way
+over-engineered.  It's only a little throw-away transmitter, after
+all.
+
+With audio-rate m-sequence transmission, Morse code, and a flashing
+light (and debug outputs on all the pins), it all came to about 100
+bytes less than the 2 kB the chip has.  128 bytes of RAM seems to be
+enough to hold the stack and the few registers it needs.  Kind of a
+Pyrrhic victory.  I could have just stuck in a few delays in the main
+loop and been done with it.
+
+Just a little postscript:  here's the m-sequence generator in all its
+glory.  Four lines of C code.  /That/ I knocked out in less than an
+hour. 
+
+#+name: code:
+#+begin_src C
+
+uint16_t galshift(uint16_t bits) {
+  uint16_t carry = (bits & 0x01) << (REGLEN-1);
+  uint16_t next = carry ? (bits^GPOLY) : bits;
+  return carry + (next>>1);
+}
+
+#+end_src
+

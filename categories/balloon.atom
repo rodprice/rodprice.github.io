@@ -3,13 +3,89 @@
 <feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>Posts about balloon</title>
   <id>http://www.shinypenny.org/categories/balloon.atom</id>
-  <updated>2017-09-20T17:14:09Z</updated>
+  <updated>2017-10-16T02:30:13Z</updated>
   <author>
     <name>Rodney Price</name>
   </author>
   <link rel="self" type="application/atom+xml" href="http://www.shinypenny.org/categories/balloon.atom"/>
   <link rel="alternate" type="text/html" href="http://www.shinypenny.org/categories/balloon.html"/>
   <generator uri="https://getnikola.com/">Nikola</generator>
+  <entry>
+    <title>Morse code is surprisingly hard</title>
+    <id>http://www.shinypenny.org/posts/morse-code-is-surprisingly-hard.html</id>
+    <updated>2017-10-11T22:11:49-06:00</updated>
+    <published>2017-10-11T22:11:49-06:00</published>
+    <author>
+      <name>Rodney Price</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://www.shinypenny.org/posts/morse-code-is-surprisingly-hard.html"/>
+    <summary type="html">&lt;div&gt;&lt;p&gt;
+&lt;a href="http://www.shinypenny.org/images/balloon/morse-code.png"&gt;
+&lt;img alt="International Morse code" src="http://www.shinypenny.org/images/balloon/morse-code.png" title="International Morse code" style="float:right;width:25%;margin:10px"&gt;
+&lt;/a&gt;
+&lt;/p&gt;
+
+&lt;p&gt;
+Hubris: "Morse code was invented 150 years ago.  It's trivial."  And,
+"that guy did a pathetically bad job with his code.  I could knock out
+something way better in an hour or two."
+&lt;/p&gt;
+
+&lt;p&gt;
+Perhaps my particular variation on hubris began with my insistence on
+cramming a Morse code generator, pseudo-noise generator, and a couple
+of other bits into a processor with 128 bytes of RAM and 2 kB flash,
+an &lt;a href="http://www.mouser.com/ProductDetail/Texas-Instruments/MSP430G2231IPW14R/"&gt;MSP430G2231&lt;/a&gt;.  This little guy sells for 62 cents each in quantity.
+I had a few on hand, and since this was going to be a throwaway
+project – we wanted to test it by strapping it to a party balloon and
+letting it fly away until we couldn't hear it anymore – I thought I'd
+give it a try.  Perhaps another day I'll write about all the things I
+love about the MSP430.  This post is about 128 bytes of RAM, 2 kB
+flash memory, and a 1 MHz clock rate.
+&lt;/p&gt;
+
+&lt;p&gt;
+Truth be told, the trouble really got started when I decided that I
+would implement an &lt;a href="http://in.ncu.edu.tw/~ncume_ee/digilogi/prbs.htm"&gt;m-sequence&lt;/a&gt; generator as well as a Morse code
+generator.  You can get a lot of coding gain out of m-sequences, for
+which there's a surprisingly fast and simple algorithm.  The problem
+isn't implementing it – it literally took four lines of C code –
+but I wanted to run it at audio rates.  That meant I needed to run it
+in an interrupt-driven way.  In turn, that persuaded me that I should
+build an interrupt-driven Morse code generator.
+&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="http://www.shinypenny.org/posts/morse-code-is-surprisingly-hard.html"&gt;Read more…&lt;/a&gt; (7 min remaining to read)&lt;/p&gt;&lt;/div&gt;</summary>
+    <category term="balloon" label="balloon"/>
+    <category term="embedded" label="embedded"/>
+    <category term="radio" label="radio"/>
+  </entry>
+  <entry>
+    <title>You get what you pay for</title>
+    <id>http://www.shinypenny.org/posts/you-get-what-you-pay-for.html</id>
+    <updated>2017-09-21T07:13:05-06:00</updated>
+    <published>2017-09-21T07:13:05-06:00</published>
+    <author>
+      <name>Rodney Price</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://www.shinypenny.org/posts/you-get-what-you-pay-for.html"/>
+    <summary type="html">&lt;div&gt;&lt;p&gt;
+Amazon delivered the really cheap transmitter/receiver pair that I
+talked about in my last blog entry, and I wired them up on the
+breadboard.  I programmed an Arduino to turn the transmitter on for a
+moment, pause for a while, then repeat.  Here's what the spectrum
+analyzer had to say:
+&lt;/p&gt;
+
+&lt;p&gt;
+&lt;a href="http://www.shinypenny.org/images/balloon/spectrum-waterfall-40mhz.png"&gt;
+&lt;img alt="Transmitter on the spectrum analyzer" src="http://www.shinypenny.org/images/balloon/spectrum-waterfall-40mhz.png" title="Transmitter on the spectrum analyzer"&gt;
+&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="http://www.shinypenny.org/posts/you-get-what-you-pay-for.html"&gt;Read more…&lt;/a&gt; (4 min remaining to read)&lt;/p&gt;&lt;/div&gt;</summary>
+    <category term="balloon" label="balloon"/>
+    <category term="radio" label="radio"/>
+  </entry>
   <entry>
     <title>A really cheap 433 MHz beacon</title>
     <id>http://www.shinypenny.org/posts/a-really-cheap-433-mhz-beacon.html</id>
@@ -20,6 +96,12 @@
     </author>
     <link rel="alternate" type="text/html" href="http://www.shinypenny.org/posts/a-really-cheap-433-mhz-beacon.html"/>
     <summary type="html">&lt;div&gt;&lt;p&gt;
+&lt;a href="http://www.shinypenny.org/images/xy-mk-5v.jpg"&gt;
+&lt;img alt="Cheap 433 MHz receiver-transmitter pair" src="http://www.shinypenny.org/images/xy-mk-5v.jpg" title="Cheap 433 MHz receiver-transmitter pair" style="float:right;width:35%;margin:10px"&gt;
+&lt;/a&gt;
+&lt;/p&gt;
+
+&lt;p&gt;
 We've been having trouble getting the 433 MHz beacon (otherwise known
 as the 70 cm beacon) going, so one of our partners Richard suggested
 we use a very simple beacon that just needs power and a bit stream.
@@ -27,6 +109,19 @@ I've shown a picture of the two at right.  I thought I'd give it a
 try, so I bought a few.  Sparkfun was backordered so I searched on
 Amazon and found people selling six transmitter-receiver pairs for
 $10.
+&lt;/p&gt;
+
+&lt;p&gt;
+The transmitters are 25 mW at 12V power supply.  We could use a 9V
+battery and get 15-20 mW out of it.  I checked the frequency against
+the Colorado ham radio &lt;a href="http://shinypenny.org/papers/colorado-70cm-band-plan.pdf"&gt;band plan for 70 cm&lt;/a&gt; (tells you what modulations
+are allowed where) and found that 433.92 MHz was right in the middle
+of a band where the FCC does not allow repeaters – good for us.
+Nothing would infuriate a bunch of hams, and generate complaints to
+the FCC, faster than running a beacon on a repeater frequency.  The
+transmitter modules are so cheap that their center frequency can drift
+over +/- 0.5 MHz, and probably will when the temperature varies.
+Fortunately the band is about 1.5 MHz wide.
 &lt;/p&gt;
 
 &lt;p&gt;&lt;a href="http://www.shinypenny.org/posts/a-really-cheap-433-mhz-beacon.html"&gt;Read more…&lt;/a&gt; (3 min remaining to read)&lt;/p&gt;&lt;/div&gt;</summary>
@@ -52,6 +147,18 @@ Not at all.  It's supposed to act like a ground plane, and RF doesn't
 go through ground planes…
 &lt;/p&gt;
 
+&lt;p&gt;
+&lt;a href="http://www.shinypenny.org/images/balloon/bent-antenna-model-with-plane-radiation-pattern.png"&gt;
+&lt;img alt="Radiation pattern for bent antenna with plane model" src="http://www.shinypenny.org/images/balloon/bent-antenna-model-with-plane-radiation-pattern.png" title="Radiation pattern for bent antenna with plane model" style="float:left;width:35%;margin:10px"&gt;
+&lt;/a&gt;
+&lt;/p&gt;
+
+&lt;p&gt;
+&lt;a href="http://www.shinypenny.org/images/balloon/bent-antenna-model-with-plane.png"&gt;
+&lt;img alt="Bent antenna model with plane" src="http://www.shinypenny.org/images/balloon/bent-antenna-model-with-plane.png" title="Bent antenna model with plane" style="float:leftright;width:30%;margin:10px"&gt;
+&lt;/a&gt;
+&lt;/p&gt;
+
 &lt;p&gt;&lt;a href="http://www.shinypenny.org/posts/antennas-always-surprise-me.html"&gt;Read more…&lt;/a&gt; (1 min remaining to read)&lt;/p&gt;&lt;/div&gt;</summary>
     <category term="antenna" label="antenna"/>
     <category term="balloon" label="balloon"/>
@@ -67,6 +174,12 @@ go through ground planes…
     </author>
     <link rel="alternate" type="text/html" href="http://www.shinypenny.org/posts/70cm-beacon-progress.html"/>
     <summary type="html">&lt;div&gt;&lt;p&gt;
+&lt;a href="http://www.shinypenny.org/images/balloon/434-mhz-wireless-transceiver-rfm69hcw.jpg"&gt;
+&lt;img alt="My first try at soldering a transmitter" src="http://www.shinypenny.org/images/balloon/434-mhz-wireless-transceiver-rfm69hcw.jpg" title="My first try at soldering a transmitter" style="float:left;width:35%;margin:10px"&gt;
+&lt;/a&gt;
+&lt;/p&gt;
+
+&lt;p&gt;
 We're putting two radios on the high-altitude balloon, just to have a
 backup in case one of them fails.  We're pretty confident that the 
 balloon will fly, but we'd like to get it back, and radio beacons are
@@ -79,6 +192,24 @@ really would prefer not to fry your part with too much heat.  Such was
 the case when I tried to attach wires to the 70 cm transmitter modules
 I had bought for the balloon.  You can see one of them in the picture
 with the quarter, to the left.
+&lt;/p&gt;
+
+&lt;p&gt;
+And I had bought two of them, just in case!  Normally, you solder to
+these things using a header, which has pins every 0.1 inches.  Not
+this thing.  It had to have them every 2 mm.  Just different enough to
+make things difficult.
+&lt;/p&gt;
+
+&lt;p&gt;
+So I fried two of them, so badly that I actually cracked several of
+the parts on the boards in pieces.  For those of you who've never
+soldered electronic parts before, that's really bad.  
+&lt;/p&gt;
+
+&lt;p&gt;
+When I was in college, I had a summer job soldering electronic parts 8
+hours a day.  I got pretty good at it, I thought.  Maybe not so much.
 &lt;/p&gt;
 
 &lt;p&gt;&lt;a href="http://www.shinypenny.org/posts/70cm-beacon-progress.html"&gt;Read more…&lt;/a&gt; (1 min remaining to read)&lt;/p&gt;&lt;/div&gt;</summary>
@@ -94,12 +225,16 @@ with the quarter, to the left.
       <name>Rodney Price</name>
     </author>
     <link rel="alternate" type="text/html" href="http://www.shinypenny.org/posts/a-hypothetical-flight-from-my-house.html"/>
-    <summary type="html">&lt;div&gt;&lt;p&gt;
+    <summary type="html">&lt;p&gt;
 If we launched a high-altitude balloon from my house tomorrow morning,
 here's what might happen.
 &lt;/p&gt;
 
-&lt;p&gt;&lt;a href="http://www.shinypenny.org/posts/a-hypothetical-flight-from-my-house.html"&gt;Read more…&lt;/a&gt; (1 min remaining to read)&lt;/p&gt;&lt;/div&gt;</summary>
+&lt;p&gt;
+&lt;a href="http://www.shinypenny.org/images/balloon/balloon-flight-prediction-20170512.png"&gt;
+&lt;img alt="Balloon track" src="http://www.shinypenny.org/images/balloon/balloon-flight-prediction-20170512.png" title="Balloon track" style="width:100%;margin:10px"&gt;
+&lt;/a&gt;
+&lt;/p&gt;</summary>
     <category term="balloon" label="balloon"/>
   </entry>
   <entry>
@@ -112,11 +247,25 @@ here's what might happen.
     </author>
     <link rel="alternate" type="text/html" href="http://www.shinypenny.org/posts/432-mhz-beacon-antenna-first-attempt.html"/>
     <summary type="html">&lt;div&gt;&lt;p&gt;
+&lt;a href="http://www.shinypenny.org/images/balloon/432-MHz-antenna.png"&gt;
+&lt;img alt="First attempt at a 432 MHz antenna" src="http://www.shinypenny.org/images/balloon/432-MHz-antenna.png" title="First attempt at a 432 MHz antenna" style="float:right;width:35%;margin:10px"&gt;
+&lt;/a&gt;
+&lt;/p&gt;
+
+&lt;p&gt;
 They say you should be ready to toss out your first attempt at a
 design, but I kind of like this one.  I'm planning to use it to test
 the 432 MHz beacon – the one that doesn't do much other than go
 "beep, beep, beep."  It's a bit beefy at about 100 grams, so I'm
 pretty sure we're going to need another go-around.
+&lt;/p&gt;
+
+&lt;p&gt;
+It's most important characteristic, aside from not weighing 100 grams,
+will be it's ability to land right-side up.  It doesn't have to point
+straight up, just maybe better than 45 degrees from vertical.  And it
+has to be strong enough not to be bent up too much when it lands.
+(That's why I used 8 gauge copper wire, but that's heavy stuff.)
 &lt;/p&gt;
 
 &lt;p&gt;&lt;a href="http://www.shinypenny.org/posts/432-mhz-beacon-antenna-first-attempt.html"&gt;Read more…&lt;/a&gt; (1 min remaining to read)&lt;/p&gt;&lt;/div&gt;</summary>

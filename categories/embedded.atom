@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-stylesheet href="http://www.shinypenny.org/assets/xml/atom.xsl" type="text/xsl media="all"?>
+<feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
+  <title>Posts about embedded</title>
+  <id>http://www.shinypenny.org/categories/embedded.atom</id>
+  <updated>2017-10-16T02:30:13Z</updated>
+  <author>
+    <name>Rodney Price</name>
+  </author>
+  <link rel="self" type="application/atom+xml" href="http://www.shinypenny.org/categories/embedded.atom"/>
+  <link rel="alternate" type="text/html" href="http://www.shinypenny.org/categories/embedded.html"/>
+  <generator uri="https://getnikola.com/">Nikola</generator>
+  <entry>
+    <title>Morse code is surprisingly hard</title>
+    <id>http://www.shinypenny.org/posts/morse-code-is-surprisingly-hard.html</id>
+    <updated>2017-10-11T22:11:49-06:00</updated>
+    <published>2017-10-11T22:11:49-06:00</published>
+    <author>
+      <name>Rodney Price</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://www.shinypenny.org/posts/morse-code-is-surprisingly-hard.html"/>
+    <summary type="html">&lt;div&gt;&lt;p&gt;
+&lt;a href="http://www.shinypenny.org/images/balloon/morse-code.png"&gt;
+&lt;img alt="International Morse code" src="http://www.shinypenny.org/images/balloon/morse-code.png" title="International Morse code" style="float:right;width:25%;margin:10px"&gt;
+&lt;/a&gt;
+&lt;/p&gt;
+
+&lt;p&gt;
+Hubris: "Morse code was invented 150 years ago.  It's trivial."  And,
+"that guy did a pathetically bad job with his code.  I could knock out
+something way better in an hour or two."
+&lt;/p&gt;
+
+&lt;p&gt;
+Perhaps my particular variation on hubris began with my insistence on
+cramming a Morse code generator, pseudo-noise generator, and a couple
+of other bits into a processor with 128 bytes of RAM and 2 kB flash,
+an &lt;a href="http://www.mouser.com/ProductDetail/Texas-Instruments/MSP430G2231IPW14R/"&gt;MSP430G2231&lt;/a&gt;.  This little guy sells for 62 cents each in quantity.
+I had a few on hand, and since this was going to be a throwaway
+project – we wanted to test it by strapping it to a party balloon and
+letting it fly away until we couldn't hear it anymore – I thought I'd
+give it a try.  Perhaps another day I'll write about all the things I
+love about the MSP430.  This post is about 128 bytes of RAM, 2 kB
+flash memory, and a 1 MHz clock rate.
+&lt;/p&gt;
+
+&lt;p&gt;
+Truth be told, the trouble really got started when I decided that I
+would implement an &lt;a href="http://in.ncu.edu.tw/~ncume_ee/digilogi/prbs.htm"&gt;m-sequence&lt;/a&gt; generator as well as a Morse code
+generator.  You can get a lot of coding gain out of m-sequences, for
+which there's a surprisingly fast and simple algorithm.  The problem
+isn't implementing it – it literally took four lines of C code –
+but I wanted to run it at audio rates.  That meant I needed to run it
+in an interrupt-driven way.  In turn, that persuaded me that I should
+build an interrupt-driven Morse code generator.
+&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="http://www.shinypenny.org/posts/morse-code-is-surprisingly-hard.html"&gt;Read more…&lt;/a&gt; (7 min remaining to read)&lt;/p&gt;&lt;/div&gt;</summary>
+    <category term="balloon" label="balloon"/>
+    <category term="embedded" label="embedded"/>
+    <category term="radio" label="radio"/>
+  </entry>
+</feed>

@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="/assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Shiny Penny (Posts about beacon)</title><link>http://www.shinypenny.org/</link><description></description><atom:link href="http://www.shinypenny.org/categories/beacon.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2017 &lt;a href="mailto:rod@shinypenny.org"&gt;Rodney Price&lt;/a&gt; </copyright><lastBuildDate>Wed, 20 Sep 2017 18:28:16 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>A really cheap 433 MHz beacon</title><link>http://www.shinypenny.org/posts/a-really-cheap-433-mhz-beacon.html</link><dc:creator>Rodney Price</dc:creator><description>&lt;div&gt;&lt;p&gt;
+<?xml-stylesheet type="text/xsl" href="/assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Shiny Penny (Posts about beacon)</title><link>http://www.shinypenny.org/</link><description></description><atom:link href="http://www.shinypenny.org/categories/beacon.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2017 &lt;a href="mailto:rod@shinypenny.org"&gt;Rodney Price&lt;/a&gt; </copyright><lastBuildDate>Mon, 16 Oct 2017 02:30:11 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>A really cheap 433 MHz beacon</title><link>http://www.shinypenny.org/posts/a-really-cheap-433-mhz-beacon.html</link><dc:creator>Rodney Price</dc:creator><description>&lt;div&gt;&lt;p&gt;
+&lt;a href="http://www.shinypenny.org/images/xy-mk-5v.jpg"&gt;
+&lt;img alt="Cheap 433 MHz receiver-transmitter pair" src="http://www.shinypenny.org/images/xy-mk-5v.jpg" title="Cheap 433 MHz receiver-transmitter pair" style="float:right;width:35%;margin:10px"&gt;
+&lt;/a&gt;
+&lt;/p&gt;
+
+&lt;p&gt;
 We've been having trouble getting the 433 MHz beacon (otherwise known
 as the 70 cm beacon) going, so one of our partners Richard suggested
 we use a very simple beacon that just needs power and a bit stream.
@@ -7,6 +13,19 @@ I've shown a picture of the two at right.  I thought I'd give it a
 try, so I bought a few.  Sparkfun was backordered so I searched on
 Amazon and found people selling six transmitter-receiver pairs for
 $10.
+&lt;/p&gt;
+
+&lt;p&gt;
+The transmitters are 25 mW at 12V power supply.  We could use a 9V
+battery and get 15-20 mW out of it.  I checked the frequency against
+the Colorado ham radio &lt;a href="http://shinypenny.org/papers/colorado-70cm-band-plan.pdf"&gt;band plan for 70 cm&lt;/a&gt; (tells you what modulations
+are allowed where) and found that 433.92 MHz was right in the middle
+of a band where the FCC does not allow repeaters – good for us.
+Nothing would infuriate a bunch of hams, and generate complaints to
+the FCC, faster than running a beacon on a repeater frequency.  The
+transmitter modules are so cheap that their center frequency can drift
+over +/- 0.5 MHz, and probably will when the temperature varies.
+Fortunately the band is about 1.5 MHz wide.
 &lt;/p&gt;
 
 &lt;p&gt;&lt;a href="http://www.shinypenny.org/posts/a-really-cheap-433-mhz-beacon.html"&gt;Read more…&lt;/a&gt; (3 min remaining to read)&lt;/p&gt;&lt;/div&gt;</description><category>balloon</category><category>beacon</category><category>radio</category><guid>http://www.shinypenny.org/posts/a-really-cheap-433-mhz-beacon.html</guid><pubDate>Wed, 06 Sep 2017 03:51:43 GMT</pubDate></item></channel></rss>

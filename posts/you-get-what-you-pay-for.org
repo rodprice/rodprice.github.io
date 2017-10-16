@@ -16,10 +16,6 @@ breadboard.  I programmed an Arduino to turn the transmitter on for a
 moment, pause for a while, then repeat.  Here's what the spectrum
 analyzer had to say:
 
-#+begin_html
-<!-- TEASER_END -->
-#+end_html
-
 #+name: fig:spectrum-waterfall-40mhz
 #+caption: Transmitter on the spectrum analyzer
 #+begin_html
@@ -30,6 +26,10 @@ src="/images/balloon/spectrum-waterfall-40mhz.png"
 title="Transmitter on the spectrum analyzer"
 </a>
 </p>
+#+end_html
+
+#+begin_html
+<!-- TEASER_END -->
 #+end_html
 
 Not pretty.  Maybe 60 kHz bandwidth at 3 dB, 200 kHz at 40 dB down

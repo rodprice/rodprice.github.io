@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article# " lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="How an over-engineered Morse code generator works.">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Morse code is surprisingly hard | Shiny Penny</title>
+<link href="/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="/assets/css/rst.css" rel="stylesheet" type="text/css">
+<link href="/assets/css/code.css" rel="stylesheet" type="text/css">
+<link href="/assets/css/colorbox.css" rel="stylesheet" type="text/css">
+<link href="/assets/css/theme.css" rel="stylesheet" type="text/css">
+<link href="/assets/css/custom.css" rel="stylesheet" type="text/css">
+<link href="/assets/css/ipython.min.css" rel="stylesheet" type="text/css">
+<link href="/assets/css/nikola_ipython.css" rel="stylesheet" type="text/css">
+<meta name="theme-color" content="#5670d4">
+<meta name="generator" content="Nikola (getnikola.com)">
+<link rel="alternate" type="application/rss+xml" title="RSS" href="/rss.xml">
+<link rel="alternate" type="application/atom+xml" title="Atom" href="/index.atom">
+<link rel="canonical" href="http://www.shinypenny.org/posts/morse-code-is-surprisingly-hard.html">
+<!--[if lt IE 9]><script src="/assets/js/html5.js"></script><![endif]--><style>body{background-image:url(/images/topography.png);}</style>
+<meta name="author" content="Rodney Price">
+<link rel="prev" href="/posts/you-get-what-you-pay-for.html" title="You get what you pay for" type="text/html">
+<meta property="og:site_name" content="Shiny Penny">
+<meta property="og:title" content="Morse code is surprisingly hard">
+<meta property="og:url" content="http://www.shinypenny.org/posts/morse-code-is-surprisingly-hard.html">
+<meta property="og:description" content="How an over-engineered Morse code generator works.">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2017-10-11T22:11:49-06:00">
+<meta property="article:tag" content="balloon">
+<meta property="article:tag" content="embedded">
+<meta property="article:tag" content="radio">
+</head>
+<body>
+<a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
+
+<!-- Menubar -->
+
+<nav class="navbar navbar-inverse navbar-static-top"><div class="container">
+<!-- This keeps the margins nice -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar" aria-controls="bs-navbar" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="http://www.shinypenny.org/">
+
+                <span id="blog-title">Shiny Penny</span>
+            </a>
+        </div>
+<!-- /.navbar-header -->
+        <div class="collapse navbar-collapse" id="bs-navbar" aria-expanded="false">
+            <ul class="nav navbar-nav">
+<li>
+<a href="/pages/about/index.html">About</a>
+            </li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Projects <b class="caret"></b></a>
+            <ul class="dropdown-menu"><li>
+<a href="/pages/projects/balloon/">High-altitude balloon</a>
+            </li></ul>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Reference <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+<li>
+<a href="/pages/reference/markup/">Markup</a>
+                    </li>
+<li>
+<a href="/pages/reference/software/">Software</a>
+                    </li>
+<li>
+<a href="/pages/reference/hardware/">Hardware</a>
+            </li>
+</ul>
+</li>
+<li>
+<a href="http://github.com/rodprice">GitHub</a>
+                </li>
+<li>
+<a href="/archive.html">Archive</a>
+                </li>
+<li>
+<a href="/categories/">Tags</a>
+
+                
+            </li>
+</ul>
+<ul class="nav navbar-nav navbar-right">
+<li>
+    <a href="/posts/morse-code-is-surprisingly-hard.org" id="sourcelink">Source</a>
+    </li>
+
+                
+            </ul>
+</div>
+<!-- /.navbar-collapse -->
+    </div>
+<!-- /.container -->
+</nav><!-- End of Menubar --><div class="container" id="content" role="main">
+    <div class="body-content">
+        <!--Body content-->
+        <div class="row">
+            
+            
+<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="/posts/morse-code-is-surprisingly-hard.html" class="u-url">Morse code is surprisingly hard</a></h1>
+
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                    Rodney Price
+            </span></p>
+            <p class="dateline"><a href="/posts/morse-code-is-surprisingly-hard.html" rel="bookmark"><time class="published dt-published" datetime="2017-10-11T22:11:49-06:00" itemprop="datePublished" title="2017-10-11 22:11">2017-10-11 22:11</time></a></p>
+                <p class="commentline">
+        
+    <a href="/posts/morse-code-is-surprisingly-hard.html#disqus_thread" data-disqus-identifier="cache/posts/morse-code-is-surprisingly-hard.html">Comments</a>
+
+
+            
+        </p>
+<p class="sourceline"><a href="/posts/morse-code-is-surprisingly-hard.org" id="sourcelink">Source</a></p>
+
+        </div>
+        
+
+    </header><div class="e-content entry-content" itemprop="articleBody text">
+    <p>
+<a href="/images/balloon/morse-code.png">
+<img alt="International Morse code" src="/images/balloon/morse-code.png" title="International Morse code" style="float:right;width:25%;margin:10px"></a>
+</p>
+
+<p>
+Hubris: "Morse code was invented 150 years ago.  It's trivial."  And,
+"that guy did a pathetically bad job with his code.  I could knock out
+something way better in an hour or two."
+</p>
+
+<p>
+Perhaps my particular variation on hubris began with my insistence on
+cramming a Morse code generator, pseudo-noise generator, and a couple
+of other bits into a processor with 128 bytes of RAM and 2 kB flash,
+an <a href="http://www.mouser.com/ProductDetail/Texas-Instruments/MSP430G2231IPW14R/">MSP430G2231</a>.  This little guy sells for 62 cents each in quantity.
+I had a few on hand, and since this was going to be a throwaway
+project – we wanted to test it by strapping it to a party balloon and
+letting it fly away until we couldn't hear it anymore – I thought I'd
+give it a try.  Perhaps another day I'll write about all the things I
+like about the MSP430.  This post is about 128 bytes of RAM, 2 kB
+flash memory, and a 1 MHz clock rate.
+</p>
+
+<p>
+Truth be told, the trouble really got started when I decided that I
+would implement an <a href="http://in.ncu.edu.tw/~ncume_ee/digilogi/prbs.htm">m-sequence</a> generator as well as a Morse code
+generator.  You can get a lot of coding gain out of m-sequences, for
+which there's a surprisingly fast and simple algorithm.  The problem
+isn't implementing it – it literally took four lines of C code –
+but I wanted to run it at audio rates.  That meant I needed to run it
+in an interrupt-driven way.  In turn, that persuaded me that I should
+build an interrupt-driven Morse code generator.
+</p>
+
+<!-- TEASER_END -->
+
+<p>
+There's nothing wrong with interrupt-driven code.  In fact, for the
+MSP430 it's the Right Way to Do It.  The <a href="https://en.wikipedia.org/wiki/Morse_code#Timing">Wikipedia article</a> on Morse
+code gives specs for timing: one time unit (tick) for a dot, three for
+a dash, with one tick between symbols (dots and dashes), three between
+letters, and seven between words.  Nice and regular, and therefore a
+good fit for interrupt-driven code.
+</p>
+
+<p>
+That lead me to think about a state machine.  At each trip through the
+interrupt code, that is, at each time tick, the state machine
+advances, sending out a dot, a space, a third of a dash, etc.  It
+ticks through the message to be sent until it's all done, and then it
+quits.  
+</p>
+
+<p>
+I came up with what I still think is a clever way to represent the
+state, involving two 8-bit registers, <code>mcode</code> and <code>mchar</code>.  <code>mcode</code>
+holds the dots and dashes comprising a letter, where 1 represents a
+dash and 0 represents a dot.  For example, the Morse code for the
+letter C in this scheme is 1010, dash-dot-dash-dot.  No Morse code
+letter has more than seven dots and dashes, so it all fits in a byte.
+</p>
+
+<p>
+The structure of the dots and dashes is found in the second register,
+<code>mchar</code>.  A dot followed by a space is 10, and a dash followed by a
+space is 1110.  The space between letters followed by a dot and space
+is 0010, and the space between letters followed by a dash and a space
+is 001110.  The space between words, seven ticks, is 0000.  Again,
+this fits into a single byte.
+</p>
+
+<p>
+The state machine proceeds by sending the left-most bit (MSB) in
+<code>mchar</code> to the transmitter and shifting <code>mchar</code> to the left on each
+tick.  When the symbol (dot or dash) is completely done, the MSB of
+<code>mcode</code> is read to determine whether the next symbol is a dot or a
+dash, the new symbol is put into <code>mchar</code>, and <code>mcode</code> is shifted to the
+left.
+</p>
+
+<p>
+The rub, and I think the clever part, comes when the state machine has
+finished a complete symbol <code>mchar</code> or letter <code>mcode</code>.  How does the
+state machine know when to stop?  The answer lies in the value of the
+bit that goes in the right-most bit (LSB) when the left-shift takes
+place.
+</p>
+
+<p>
+For <code>mchar</code>, it's simple.  I always put in a 1.  The bits comprising
+<code>mchar</code> always end in 0.  When the last 0 (space) is shifted out, the
+register contains all 1's.  When that happens, it's time to look at
+the next symbol in <code>mcode</code>.
+</p>
+
+<p>
+This gives us five symbols to deal with, shown in the C code below.
+</p>
+
+<div class="highlight"><pre><span></span><span class="cp">#define DOT       0b10111111</span>
+<span class="cp">#define DASH      0b11101111</span>
+<span class="cp">#define SPACEDOT  0b00101111</span>
+<span class="cp">#define SPACEDASH 0b00111011</span>
+<span class="cp">#define SPACEWORD 0b00001111</span>
+</pre></div>
+
+<p>
+You can see that the relevant bits of the symbol are pushed as far to
+the left as possible, with 1's padding the symbol on the right.  The
+spaces between symbols, letters, and words fall out correctly, as you
+can see in this example:
+</p>
+
+<pre class="example">
+A -&gt; __o_ooo___
+D -&gt; ooo_o_o___
+0 -&gt; ooo_ooo_ooo_ooo_ooo___
+Y -&gt; ooo_o_ooo_ooo___
+X -&gt; ooo_o_o_ooo___
+  -&gt; ____
+s -&gt; o_o_o___
+e -&gt; o___
+n -&gt; ooo_o___
+d -&gt; ooo_o_o___
+i -&gt; o_o___
+n -&gt; ooo_o___
+g -&gt; ooo_ooo_o___
+  -&gt; ____
+m -&gt; ooo_ooo___
+- -&gt; ooo_o_o_o_o_ooo_
+</pre>
+
+<p>
+Here I'm showing the beginning of the message "AD0YX sending
+m-sequence".  An underscore <code>_</code> denotes a space and <code>o</code> denotes a
+"mark"; that is, a space means no signal and a mark means a signal.
+You can see that this is generating correct Morse code, and with the
+proper timing.
+</p>
+
+<p>
+So now we know how to generate dots and dashes, and put in appropriate
+spaces.  I haven't yet explained how to assemble those dots and dashes
+into meaningful Morse code.  To do that, we use the <code>mcode</code> register.
+When the <code>mchar</code> register is all 1's, that signals the state machine
+to pop off the next dot or dash from the <code>mcode</code> register and load the
+next symbol into <code>mchar</code>.  A left-shift of <code>mcode</code> queues up the next
+dot or dash.
+</p>
+
+<p>
+I use a lookup table to go from ASCII to the <code>mcode</code> templates.
+Here's a small section:
+</p>
+
+<div class="highlight"><pre><span></span><span class="k">static</span> <span class="k">const</span> <span class="kt">uint8_t</span> <span class="n">morse</span><span class="p">[</span><span class="n">MORSE_LUT_SIZE</span><span class="p">]</span> <span class="o">=</span>
+  <span class="p">{</span>
+    <span class="mi">0</span><span class="n">b11111000</span><span class="p">,</span>                 <span class="cm">/* '0' */</span>
+    <span class="mi">0</span><span class="n">b01111000</span><span class="p">,</span>                 <span class="cm">/* '1' */</span>
+    <span class="mi">0</span><span class="n">b00111000</span><span class="p">,</span>                 <span class="cm">/* '2' */</span>
+    <span class="mi">0</span><span class="n">b00011000</span><span class="p">,</span>                 <span class="cm">/* '3' */</span>
+    <span class="mi">0</span><span class="n">b00001000</span><span class="p">,</span>                 <span class="cm">/* '4' */</span>
+    <span class="mi">0</span><span class="n">b00000111</span><span class="p">,</span>                 <span class="cm">/* '5' */</span>
+    <span class="mi">0</span><span class="n">b10000111</span><span class="p">,</span>                 <span class="cm">/* '6' */</span>
+    <span class="mi">0</span><span class="n">b11000111</span><span class="p">,</span>                 <span class="cm">/* '7' */</span>
+    <span class="mi">0</span><span class="n">b11100111</span><span class="p">,</span>                 <span class="cm">/* '8' */</span>
+    <span class="mi">0</span><span class="n">b11110111</span><span class="p">,</span>                 <span class="cm">/* '9' */</span>
+    <span class="mi">0</span><span class="n">b01000000</span><span class="p">,</span>                 <span class="cm">/* 'A' */</span>
+    <span class="mi">0</span><span class="n">b10001111</span><span class="p">,</span>                 <span class="cm">/* 'B' */</span>
+    <span class="mi">0</span><span class="n">b10101111</span><span class="p">,</span>                 <span class="cm">/* 'C' */</span>
+    <span class="p">...</span>
+</pre></div>
+
+<p>
+In the notation I used above, an 'A' is <code>o_ooo_</code>.  Here it's just
+written <code>01</code>, for a dot followed by a dash.  <code>0</code> for a dot; <code>1</code> for a
+dash.  That leaves six more bits in <code>mcode</code>.  This time there's no
+guarantee that the last information-carrying bit will be a <code>0</code>, as it
+was in <code>mchar</code>.  Now the state machine is looking for either all 0's
+or all 1's to signal that the current letter is completely sent.  If
+the letter ends in a dash, so that the last meaningful bit is <code>1</code>, I
+fill the rest with 0's.  If, on the other hand, the letter ends in a
+dot, I fill the rest with 1's.
+</p>
+
+<p>
+Once the state machine sees that it's time for a new letter (a new
+<code>mcode</code> template) we have to put in three spaces to indicate that a
+full letter has been sent.  That's what the symbols  <code>SPACEDOT</code> and
+<code>SPACEDASH</code> are for.  The next dot or dash to go out uses one of those
+two rather than <code>DOT</code> or <code>DASH</code>, and there are the three required
+spaces between letters.
+</p>
+
+<p>
+How about spaces between words?  For this I use a bit of a trick.  If
+the lookup table can't find a Morse code template for a letter, it
+returns an error code.  This error code doesn't correspond to any
+Morse code template.  The state machine sees that, and inserts a
+<code>SPACEWORD</code> into <code>mcode</code>.  The next time through the lookup table,
+either the state machine gets a valid <code>mcode</code>, or it hits the end of
+the message string and stops.
+</p>
+
+<p>
+All this sounds straightforward, but getting it right was really
+painful.  I spent almost a week of nights after work struggling with
+it.  I think I threw away four or five attempts before I got it right.
+This was far from "knock it out in an hour or two."  And that was just
+to get it running under Linux.  Getting it onto the MSP430 chip was
+another matter entirely.
+</p>
+
+<p>
+Here is the logic that finally worked:
+</p>
+
+<div class="highlight"><pre><span></span><span class="cm">/* Sends a new bit at every call until ring buffer is empty */</span>
+<span class="n">BIT</span> <span class="nf">tock</span><span class="p">()</span> <span class="p">{</span>
+  <span class="k">if</span> <span class="p">(</span><span class="n">donechar</span><span class="p">())</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">donecode</span><span class="p">())</span> <span class="p">{</span>
+      <span class="k">if</span> <span class="p">(</span><span class="n">rbempty</span><span class="p">(</span><span class="o">&amp;</span><span class="n">ring</span><span class="p">))</span> <span class="p">{</span> 
+	<span class="n">mcode</span> <span class="o">=</span> <span class="n">ZEROS</span><span class="p">;</span>
+	<span class="n">mchar</span> <span class="o">=</span> <span class="n">ZEROS</span><span class="p">;</span>
+	<span class="k">return</span> <span class="mi">0</span><span class="p">;</span>         <span class="cm">/* wait for new letters */</span>
+      <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+	<span class="n">mcode</span> <span class="o">=</span> <span class="n">rbget</span><span class="p">(</span><span class="o">&amp;</span><span class="n">ring</span><span class="p">);</span>
+	<span class="k">if</span> <span class="p">(</span><span class="n">mcode</span> <span class="o">==</span> <span class="n">ONES</span><span class="p">)</span>
+	  <span class="n">mchar</span> <span class="o">=</span> <span class="n">SPACEWORD</span><span class="p">;</span>
+	<span class="k">else</span>
+	  <span class="n">nextspacecode</span><span class="p">();</span>
+      <span class="p">}</span>
+    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+      <span class="n">nextcode</span><span class="p">();</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+  <span class="n">iowrite</span><span class="p">(</span><span class="n">nextchar</span><span class="p">());</span>
+  <span class="k">return</span> <span class="mi">1</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+
+<p>
+Notice the bit about the ring buffer?  (shiver..)  It's a little queue
+that takes Morse code from the main loop and makes it available to the
+interrupt routine above.  That way you can asynchronously push Morse
+code into the queue whenever it becomes available from the main loop,
+and have it sent out from the interrupt routine timed correctly.
+</p>
+
+<p>
+I won't put you through the pain I had trying to get that to work.  It
+worked fine on Linux, where everything runs sequentially and there's
+no running out of time before the next interrupt comes along.  Running
+concurrently in real time on the MSP430 just didn't work, and I still
+don't know why.  In the end, rather than throw the thing down on the
+floor and stomp on it, I just stuffed every last bit of code into the
+interrupt routine and called it good.
+</p>
+
+<p>
+If I ever get it to work, I'll write a post about it.  (Bet you can't
+wait for that.)  This got me so cranked up that I pulled out my formal
+methods <a href="http://alloy.mit.edu">book</a> and started building a model before I came to myself.
+It's only a little throw-away transmitter, after all.  Sheesh.
+</p>
+
+<p>
+After all that, I've got running code on the MSP430 that pushes out
+Morse code as fast as you would like.  On an ARM chip you could
+probably do 100,000 wpm with it, it's that lean and efficient.  Way
+over-engineered.  It's only a little throw-away transmitter, after
+all.
+</p>
+
+<p>
+With audio-rate m-sequence transmission, Morse code, and a flashing
+light (and debug outputs on all the pins), it all came to about 100
+bytes less than the 2 kB the chip has.  128 bytes of RAM seems to be
+enough to hold the stack and the few registers it needs.  Kind of a
+Pyrrhic victory.  I could have just stuck in a few delays in the main
+loop and been done with it.
+</p>
+
+<p>
+Just a little postscript:  here's the m-sequence generator in all its
+glory.  Four lines of C code.  <i>That</i> I knocked out in less than an
+hour. 
+</p>
+
+<div class="highlight"><pre><span></span><span class="kt">uint16_t</span> <span class="nf">galshift</span><span class="p">(</span><span class="kt">uint16_t</span> <span class="n">bits</span><span class="p">)</span> <span class="p">{</span>
+  <span class="kt">uint16_t</span> <span class="n">carry</span> <span class="o">=</span> <span class="p">(</span><span class="n">bits</span> <span class="o">&amp;</span> <span class="mh">0x01</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="p">(</span><span class="n">REGLEN</span><span class="o">-</span><span class="mi">1</span><span class="p">);</span>
+  <span class="kt">uint16_t</span> <span class="n">next</span> <span class="o">=</span> <span class="n">carry</span> <span class="o">?</span> <span class="p">(</span><span class="n">bits</span><span class="o">^</span><span class="n">GPOLY</span><span class="p">)</span> <span class="o">:</span> <span class="n">bits</span><span class="p">;</span>
+  <span class="k">return</span> <span class="n">carry</span> <span class="o">+</span> <span class="p">(</span><span class="n">next</span><span class="o">&gt;&gt;</span><span class="mi">1</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+    </div>
+    <aside class="postpromonav"><nav><ul itemprop="keywords" class="tags">
+<li><a class="tag p-category" href="/categories/balloon.html" rel="tag">balloon</a></li>
+            <li><a class="tag p-category" href="/categories/embedded.html" rel="tag">embedded</a></li>
+            <li><a class="tag p-category" href="/categories/radio.html" rel="tag">radio</a></li>
+        </ul>
+<ul class="pager hidden-print">
+<li class="previous">
+                <a href="/posts/you-get-what-you-pay-for.html" rel="prev" title="You get what you pay for">Previous post</a>
+            </li>
+        </ul></nav></aside><section class="comments hidden-print"><h2>Comments</h2>
+        
+        
+        <div id="disqus_thread"></div>
+        <script>
+        var disqus_shortname ="shiny-penny",
+            disqus_url="http://www.shinypenny.org/posts/morse-code-is-surprisingly-hard.html",
+        disqus_title="Morse code is surprisingly hard",
+        disqus_identifier="cache/posts/morse-code-is-surprisingly-hard.html",
+        disqus_config = function () {
+            this.language = "en";
+        };
+        (function() {
+            var dsq = document.createElement('script'); dsq.async = true;
+            dsq.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script><noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a>
+</noscript>
+    <a href="https://disqus.com" class="dsq-brlink" rel="nofollow">Comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+        </section></article><script>var disqus_shortname="shiny-penny";(function(){var a=document.createElement("script");a.async=true;a.src="https://"+disqus_shortname+".disqus.com/count.js";(document.getElementsByTagName("head")[0]||document.getElementsByTagName("body")[0]).appendChild(a)}());</script>
+</div>
+        <!--End of body content-->
+
+        <footer id="footer">
+            Contents © 2017         <a href="mailto:rod@shinypenny.org">Rodney Price</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         
+            
+        </footer>
+</div>
+</div>
+
+
+            <script src="/assets/js/jquery.min.js"></script><script src="/assets/js/bootstrap.min.js"></script><script src="/assets/js/moment-with-locales.min.js"></script><script src="/assets/js/fancydates.js"></script><script src="/assets/js/jquery.colorbox-min.js"></script><script>$('a.image-reference:not(.islink) img:not(.islink)').parent().colorbox({rel:"gal",maxWidth:"100%",maxHeight:"100%",scalePhotos:true});</script><!-- fancy dates --><script>
+    moment.locale("en");
+    fancydates(2, "YYYY-MM-DD HH:mm");
+    </script><!-- end fancy dates -->
+</body>
+</html>

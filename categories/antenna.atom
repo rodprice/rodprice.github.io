@@ -3,7 +3,7 @@
 <feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>Posts about antenna</title>
   <id>http://www.shinypenny.org/categories/antenna.atom</id>
-  <updated>2017-09-20T17:14:10Z</updated>
+  <updated>2017-10-16T02:30:11Z</updated>
   <author>
     <name>Rodney Price</name>
   </author>
@@ -28,6 +28,18 @@ Not at all.  It's supposed to act like a ground plane, and RF doesn't
 go through ground planes…
 &lt;/p&gt;
 
+&lt;p&gt;
+&lt;a href="http://www.shinypenny.org/images/balloon/bent-antenna-model-with-plane-radiation-pattern.png"&gt;
+&lt;img alt="Radiation pattern for bent antenna with plane model" src="http://www.shinypenny.org/images/balloon/bent-antenna-model-with-plane-radiation-pattern.png" title="Radiation pattern for bent antenna with plane model" style="float:left;width:35%;margin:10px"&gt;
+&lt;/a&gt;
+&lt;/p&gt;
+
+&lt;p&gt;
+&lt;a href="http://www.shinypenny.org/images/balloon/bent-antenna-model-with-plane.png"&gt;
+&lt;img alt="Bent antenna model with plane" src="http://www.shinypenny.org/images/balloon/bent-antenna-model-with-plane.png" title="Bent antenna model with plane" style="float:leftright;width:30%;margin:10px"&gt;
+&lt;/a&gt;
+&lt;/p&gt;
+
 &lt;p&gt;&lt;a href="http://www.shinypenny.org/posts/antennas-always-surprise-me.html"&gt;Read more…&lt;/a&gt; (1 min remaining to read)&lt;/p&gt;&lt;/div&gt;</summary>
     <category term="antenna" label="antenna"/>
     <category term="balloon" label="balloon"/>
@@ -43,11 +55,25 @@ go through ground planes…
     </author>
     <link rel="alternate" type="text/html" href="http://www.shinypenny.org/posts/432-mhz-beacon-antenna-first-attempt.html"/>
     <summary type="html">&lt;div&gt;&lt;p&gt;
+&lt;a href="http://www.shinypenny.org/images/balloon/432-MHz-antenna.png"&gt;
+&lt;img alt="First attempt at a 432 MHz antenna" src="http://www.shinypenny.org/images/balloon/432-MHz-antenna.png" title="First attempt at a 432 MHz antenna" style="float:right;width:35%;margin:10px"&gt;
+&lt;/a&gt;
+&lt;/p&gt;
+
+&lt;p&gt;
 They say you should be ready to toss out your first attempt at a
 design, but I kind of like this one.  I'm planning to use it to test
 the 432 MHz beacon – the one that doesn't do much other than go
 "beep, beep, beep."  It's a bit beefy at about 100 grams, so I'm
 pretty sure we're going to need another go-around.
+&lt;/p&gt;
+
+&lt;p&gt;
+It's most important characteristic, aside from not weighing 100 grams,
+will be it's ability to land right-side up.  It doesn't have to point
+straight up, just maybe better than 45 degrees from vertical.  And it
+has to be strong enough not to be bent up too much when it lands.
+(That's why I used 8 gauge copper wire, but that's heavy stuff.)
 &lt;/p&gt;
 
 &lt;p&gt;&lt;a href="http://www.shinypenny.org/posts/432-mhz-beacon-antenna-first-attempt.html"&gt;Read more…&lt;/a&gt; (1 min remaining to read)&lt;/p&gt;&lt;/div&gt;</summary>

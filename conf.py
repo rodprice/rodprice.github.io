@@ -21,11 +21,11 @@ BLOG_AUTHOR = "Rodney Price"  # (translatable)
 BLOG_TITLE = "Shiny Penny"  # (translatable)
 # This is the main URL for your site. It will be used
 # in a prominent link. Don't forget the protocol (http/https)!
-SITE_URL = "http://www.shinypenny.org/"
+SITE_URL = "http://www.shinypenny.cc/"
 # This is the URL where Nikola's output will be deployed.
 # If not set, defaults to SITE_URL
-# BASE_URL = "http://www.shinypenny.org/"
-BLOG_EMAIL = "rod@shinypenny.org"
+# BASE_URL = "http://www.shinypenny.cc/"
+BLOG_EMAIL = "rod@shinypenny.cc"
 BLOG_DESCRIPTION = "Distraction is us"  # (translatable)
 
 # Nikola is multilingual!
@@ -150,7 +150,7 @@ NAVIGATION_LINKS = {
             ),
          "Reference"
         ),
-        ("http://github.com/rodprice", "GitHub"),
+        ("https://github.com/rodprice", "GitHub"),
         ("/archive.html", "Archive"),
         ("/categories/", "Tags"),
         # ("/rss.xml", "RSS feed"),
